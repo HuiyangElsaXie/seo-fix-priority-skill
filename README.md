@@ -2,11 +2,28 @@
 
 **Give it a website URL to collect a bounded public sample and produce an evidence-linked six-dimension SEO review, or supply your own crawl data for repair triage.** The report separates observed facts, missing evidence, applicability and review tasks. It does not promise complete verification from a URL.
 
+## Start in one minute
+
+[Example action report](cases/actionable-handoff/run-06-freeze/report.md) · [Synthetic inputs and retained run history](cases/actionable-handoff/README.md) · [Four map/applicability cases](cases/google-maps/REVIEW.md)
+
+These are existing fictional outputs, not a live audit of your URL. The report separates fixes asserted by a supplied scoped review, verification tasks, optional improvements and keep decisions.
+
+| What you have / route | Smallest useful next step | Expected result and limit |
+|---|---|---|
+| Only a website URL; Codex/AI conversation | Read [the skill](skills/seo-fix-priority-workflow/SKILL.md), supply the URL, site purpose, audience and important pages. Ask for a bounded six-dimension review and evidence gaps. | With actual authorized shell/network tools, use the public collector. Without them, supply page text or exports; do not claim collection was run. |
+| Existing crawl/snapshot or supplemental data; Codex/AI | Supply permitted dated files and intended page behavior. Use [the fixture/schema guide](cases/six-dimension/README.md) for mapping. | AI/reviewer interprets findings and applicability; arbitrary CSV columns are not imported automatically. |
+| Python with only a URL | Follow [the URL collection commands](#use-python-directly), then analyze the saved snapshot. | Collection makes bounded public HTTP requests; this is the network step, not an offline or JavaScript-rendered audit. |
+| Python offline with saved evidence | Run the six-dimension reporter on the documented snapshot schema, or use normalized data with [legacy triage](INPUT-CONTRACT.md). Use new output paths. | Produces a report/queue from supplied evidence. Missing evidence and semantic judgments remain explicit; no automatic account or search-data access. |
+
+Example request: “Review this URL for the supplied business purpose. Separate observed facts, verification tasks and scoped fixes; show sources and what remains uninspected. Do not modify the site.”
+
+AI execution depends on host tools and permissions; no untested cross-host compatibility is promised. Historical test logs below remain evidence of their recorded runs, not a new regression run for this documentation update.
+
 [中文说明](README.zh-CN.md) · [Agent skill](skills/seo-fix-priority-workflow/SKILL.md) · [Fillable bilingual questionnaire](skills/seo-fix-priority-workflow/QUESTIONNAIRE.md) · [Six-dimension method and tools](docs/SIX-DIMENSION-METHOD.md)
 
 **Adapted from [Snippet Digital's MIT technical-seo-audit skill](https://github.com/Snippet-Digital-Agency/tech-seo-audit-skill/tree/8b5b5d5c776ec71a0d427bd6760dfeca058b404c).** Copyright © 2026 Snippet Digital. The [exact upstream skill](upstream/snippet-digital/SKILL.md), [full original MIT license](upstream/snippet-digital/LICENCE), [source lock](upstream/source-lock.json) and [specific changes](ADAPTATION.md) remain included. New public collection/report code is locally authored; it is not an upstream crawler or an endorsement by its authors. [New-contribution licensing remains owner-pending](LICENSE-PROPOSAL.md).
 
-Initially created for noncommercial learning and a professional portfolio. That intention does not restrict upstream MIT rights or technically prevent everyday/client use. With permitted inputs and human review, the workflow can support a freelance report or developer handoff. It is not claimed to be the author's primary production workflow or a validated full-service SEO platform.
+Maintained for personal use and continuously updated. This purpose does not restrict upstream MIT rights. With permitted inputs and human review, the workflow can support an SEO report or developer handoff; it is not a validated full-service SEO platform.
 
 For purpose/applicability questions and runnable JSON, see [the intake](skills/seo-fix-priority-workflow/QUESTIONNAIRE.md) and [six-dimension context template](skills/seo-fix-priority-workflow/SIX-DIMENSION-CONTEXT.template.json). AI reuses available context first; CLI users edit JSON and pass --context. Noncommercial/online-only/local-store scenarios are gated by actual services and transactions, not missing features.
 

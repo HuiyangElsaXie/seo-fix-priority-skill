@@ -2,11 +2,26 @@
 
 **提供一个网站 URL，采集有限的公开页面样本并生成有证据出处的六维度 SEO 检查报告；也可以直接分析你提供的抓取数据，形成修复队列。** 报告区分观察到的事实、缺失证据、适用范围和待复核项，不承诺仅凭网址完成全面验证。
 
+## 一分钟开始
+
+[现有行动报告示例](cases/actionable-handoff/run-06-freeze/report.md) · [合成输入与完整历史记录](cases/actionable-handoff/README.md) · [四个地图／适用性案例](cases/google-maps/REVIEW.md)
+
+全部为已有虚构输出，不是对你网址的新审计。报告区分所提供专项复核声称的修复、待验证任务、可选优化和保持不动。
+
+| 手头资料／使用方式 | 最短下一步 | 交付与边界 |
+|---|---|---|
+| 只有网站 URL；Codex／AI 对话 | 先读 [skill](skills/seo-fix-priority-workflow/SKILL.md)，提供网址、网站用途、受众和重点页面，请做有限六维检查并列缺口。 | 宿主具备获准 shell／网络工具时可运行公开采集器；没有工具则提供正文或导出，不声称已执行采集。 |
+| 已有抓取／快照或补充数据；Codex／AI | 提供获准、带日期文件及页面预期行为，按[样本／schema 说明](cases/six-dimension/README.md)映射。 | AI／审阅者判断信号和适用性；不自动识别任意 CSV 列。 |
+| Python，只有网址 | 按下方“直接运行 Python”的采集命令先保存快照，再生成报告。 | 采集是有限公开 HTTP 联网步骤，不是离线流程，也不渲染 JavaScript。 |
+| Python 离线，已有证据 | 按快照 schema 运行六维报告；规范化旧数据可走 [triage](INPUT-CONTRACT.md)，每次用新输出路径。 | 从已给证据生成报告／队列，保留缺口与语义待审项；不自动连接账号或搜索数据源。 |
+
+示例请求：“按我提供的网站用途检查这个 URL；分开观察事实、待验证项与有依据的修复，写明来源和未检查范围，不修改网站。”实际执行取决于宿主工具和权限，不承诺未经测试的跨宿主兼容。下方历史测试记录保留原意，不表示本次文档修改又跑了回归。
+
 [English](README.md) · [AI 使用步骤](skills/seo-fix-priority-workflow/SKILL.md) · [中英可填写问卷](skills/seo-fix-priority-workflow/QUESTIONNAIRE.md) · [六维度方法与工具](docs/SIX-DIMENSION-METHOD.md)
 
 **改编自 [Snippet Digital 的 MIT technical-seo-audit skill](https://github.com/Snippet-Digital-Agency/tech-seo-audit-skill/tree/8b5b5d5c776ec71a0d427bd6760dfeca058b404c)。** 原版权 © 2026 Snippet Digital。[原始 skill](upstream/snippet-digital/SKILL.md)、[完整 MIT 许可](upstream/snippet-digital/LICENCE)、[固定版本记录](upstream/source-lock.json)与[具体改动映射](ADAPTATION.md)均保留。新增公开采集和报告程序为本项目编写，并非上游爬虫，也不代表上游认可。[新增内容许可仍待作者决定](LICENSE-PROPOSAL.md)。
 
-最初用于非商业学习与职业作品展示；这不改变上游 MIT 权利，也不意味着技术上只能演示。在输入获准使用、人工审核后，可辅助日常或接案分析和开发交接。这里不宣称它是作者的主要生产工作流或经过完整验证的 SEO 服务平台。
+个人自用，持续更新；这不改变上游 MIT 权利。在输入获准使用、人工审核后，可辅助 SEO 分析报告和开发交接，不宣称经过完整验证的 SEO 服务平台。
 
 使用前的目的/适用性问题与可运行 JSON 见[提问文件](skills/seo-fix-priority-workflow/QUESTIONNAIRE.md)及[六维 context 模板](skills/seo-fix-priority-workflow/SIX-DIMENSION-CONTEXT.template.json)。AI 先复用已知背景，缺失才问；CLI 编辑 JSON 后传入 --context。按实际本地服务和交易功能排除不适用维度，不因没有地图或购物车扣分。
 
