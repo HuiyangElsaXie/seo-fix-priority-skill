@@ -1,0 +1,23 @@
+{
+  "note": "Original raw bytes retained locally; public copy only redacts machine-local path prefixes. Empty stream files are intentionally empty.",
+  "files": [
+    {
+      "file": "stdout.raw.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "stderr.raw.txt",
+      "original_sha256": "455e858536c3634a196b27b86490f3910792a0320d22703db8b795cf90a3ced2",
+      "public_sha256": "8302436965bfc74baee8148344cd53277103a2a2d4fc80d0219406efb2aba35a",
+      "machine_path_redacted": true
+    },
+    {
+      "file": "run.json",
+      "original_sha256": "ea71f5d51611948bc6191b93127efac4d9614430a4a9786f73701404919efa45",
+      "public_sha256": "ea71f5d51611948bc6191b93127efac4d9614430a4a9786f73701404919efa45",
+      "machine_path_redacted": false
+    }
+  ]
+}

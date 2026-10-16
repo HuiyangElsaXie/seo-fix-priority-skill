@@ -4,6 +4,8 @@
 
 ## 一分钟开始
 
+保留完整仓库并明确提供嵌套 SKILL.md 入口；仅复制技能子目录会遗漏根目录脚本、文档、案例及来源资源。自动发现／安装规则取决于宿主。
+
 [现有行动报告示例](cases/actionable-handoff/run-06-freeze/report.md) · [合成输入与完整历史记录](cases/actionable-handoff/README.md) · [四个地图／适用性案例](cases/google-maps/REVIEW.md)
 
 全部为已有虚构输出，不是对你网址的新审计。报告区分所提供专项复核声称的修复、待验证任务、可选优化和保持不动。

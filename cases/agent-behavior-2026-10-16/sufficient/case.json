@@ -1,0 +1,23 @@
+{
+  "case": "sufficient",
+  "repository": "seo-fix-priority-skill",
+  "baseline_commit": "774627bafadc00122fa5d546dc6bd91863d141bd",
+  "tested_skill_sha256": "abc18e1239953e62cd014dbae706b85a49ed2ef47884e7de8ca5c4e5ad93be57",
+  "skill_entry": "skills/seo-fix-priority-workflow/SKILL.md",
+  "synthetic": true,
+  "model_requested": "gpt-6.1-sol",
+  "request": "Use the skill to review the supplied synthetic snapshot and context, generate the actual six-dimension report, then provide an owner-ready handoff and review record. Preserve first output and distinguish intent from technical signals. Do not collect live URLs.",
+  "input_files": [
+    "snapshot.json",
+    "context.json",
+    "brief.md"
+  ],
+  "tools": {
+    "harness_read_and_write": "Allowed only in this case folder plus read-only skill/repository references",
+    "offline_python_for_business_task": true,
+    "business_network_search_browsing": false,
+    "paid_calls_or_new_accounts": false,
+    "site_mutations_or_git": false
+  },
+  "execution_note": "Business tool limits are scenario permissions on a tool-capable host, not a claim that host tools do not exist. A separate fresh Sol 6.1 agent generates the deliverable; static checks are recorded separately."
+}

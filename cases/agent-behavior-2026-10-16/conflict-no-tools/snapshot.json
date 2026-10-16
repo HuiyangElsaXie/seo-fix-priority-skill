@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "collection": {
+    "requested_url": "https://cedar-guide.example/",
+    "final_url": "https://cedar-guide.example/",
+    "started_at": "2026-10-16T00:00:00Z",
+    "finished_at": "2026-10-16T00:00:01Z",
+    "limitations": [
+      "Synthetic supplied snapshot, not a real crawl."
+    ]
+  },
+  "pages": [
+    {
+      "url": "https://cedar-guide.example/",
+      "status": 200,
+      "fetch_state": "ok",
+      "fetched_at": "2026-10-16T00:00:00Z",
+      "content_type": "text/html",
+      "title": "",
+      "meta_description": "",
+      "h1": [
+        "Cedar repair guide"
+      ],
+      "canonical": [
+        "https://cedar-guide.example/"
+      ],
+      "robots_meta": [],
+      "hreflang": [],
+      "internal_links": [
+        "https://cedar-guide.example/archive"
+      ],
+      "jsonld": [],
+      "raw_artifact_path": "synthetic-inline-F1",
+      "parse_state": "parsed"
+    },
+    {
+      "url": "https://cedar-guide.example/archive",
+      "status": 200,
+      "fetch_state": "ok",
+      "fetched_at": "2026-10-16T00:00:00Z",
+      "content_type": "text/html",
+      "title": "Old repair notes",
+      "meta_description": "Archive",
+      "h1": [
+        "Old repair notes"
+      ],
+      "canonical": [
+        "https://cedar-guide.example/archive"
+      ],
+      "robots_meta": [
+        "noindex"
+      ],
+      "hreflang": [],
+      "internal_links": [],
+      "jsonld": [],
+      "raw_artifact_path": "synthetic-inline-F1",
+      "parse_state": "parsed"
+    }
+  ],
+  "errors": []
+}

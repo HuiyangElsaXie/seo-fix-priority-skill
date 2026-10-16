@@ -1,0 +1,15 @@
+{
+ "review_type":"same-agent",
+ "skill_sha256":"abc18e1239953e62cd014dbae706b85a49ed2ef47884e7de8ca5c4e5ad93be57",
+ "actual_execution":[
+  {"tool":"exec_command","purpose":"Read case.json and SKILL.md","result":"success"},
+  {"tool":"exec_command","purpose":"Read supplied inputs and relevant README/ACTIONABLE-HANDOFF; Get-FileHash skill","result":"success"},
+  {"tool":"exec_command","purpose":"Write artifacts","result":"PowerShell parse error; no commands executed"},
+  {"tool":"exec_command","purpose":"Corrected harness writes of raw-response.md, self-review.md, final.md, tool-availability.md, commands.json; artifact inventory","result":"see tool completion"}
+ ],
+ "business_commands":[],
+ "generated_report":false,
+ "measurements_collected":false,
+ "not_executed":["triage.py","collect_public_site.py","six_dimension_report.py","network/search/browsing","Git/site mutations","paid calls","subagents"],
+ "reason":"Explicit user/case prohibition; manual supplied-evidence review only"
+}

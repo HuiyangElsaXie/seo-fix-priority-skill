@@ -1,0 +1,5 @@
+# Actual tool use and permissions
+Loaded skill SHA256: a74690f43865561fa5cc9aaeaff8dee7842599d1d17bc23f7bd886868b03c5da
+Permissions: read this case, listed inputs and relevant repository references; write this case only. Offline Python allowed. Network, paid calls, accounts, Git/site/repository mutations and subagents prohibited and unused.
+Used PowerShell for file reads/copying and invoking the authorized Python runtime. Used offline reporter twice from repository cwd. No collector, live URL retrieval, browser, analytics or external approval. rg was unavailable; Select-String supplied the read-only fallback. commands.json records reporter command times and exit codes; raw stdout/stderr are retained unchanged. Initial PowerShell redirection uses its native output encoding; final logs preserve subprocess bytes.
+Mapped inputs are byte copies; no synthetic observations were added. Review input is same-agent authored and fingerprint-bound, not independent approval. Repository unchanged.

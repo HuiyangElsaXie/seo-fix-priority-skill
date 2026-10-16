@@ -1,0 +1,31 @@
+{
+  "repository": "seo-fix-priority-skill",
+  "runs": [
+    {
+      "attempt": 1,
+      "baseline_commit": "774627bafadc00122fa5d546dc6bd91863d141bd",
+      "started_at_utc": "2026-10-16T21:27:10.945823+00:00",
+      "finished_at_utc": "2026-10-16T21:27:12.512813+00:00",
+      "command": "python -X utf8 -m unittest discover -s tests -v",
+      "exit_code": 1,
+      "reported_test_count": 180
+    },
+    {
+      "attempt": 2,
+      "baseline_commit": "774627bafadc00122fa5d546dc6bd91863d141bd",
+      "started_at_utc": "2026-10-16T21:30:03.945831+00:00",
+      "finished_at_utc": "2026-10-16T21:30:05.716518+00:00",
+      "command": "python -X utf8 -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "reported_test_count": 228
+    }
+  ],
+  "runtime_note": "Attempt 1 used task-local embedded Python 3.13.7 in isolated import mode and had import errors. Attempt 2 used a copied task-local runtime without ._pth isolation, restoring normal repository/script imports. No repository Python source or test was changed.",
+  "scope": "Actual unittest execution; not agent/model or live site verification.",
+  "final_outcome": {
+    "tests_run": 228,
+    "passed": 228,
+    "errors": 0,
+    "exit_code": 0
+  }
+}

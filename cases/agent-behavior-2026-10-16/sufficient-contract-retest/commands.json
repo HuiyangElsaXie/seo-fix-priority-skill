@@ -1,0 +1,58 @@
+[
+  {
+    "stderr": "initial.stderr.txt",
+    "stdout": "initial.stdout.txt",
+    "started_at": "2026-10-16T21:33:30.7437614Z",
+    "command": [
+      "{PYTHON}",
+      "scripts/six_dimension_report.py",
+      "{CASE}\\mapped-inputs\\snapshot.json",
+      "--context",
+      "{CASE}\\mapped-inputs\\context.json",
+      "--out",
+      "{CASE}\\initial-report"
+    ],
+    "finished_at": "2026-10-16T21:33:30.8936911Z",
+    "exit_code": 0,
+    "cwd": "{REPO}",
+    "record_correction": "Reconstructed exact argv path values from recorded PowerShell invocation; original timestamp/exit telemetry preserved. commands-v1.json retains the earlier inconsistent relative display paths."
+  },
+  {
+    "command": [
+      "{PYTHON}",
+      "scripts/six_dimension_report.py",
+      "{CASE}\\mapped-inputs\\snapshot.json",
+      "--context",
+      "{CASE}\\mapped-inputs\\context.json",
+      "--review",
+      "{CASE}\\review-input.json",
+      "--out",
+      "{CASE}\\final-report"
+    ],
+    "cwd": "{REPO}",
+    "started_at": "2026-10-16T21:34:16.366966+00:00",
+    "finished_at": "2026-10-16T21:34:16.467031+00:00",
+    "exit_code": 0,
+    "stdout": "final.stdout.txt",
+    "stderr": "final.stderr.txt"
+  },
+  {
+    "command": [
+      "{PYTHON}",
+      "scripts/six_dimension_report.py",
+      "{CASE}\\mapped-inputs\\snapshot.json",
+      "--context",
+      "{CASE}\\mapped-inputs\\context.json",
+      "--review",
+      "{CASE}\\review-input-v2.json",
+      "--out",
+      "{CASE}\\final-report-v2"
+    ],
+    "cwd": "{REPO}",
+    "started_at": "2026-10-16T21:34:47.131648+00:00",
+    "finished_at": "2026-10-16T21:34:47.235462+00:00",
+    "exit_code": 0,
+    "stdout": "final-v2.stdout.txt",
+    "stderr": "final-v2.stderr.txt"
+  }
+]

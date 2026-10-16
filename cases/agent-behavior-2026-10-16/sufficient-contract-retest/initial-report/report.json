@@ -1,0 +1,754 @@
+{
+  "schema_version": "1.0",
+  "input_fingerprint": "496d8f380f8cd5f189352a8619925dd6656c3228eacece7945bac61d14a370d1",
+  "final_review_status": {
+    "status": "not_supplied",
+    "source_truth": "not_independently_verified",
+    "input_binding": "evidence_locator_only; review assertions may be stale if source content changed"
+  },
+  "actionable_handoff": {
+    "status": "verification_required",
+    "buckets": {
+      "confirmed_fix": [],
+      "needs_verification": [
+        {
+          "task_id": "task-issue-011525d1447c",
+          "issue_id": "issue-011525d1447c",
+          "dimension": "onpage_content",
+          "subject": "https://cedar-guide.example/",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-9ea11a786c37"
+          ],
+          "observed_basis": "title is empty in collected HTML.",
+          "steps": [
+            "Inspect the title in full rendered pages and the template for every listed URL.",
+            "Document whether these pages serve distinct reader tasks or intentional duplicate/alternate purposes.",
+            "For pages needing differentiation, draft a truthful, purpose-specific title; retain intentional shared values when justified."
+          ],
+          "proposed_role": "Content editor with SEO reviewer",
+          "dependencies": [
+            "Page purpose and target reader confirmed",
+            "Editorial approval and template access"
+          ],
+          "acceptance": [
+            "Each scoped URL has an approved title or a documented reason for retaining/omitting it.",
+            "Fresh HTML/rendered evidence matches the approved copy; no ranking or click-rate gain is assumed."
+          ],
+          "priority_reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-issue-638d094132b9",
+          "issue_id": "issue-638d094132b9",
+          "dimension": "onpage_content",
+          "subject": "https://cedar-guide.example/",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-9ea11a786c37"
+          ],
+          "observed_basis": "meta_description is empty in collected HTML.",
+          "steps": [
+            "Inspect the meta description in full rendered pages and the template for every listed URL.",
+            "Document whether these pages serve distinct reader tasks or intentional duplicate/alternate purposes.",
+            "For pages needing differentiation, draft a truthful, purpose-specific meta description; retain intentional shared values when justified."
+          ],
+          "proposed_role": "Content editor with SEO reviewer",
+          "dependencies": [
+            "Page purpose and target reader confirmed",
+            "Editorial approval and template access"
+          ],
+          "acceptance": [
+            "Each scoped URL has an approved meta description or a documented reason for retaining/omitting it.",
+            "Fresh HTML/rendered evidence matches the approved copy; no ranking or click-rate gain is assumed."
+          ],
+          "priority_reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-issue-aeb924af0c3f",
+          "issue_id": "issue-aeb924af0c3f",
+          "dimension": "technical",
+          "subject": "https://cedar-guide.example/archive",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-f66a5ec31de5"
+          ],
+          "observed_basis": "Collected HTML or HTTP robots directive includes noindex.",
+          "steps": [
+            "Record the precise HTML meta or HTTP header containing noindex and inspect rendered output.",
+            "Confirm with the owner whether this URL is intended for search visibility or exclusion.",
+            "Retain deliberate exclusions; remove or correct directives only after an unintended exclusion is confirmed."
+          ],
+          "proposed_role": "Technical SEO reviewer with web engineer",
+          "dependencies": [
+            "Explicit URL visibility intent",
+            "Access to rendered HTML, response headers and relevant template"
+          ],
+          "acceptance": [
+            "The recorded directive matches documented visibility intent in a fresh response and rendered check.",
+            "If visibility is intended, inspect Search Console separately; do not equate directive removal with indexing."
+          ],
+          "priority_reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-404b69bc24c4",
+          "issue_id": null,
+          "dimension": "technical",
+          "subject": "Evidence investigation",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "Crawl/HTML sample does not prove index inclusion, rendered parity, complete internal graph or robots access for every crawler.; No supplied field CWV export: LCP/INP/CLS unknown, not measured.",
+          "source_locator": "sections.technical.unknowns",
+          "steps": [
+            "Investigate only these scoped gaps: Crawl/HTML sample does not prove index inclusion, rendered parity, complete internal graph or robots access for every crawler.; No supplied field CWV export: LCP/INP/CLS unknown, not measured.",
+            "If any scoped HTTP/parse failures are listed, repeat the exact requests and save status, headers and raw HTML before re-running skipped checks.",
+            "For index/rendering uncertainty, compare rendered HTML and URL Inspection evidence for the scoped URLs; inspect robots rules for the relevant crawler and record sample limits.",
+            "For CWV gaps, request a field p75 export with URL/origin scope, device, metric, units and window; invalid or absent records remain unknown.",
+            "Attach source, date, scope and locator for each resolved gap; keep unavailable or irrelevant checks explicitly unresolved/not applicable."
+          ],
+          "proposed_role": "Technical SEO reviewer with web engineer",
+          "dependencies": [
+            "Access to the scoped source identified in the evidence gap",
+            "Reviewer availability"
+          ],
+          "acceptance": [
+            "Attach dated evidence with scope and locator for this exact gap, or record why it remains unavailable.",
+            "Mark the check resolved only after review; unresolved evidence is never a site defect or a healthy result."
+          ],
+          "priority_reason": "Collect missing evidence before diagnosing faults or ordering changes; missing data alone establishes no urgency.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-b47cd1f66509",
+          "issue_id": null,
+          "dimension": "onpage_content",
+          "subject": "Evidence investigation",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "Full-content task satisfaction and factual accuracy need semantic review; excerpts/word counts cannot establish thin content.",
+          "source_locator": "sections.onpage_content.unknowns",
+          "steps": [
+            "Investigate only these scoped gaps: Full-content task satisfaction and factual accuracy need semantic review; excerpts/word counts cannot establish thin content.",
+            "Review full content for the exact affected URLs against the intended reader task; list factual claims and their supporting sources.",
+            "Check authorship/first-hand evidence and whether internal links or a relevant next action help the reader; compare rendered metadata with raw HTML where parsing failed.",
+            "Attach source, date, scope and locator for each resolved gap; keep unavailable or irrelevant checks explicitly unresolved/not applicable."
+          ],
+          "proposed_role": "Content editor with SEO reviewer",
+          "dependencies": [
+            "Access to the scoped source identified in the evidence gap",
+            "Reviewer availability"
+          ],
+          "acceptance": [
+            "Attach dated evidence with scope and locator for this exact gap, or record why it remains unavailable.",
+            "Mark the check resolved only after review; unresolved evidence is never a site defect or a healthy result."
+          ],
+          "priority_reason": "Collect missing evidence before diagnosing faults or ordering changes; missing data alone establishes no urgency.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-debf275596d0",
+          "issue_id": null,
+          "dimension": "offpage",
+          "subject": "Evidence investigation",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "No backlink/mention data supplied; this does not mean no backlinks exist.",
+          "source_locator": "sections.offpage.unknowns",
+          "steps": [
+            "Investigate only these scoped gaps: No backlink/mention data supplied; this does not mean no backlinks exist.",
+            "If external reputation evidence is needed for this objective, obtain a dated referring-page/target/rel export with its sampling limits.",
+            "Inspect a documented sample for live links, topical relevance, independence and paid relationships; do not infer reputation from missing data or recommend buying links.",
+            "Attach source, date, scope and locator for each resolved gap; keep unavailable or irrelevant checks explicitly unresolved/not applicable."
+          ],
+          "proposed_role": "PR or partnerships reviewer",
+          "dependencies": [
+            "Access to the scoped source identified in the evidence gap",
+            "Reviewer availability"
+          ],
+          "acceptance": [
+            "Attach dated evidence with scope and locator for this exact gap, or record why it remains unavailable.",
+            "Mark the check resolved only after review; unresolved evidence is never a site defect or a healthy result."
+          ],
+          "priority_reason": "Collect missing evidence before diagnosing faults or ordering changes; missing data alone establishes no urgency.",
+          "source_truth": "supplied_input_not_independently_verified"
+        }
+      ],
+      "optional_improvement": [],
+      "keep_or_not_applicable": [
+        {
+          "task_id": "task-60b6d0e43cb3",
+          "issue_id": null,
+          "dimension": "local",
+          "subject": "Applicability decision",
+          "bucket": "keep_or_not_applicable",
+          "evidence_ids": [],
+          "observed_basis": "No in-person customer service",
+          "source_locator": "sections.local.applicability",
+          "steps": [
+            "Retain the documented applicability decision: No in-person customer service",
+            "Revisit only if the business offering or market scope changes."
+          ],
+          "proposed_role": "Local operations manager",
+          "dependencies": [
+            "Business owner confirmation if applicability changes"
+          ],
+          "acceptance": [
+            "Applicability reason, source and date remain recorded; no missing-data penalty is assigned."
+          ],
+          "priority_reason": "Preserve an explicit supplied scope decision.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-bab237b49009",
+          "issue_id": null,
+          "dimension": "ecommerce",
+          "subject": "Applicability decision",
+          "bucket": "keep_or_not_applicable",
+          "evidence_ids": [],
+          "observed_basis": "No online transactions",
+          "source_locator": "sections.ecommerce.applicability",
+          "steps": [
+            "Retain the documented applicability decision: No online transactions",
+            "Revisit only if the business offering or market scope changes."
+          ],
+          "proposed_role": "Catalog operations manager with web engineer",
+          "dependencies": [
+            "Business owner confirmation if applicability changes"
+          ],
+          "acceptance": [
+            "Applicability reason, source and date remain recorded; no missing-data penalty is assigned."
+          ],
+          "priority_reason": "Preserve an explicit supplied scope decision.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-ec269f746d1f",
+          "issue_id": null,
+          "dimension": "international",
+          "subject": "Applicability decision",
+          "bucket": "keep_or_not_applicable",
+          "evidence_ids": [],
+          "observed_basis": "One English edition only",
+          "source_locator": "sections.international.applicability",
+          "steps": [
+            "Retain the documented applicability decision: One English edition only",
+            "Revisit only if the business offering or market scope changes."
+          ],
+          "proposed_role": "Localization lead with technical SEO reviewer",
+          "dependencies": [
+            "Business owner confirmation if applicability changes"
+          ],
+          "acceptance": [
+            "Applicability reason, source and date remain recorded; no missing-data penalty is assigned."
+          ],
+          "priority_reason": "Preserve an explicit supplied scope decision.",
+          "source_truth": "supplied_input_not_independently_verified"
+        }
+      ]
+    },
+    "interpretation": "Actionable investigation and conditional repair plans, not execution approval. Evidence gaps are conditional scope checks, not mandatory tool purchases or website changes. Empty confirmed-fix and optional buckets do not mean healthy. Proposed roles are not assigned people. Business priority remains pending; investigation sequencing is evidence-based."
+  },
+  "report_type": "bounded_six_dimension_evidence_review",
+  "intake": {
+    "mode": "tailored",
+    "answers": {
+      "industry": {
+        "value": "Community repair education",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "audience": {
+        "value": "Beginner volunteers",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "geography": {
+        "value": "CA",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "language": {
+        "value": "en",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "positioning": {
+        "value": "Educational checklist resource, no commercial comparison",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "brand_lifecycle": {
+        "value": "early",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "product_lifecycle": {
+        "value": "not a sold product",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "primary_objective": {
+        "value": "awareness",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "conversion_definition": {
+        "value": "Reader finds checklist; no measured conversion",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "objective_tradeoff": {
+        "value": "Clarity before acquisition volume",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "resources": {
+        "value": "One volunteer, one content review",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "constraints": {
+        "value": "No sales, no customer visits, no other language editions",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "specific_problem": {
+        "value": "Review the supplied home title and preserve an intentionally excluded archive",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "site_age": {
+        "value": "not supplied",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "migration_history": {
+        "value": "none supplied",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      }
+    },
+    "sources": {
+      "brief": {
+        "kind": "fictional_fixture",
+        "description": "Synthetic owner brief, not independently verified",
+        "observed_at": "2026-10-16"
+      }
+    },
+    "as_of": "2026-10-16",
+    "invalid_source_ids": [],
+    "missing_essential": [],
+    "objective": "awareness",
+    "interpretation": "Context is supplied and attributed, not independently verified. Malformed or future-dated sources cannot establish known answers. Missing context does not block technical observations.",
+    "next_questions": [
+      "What is the website purpose: portfolio, content, lead generation, online sales or other?"
+    ]
+  },
+  "collection": {
+    "requested_url": "https://cedar-guide.example/",
+    "final_url": "https://cedar-guide.example/",
+    "started_at": "2026-10-16T00:00:00Z",
+    "finished_at": "2026-10-16T00:00:01Z",
+    "limitations": [
+      "Synthetic supplied snapshot, not a real crawl."
+    ]
+  },
+  "sections": {
+    "technical": {
+      "applicability": {
+        "value": "yes",
+        "reason": "General website review dimension."
+      },
+      "evidence_status": "partial",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "url": "https://cedar-guide.example/",
+          "http_status": 200
+        },
+        {
+          "url": "https://cedar-guide.example/",
+          "canonical": [
+            "https://cedar-guide.example/"
+          ],
+          "robots_meta": [],
+          "index_status": "unknown"
+        },
+        {
+          "url": "https://cedar-guide.example/",
+          "jsonld_blocks": 0,
+          "validation": "presence and supplied JSON shape only; not official rich-result validation"
+        },
+        {
+          "url": "https://cedar-guide.example/archive",
+          "http_status": 200
+        },
+        {
+          "url": "https://cedar-guide.example/archive",
+          "canonical": [
+            "https://cedar-guide.example/archive"
+          ],
+          "robots_meta": [
+            {
+              "name": "robots",
+              "content": "noindex"
+            }
+          ],
+          "index_status": "unknown"
+        },
+        {
+          "url": "https://cedar-guide.example/archive",
+          "jsonld_blocks": 0,
+          "validation": "presence and supplied JSON shape only; not official rich-result validation"
+        },
+        {
+          "internal_graph": [
+            {
+              "url": "https://cedar-guide.example/",
+              "sample_inlinks": 0,
+              "sample_depth": 0
+            },
+            {
+              "url": "https://cedar-guide.example/archive",
+              "sample_inlinks": 1,
+              "sample_depth": 1
+            }
+          ],
+          "sample_only": true,
+          "orphan_assessment": "unknown"
+        }
+      ],
+      "unknowns": [
+        "Crawl/HTML sample does not prove index inclusion, rendered parity, complete internal graph or robots access for every crawler.",
+        "No supplied field CWV export: LCP/INP/CLS unknown, not measured."
+      ],
+      "issue_ids": [
+        "issue-aeb924af0c3f"
+      ],
+      "review_task": "Confirm intended visibility, canonical choices, rendering and business-critical paths; observed directives do not prove Google index status.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "onpage_content": {
+      "applicability": {
+        "value": "yes",
+        "reason": "General website review dimension."
+      },
+      "evidence_status": "partial",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "url": "https://cedar-guide.example/",
+          "title": "",
+          "meta_description": "",
+          "h1": [
+            "Cedar repair guide"
+          ]
+        },
+        {
+          "url": "https://cedar-guide.example/archive",
+          "title": "Old repair notes",
+          "meta_description": "Archive",
+          "h1": [
+            "Old repair notes"
+          ]
+        }
+      ],
+      "unknowns": [
+        "Full-content task satisfaction and factual accuracy need semantic review; excerpts/word counts cannot establish thin content."
+      ],
+      "issue_ids": [
+        "issue-011525d1447c",
+        "issue-638d094132b9"
+      ],
+      "review_task": "Review reader task, accuracy, first-hand evidence, authorship and useful next steps in full content. Do not score E-E-A-T, keyword density or word count.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "offpage": {
+      "applicability": {
+        "value": "yes",
+        "reason": "General website review dimension."
+      },
+      "evidence_status": "not_assessed",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [],
+      "unknowns": [
+        "No backlink/mention data supplied; this does not mean no backlinks exist."
+      ],
+      "issue_ids": [],
+      "review_task": "Review relevance, independence, paid relationships and sample bias. DA/DR are third-party measures, not Google authority scores.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "local": {
+      "applicability": {
+        "value": "no",
+        "reason": "No in-person customer service",
+        "source": "F2 synthetic brief",
+        "date": "2026-10-16"
+      },
+      "evidence_status": "not_assessed",
+      "semantic_review": "not_applicable",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [],
+      "unknowns": [
+        "Not applicable according to supplied business reason; no penalty assigned."
+      ],
+      "issue_ids": [],
+      "review_task": "Confirm real customer contact/service eligibility, branch identity and privacy before suggesting a Business Profile; a city/address alone establishes no eligibility.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "ecommerce": {
+      "applicability": {
+        "value": "no",
+        "reason": "No online transactions",
+        "source": "F2 synthetic brief",
+        "date": "2026-10-16"
+      },
+      "evidence_status": "not_assessed",
+      "semantic_review": "not_applicable",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [],
+      "unknowns": [
+        "Not applicable according to supplied business reason; no penalty assigned."
+      ],
+      "issue_ids": [],
+      "review_task": "Confirm current selling purpose, variants, purchase flow, delivery and returns; past ecommerce case studies do not make this site a shop.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "international": {
+      "applicability": {
+        "value": "no",
+        "reason": "One English edition only",
+        "source": "F2 synthetic brief",
+        "date": "2026-10-16"
+      },
+      "evidence_status": "not_assessed",
+      "semantic_review": "not_applicable",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [],
+      "unknowns": [
+        "Not applicable according to supplied business reason; no penalty assigned."
+      ],
+      "issue_ids": [],
+      "review_task": "Review actual language/market purpose, translation quality and regional requirements; single-language sites need no standalone missing-hreflang warning.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    }
+  },
+  "findings": [
+    {
+      "issue_id": "issue-011525d1447c",
+      "root_cause_key": "EMPTY_TITLE|https://cedar-guide.example/",
+      "subject": "https://cedar-guide.example/",
+      "primary_dimension": "onpage_content",
+      "related_dimensions": [],
+      "technical_fact": "title is empty in collected HTML.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-9ea11a786c37"
+      ],
+      "recommendation": "Review a descriptive field for the page purpose; absence is not proof of a ranking penalty.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied."
+      },
+      "acceptance": "Each scoped URL has an approved title or a documented reason for retaining/omitting it. Fresh HTML/rendered evidence matches the approved copy; no ranking or click-rate gain is assumed.",
+      "owner": "Content editor with SEO reviewer (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    },
+    {
+      "issue_id": "issue-638d094132b9",
+      "root_cause_key": "EMPTY_META_DESCRIPTION|https://cedar-guide.example/",
+      "subject": "https://cedar-guide.example/",
+      "primary_dimension": "onpage_content",
+      "related_dimensions": [],
+      "technical_fact": "meta_description is empty in collected HTML.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-9ea11a786c37"
+      ],
+      "recommendation": "Review a descriptive field for the page purpose; absence is not proof of a ranking penalty.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied."
+      },
+      "acceptance": "Each scoped URL has an approved meta description or a documented reason for retaining/omitting it. Fresh HTML/rendered evidence matches the approved copy; no ranking or click-rate gain is assumed.",
+      "owner": "Content editor with SEO reviewer (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    },
+    {
+      "issue_id": "issue-aeb924af0c3f",
+      "root_cause_key": "NOINDEX_REVIEW|https://cedar-guide.example/archive",
+      "subject": "https://cedar-guide.example/archive",
+      "primary_dimension": "technical",
+      "related_dimensions": [],
+      "technical_fact": "Collected HTML or HTTP robots directive includes noindex.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-f66a5ec31de5"
+      ],
+      "recommendation": "Confirm intended exclusion before considering any directive change.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied."
+      },
+      "acceptance": "The recorded directive matches documented visibility intent in a fresh response and rendered check. If visibility is intended, inspect Search Console separately; do not equate directive removal with indexing.",
+      "owner": "Technical SEO reviewer with web engineer (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "e-9ea11a786c37",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://cedar-guide.example/",
+      "locator": "synthetic-inline-F1"
+    },
+    {
+      "evidence_id": "e-f66a5ec31de5",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://cedar-guide.example/archive",
+      "locator": "synthetic-inline-F1"
+    }
+  ],
+  "limitations": [
+    "No overall health/authority score, traffic loss, ranking penalty or ROI is calculated.",
+    "Unreviewed semantic scope remains pending; supplied external reviews are attributed assertions, not AI review performed by this deterministic script.",
+    "JSON-LD checks are not official rich-result validation. FAQ rich results were removed May 7, 2026; no FAQ rich-result benefit is promised.",
+    "Priority is qualitative and pending business-impact/effort/owner evidence; technical severity is separate."
+  ]
+}

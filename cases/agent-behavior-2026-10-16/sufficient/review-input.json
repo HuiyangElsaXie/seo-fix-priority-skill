@@ -1,0 +1,64 @@
+{
+  "source": "Supplied synthetic snapshot.json, context.json and brief.md F1-F2, read directly",
+  "decisions": [
+    {
+      "issue_id": "issue-011525d1447c",
+      "business_context_basis": "brief.md F1-F2 and context answers: awareness; clarity before volume; one volunteer content review.",
+      "rationale": "The supplied home title is empty; F1 identifies its checklist task and F2 states home discoverability intent. A descriptive title is supported within this synthetic scope, with no measured SEO harm claimed.",
+      "evidence_ids": [
+        "e-9ea11a786c37"
+      ],
+      "intended_behavior": "Home has a truthful descriptive title for beginner volunteers.",
+      "steps": [
+        "Content editor proposes Cedar repair guide | Volunteer checklist, checking it against full home content.",
+        "Owner approves wording; web maintainer adds the title to the home template only after fresh HTML/rendered inspection.",
+        "Capture dated HTML and rendered title after the separately authorized implementation."
+      ],
+      "decision": "confirmed_fix",
+      "acceptance": [
+        "Approved descriptive title is present and matches the rendered home page.",
+        "Archive exclusion is unchanged; no indexing or ranking gain is inferred."
+      ]
+    },
+    {
+      "issue_id": "issue-638d094132b9",
+      "business_context_basis": "brief.md F1-F2: beginner volunteers and clarity objective.",
+      "rationale": "Empty description is observed, but no requirement or demonstrated harm is supplied. A concise summary may clarify the reader task.",
+      "evidence_ids": [
+        "e-9ea11a786c37"
+      ],
+      "intended_behavior": "An optional summary accurately describes the educational checklist.",
+      "steps": [
+        "After title approval, content editor considers: Use this checklist to record an item, its material and questions before seeking appropriate repair guidance.",
+        "Approve only if full content supports that summary; web maintainer adds it in a separately authorized change."
+      ],
+      "decision": "optional_improvement",
+      "acceptance": [
+        "Description matches approved copy and actual content, or owner documents a decision to omit it.",
+        "No snippet selection or click-rate gain is promised."
+      ]
+    },
+    {
+      "rationale": "F2 explicitly states superseded archive notes are intentionally excluded. The snapshot noindex matches that intention.",
+      "steps": [
+        "Web maintainer retains archive noindex and records its superseded-note purpose.",
+        "If templates are edited later, compare archive directives against documented exclusion intent."
+      ],
+      "evidence_ids": [
+        "e-f66a5ec31de5"
+      ],
+      "visibility_intent": "exclude",
+      "intended_behavior": "Archive remains intentionally noindex.",
+      "decision": "keep_or_not_applicable",
+      "issue_id": "issue-aeb924af0c3f",
+      "business_context_basis": "brief.md F2 explicitly says do not restore archive indexation.",
+      "acceptance": [
+        "Fresh archive directive still includes noindex when subsequently checked.",
+        "No restoration or indexing request is performed."
+      ]
+    }
+  ],
+  "reviewer": "Codex agent; same-agent analyst review, no independent human approval",
+  "input_fingerprint": "d3b43718a8e3a02867c6e2d3e77d2371f842a57af62cf721d5fcf72ea3eb0a49",
+  "date": "2026-10-16"
+}

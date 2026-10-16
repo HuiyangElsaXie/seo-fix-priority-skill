@@ -1,0 +1,10 @@
+# Same-agent self-review — 2026-10-16
+Reviewed raw-response.md after saving it, mapped originals, actual generated report and reviewed machine records. This is not independent review or human approval.
+
+Correction: first review business basis attributed the volunteer constraint to brief F2; it actually comes from context.json, whose broad F2 locator is not literal corroboration. Preserved review-input.json and final-report unchanged. review-input-v2.json corrects attribution and final-report-v2 is a fresh actual rerun. No observations or fixture inputs changed.
+
+Final checks: three reporter runs exited 0; exact fingerprint bound; four bucket counts are 1 confirmed fix, 4 investigations, 1 optional improvement and 4 keep/N/A. All six dimensions present. Home title fix is a scoped analyst decision about supplied empty metadata and known purpose; wording remains editorial proposal. Description optional; archive retained. Full-content investigation overlaps the scoped semantic note: treat them as a single content review, not additive work/benefit. Automatic role suggestions for N/A sections are dormant, not requests to staff specialist positions. The generic purpose prompt is redundant with supplied context. Generic recommendation text still asks to confirm archive intent; the applied retain decision and its review rationale resolve that intent in the supplied scope.
+
+F1 body excerpt was actually read. Reader task and language can be assessed only within that excerpt; factual accuracy, first-hand proof, authorship, rendered journey and full-content satisfaction remain pending. No external measurements, production truth, rankings, benefit estimates or independent approval claimed. JSON/schema checks validate consistency, not authenticity. No site changes or live collection performed.
+
+Residual limits: no full HTML, robots capture, rendering, Search Console, CWV or backlinks. No execution blocker for the offline deliverable. Initial stdout/stderr preserved; commands.json records each business invocation with actual timestamps and exit codes. Tool discovery fallback failure (rg unavailable) did not affect execution.

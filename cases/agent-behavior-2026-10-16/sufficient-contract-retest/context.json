@@ -1,0 +1,124 @@
+{
+  "sources": {
+    "brief": {
+      "kind": "fictional_fixture",
+      "description": "Synthetic owner brief, not independently verified",
+      "observed_at": "2026-10-16"
+    }
+  },
+  "business_context": {
+    "answers": {
+      "industry": {
+        "value": "Community repair education",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "audience": {
+        "value": "Beginner volunteers",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "geography": {
+        "value": "CA",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "language": {
+        "value": "en",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "positioning": {
+        "value": "Educational checklist resource, no commercial comparison",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "brand_lifecycle": {
+        "value": "early",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "product_lifecycle": {
+        "value": "not a sold product",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "primary_objective": {
+        "value": "awareness",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "conversion_definition": {
+        "value": "Reader finds checklist; no measured conversion",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "objective_tradeoff": {
+        "value": "Clarity before acquisition volume",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "resources": {
+        "value": "One volunteer, one content review",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "constraints": {
+        "value": "No sales, no customer visits, no other language editions",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "specific_problem": {
+        "value": "Review the supplied home title and preserve an intentionally excluded archive",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "site_age": {
+        "value": "not supplied",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      },
+      "migration_history": {
+        "value": "none supplied",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "brief.md F2"
+      }
+    }
+  },
+  "applicability": {
+    "local": {
+      "value": "no",
+      "reason": "No in-person customer service",
+      "source": "F2 synthetic brief",
+      "date": "2026-10-16"
+    },
+    "ecommerce": {
+      "value": "no",
+      "reason": "No online transactions",
+      "source": "F2 synthetic brief",
+      "date": "2026-10-16"
+    },
+    "international": {
+      "value": "no",
+      "reason": "One English edition only",
+      "source": "F2 synthetic brief",
+      "date": "2026-10-16"
+    }
+  },
+  "as_of": "2026-10-16"
+}

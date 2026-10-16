@@ -1,0 +1,13 @@
+{
+  "repository": "seo-fix-priority-skill",
+  "baseline_commit": "774627bafadc00122fa5d546dc6bd91863d141bd",
+  "started_at_utc": "2026-10-16T21:30:03.945831+00:00",
+  "finished_at_utc": "2026-10-16T21:30:05.716518+00:00",
+  "command": "python -X utf8 -m unittest discover -s tests -v",
+  "runtime": "Python 3.13.7 temporary embedded runtime",
+  "exit_code": 0,
+  "test_count": 228,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "61b776453c74be4e064c19e498037ad695be2f47674850253814aefea9999edf",
+  "scope": "Actual local execution; not agent behavior or live business/platform verification."
+}

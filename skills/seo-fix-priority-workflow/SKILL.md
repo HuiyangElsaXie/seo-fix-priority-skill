@@ -5,6 +5,17 @@ description: Review a bounded public website sample across six SEO dimensions, o
 
 # Evidence-linked SEO review and repair triage
 
+## Choose the current route first
+
+Optional current output: [actual generated six-dimension actionable report](../../cases/agent-behavior-2026-10-16/sufficient-contract-retest/final-report-v2/report.md), with [inputs, first reports and reviews](../../cases/agent-behavior-2026-10-16/README.md). Synthetic supplied evidence, not a live audit.
+
+- **Only a URL:** use the bounded URL-first six-dimension workflow below when actual authorized shell/network tools exist. With no collection tools, request supplied page/snapshot evidence or deliver a clearly limited framework; never claim a crawl was run.
+- **Saved snapshot:** follow [six-dimension input schemas and fixtures](../../cases/six-dimension/README.md); run the offline reporter, preserve first output, review evidence and deliver the actionable report.
+- **Normalized crawl rows:** start from [INPUT.template.json](INPUT.template.json) and [the input contract](../../INPUT-CONTRACT.md) for the distinct offline triage mode. The empty template is orientation, not a site diagnosis. Historical examples/input.json is not the current starter.
+- Optional output orientation: [existing actionable report](../../cases/actionable-handoff/run-06-freeze/report.md) and [its synthetic inputs/review history](../../cases/actionable-handoff/README.md). Fix claims there depend on the supplied scoped review; they are not independent proof of a live defect. Do not reread examples when the task already has enough context.
+
+**Package layout:** keep the full repository and provide this entrypoint explicitly. Root scripts, schemas, cases and upstream notices are required by relative ../../ links; copying only this nested folder is incomplete. Host discovery/installation behavior must be checked separately.
+
 Adapted from Snippet Digital's MIT technical-seo-audit skill, commit 8b5b5d5c776ec71a0d427bd6760dfeca058b404c. Exact source and copyright/license: ../../upstream/snippet-digital/. See ../../ADAPTATION.md for the transformation. Original contributions' licensing is owner-pending.
 
 ## When to use
@@ -48,6 +59,8 @@ Only bounded public HTTP collection is built in. No paid APIs, browser rendering
 
 ## Final actionable handoff requirement (v0.5)
 The final deliverable is the script-generated actionable report, accompanied by a separately labeled analyst validation note if testing the skill. Do not substitute a narrative about test execution for the actual report. Follow ../../docs/ACTIONABLE-HANDOFF.md and the implemented review-input contract.
+
+If business execution is unavailable/prohibited or no compatible observations exist, provide a clearly labeled manual limited framework or evidence-gathering handoff instead. State that report generation was not executed; do not fabricate a snapshot, machine queue or finding IDs to satisfy the format. This fallback is not script-generated output.
 
 For each reviewed observation, distinguish confirmed fix, needs verification, optional improvement and keep/not applicable. Supply concrete steps, proposed role, dependencies, sequencing reason and observable acceptance. Do not invent a person, effort estimate, urgency, defect or business outcome. A missing source may produce a specific evidence-gathering task, not an allegation that the site is broken. Confirmed fixes require intended behavior and explicit supporting review; retain uncertain canonical/noindex/404 lifecycle cases as investigations until their intent is established.
 

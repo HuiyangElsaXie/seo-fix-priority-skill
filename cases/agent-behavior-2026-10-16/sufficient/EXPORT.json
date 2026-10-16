@@ -1,0 +1,130 @@
+{
+  "case": "sufficient",
+  "configured_model": "gpt-6.1-sol",
+  "executor": "collaboration.spawn_agent",
+  "agent": "/root/seo_sufficient",
+  "fork_turns": "none",
+  "baseline_commit": "774627bafadc00122fa5d546dc6bd91863d141bd",
+  "tested_skill_sha256": "abc18e1239953e62cd014dbae706b85a49ed2ef47884e7de8ca5c4e5ad93be57",
+  "input": "case.json",
+  "first_response": "raw-response.md",
+  "final_response": "final.md",
+  "review": "self-review.md",
+  "export_note": "Only machine-local absolute path prefixes are redacted to portable tokens. Exact unredacted originals are retained in the local run folder. Unchanged exports retain original bytes. Command records distinguish execution from harness reads/writes. No static check is counted as an agent execution.",
+  "files": [
+    {
+      "file": "brief.md",
+      "original_sha256": "030bc599dc57b8e53a6f52b0077d6c3401f21c6ddbc7a783124a4e94cc9d2832",
+      "public_sha256": "030bc599dc57b8e53a6f52b0077d6c3401f21c6ddbc7a783124a4e94cc9d2832",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "case.json",
+      "original_sha256": "4371ec2892ded25104209aeb2e161099de1551fbafb21caa72254660b6f92ef1",
+      "public_sha256": "4371ec2892ded25104209aeb2e161099de1551fbafb21caa72254660b6f92ef1",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "commands.json",
+      "original_sha256": "0c80c96160de22a7d9f1e101604dc2af574eca55a7c59d36feb152a47828af3e",
+      "public_sha256": "a56e54dac439054020af1958fc2cee3f31409f1e76e5d7a24685b5369b2374af",
+      "machine_path_redacted": true
+    },
+    {
+      "file": "context.json",
+      "original_sha256": "d4009a10946d7d546c7fae531719b26fd269f1e7308451f9c8ccd4ce55b8200f",
+      "public_sha256": "d4009a10946d7d546c7fae531719b26fd269f1e7308451f9c8ccd4ce55b8200f",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "final-stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "final-stdout.txt",
+      "original_sha256": "18300a66d74ff30d0a4dffd948a9ca0944764861007cfcdd9360cc9d0c0cef57",
+      "public_sha256": "8d1ab28fcfdb04e0062897b2369f3d4b17fe1fad78aa94d132dd52f258548245",
+      "machine_path_redacted": true
+    },
+    {
+      "file": "final.md",
+      "original_sha256": "7931c194ce6059942e1053780f0db918de188b4a92773208223a0acc4ad70316",
+      "public_sha256": "7931c194ce6059942e1053780f0db918de188b4a92773208223a0acc4ad70316",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "initial-stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "initial-stdout.txt",
+      "original_sha256": "da6c66a5dd3cdda531f114ada75611b8bd051bbc4f3e89ca1c1730796fb95e83",
+      "public_sha256": "2498218f51f53ee37cf5d8c18c018c1872ed3106613684847f8fc87713c84e38",
+      "machine_path_redacted": true
+    },
+    {
+      "file": "mapped-inputs.md",
+      "original_sha256": "4ee4b55125626c22ae41ecc49a2ed37991febd1f354b52350fb689820c812041",
+      "public_sha256": "4ee4b55125626c22ae41ecc49a2ed37991febd1f354b52350fb689820c812041",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "raw-response.md",
+      "original_sha256": "17785700dca8a0634dab19f9747f1d7a3358f501544e2ea3d3903194a6bae6ee",
+      "public_sha256": "17785700dca8a0634dab19f9747f1d7a3358f501544e2ea3d3903194a6bae6ee",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "review-input.json",
+      "original_sha256": "7cc5a9204983ef3f901e7a2d24cfa4b259f5a902d55839819005d13b48f7b370",
+      "public_sha256": "7cc5a9204983ef3f901e7a2d24cfa4b259f5a902d55839819005d13b48f7b370",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "self-review.md",
+      "original_sha256": "b018c8327b033670a75bc578f8f51a1115316d7541c247cf413861554c4f32c4",
+      "public_sha256": "b018c8327b033670a75bc578f8f51a1115316d7541c247cf413861554c4f32c4",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "snapshot.json",
+      "original_sha256": "98bc983b51c25905b529e84b02c068c3fdb41b827c6daf0417368db0ab78e6b2",
+      "public_sha256": "98bc983b51c25905b529e84b02c068c3fdb41b827c6daf0417368db0ab78e6b2",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "tool-availability.md",
+      "original_sha256": "de16a2e5622e0cfffb0212696df62f958e5f62273ec047bee70baba39091f396",
+      "public_sha256": "de16a2e5622e0cfffb0212696df62f958e5f62273ec047bee70baba39091f396",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "final-report/report.json",
+      "original_sha256": "0753a13ab2b6a701f9e19b2d4c09c046bb30b7990b7073e69cbb14211bf0bf18",
+      "public_sha256": "0753a13ab2b6a701f9e19b2d4c09c046bb30b7990b7073e69cbb14211bf0bf18",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "final-report/report.md",
+      "original_sha256": "796f5452e7d62b2995d5744b33e9a98c0716307cb16f3c841886605c1e15e2a7",
+      "public_sha256": "796f5452e7d62b2995d5744b33e9a98c0716307cb16f3c841886605c1e15e2a7",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "initial-report/report.json",
+      "original_sha256": "7389c5c8e5b7019203eecc82f90f5fccf82c9dbfaf7d5591adc49a813dfbbe10",
+      "public_sha256": "7389c5c8e5b7019203eecc82f90f5fccf82c9dbfaf7d5591adc49a813dfbbe10",
+      "machine_path_redacted": false
+    },
+    {
+      "file": "initial-report/report.md",
+      "original_sha256": "d1118a1ea3937d90a208e328c70b59cfd29ee4c1db52e260c4e0b18078666b17",
+      "public_sha256": "d1118a1ea3937d90a208e328c70b59cfd29ee4c1db52e260c4e0b18078666b17",
+      "machine_path_redacted": false
+    }
+  ]
+}

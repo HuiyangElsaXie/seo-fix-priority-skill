@@ -1,0 +1,33 @@
+[
+  {
+    "command": "python scripts/six_dimension_report.py snapshot.json --context context.json --out initial-report",
+    "cwd": "{REPO}",
+    "started_at": "2026-10-16T21:29:53.0807068Z",
+    "finished_at": "2026-10-16T21:29:53.2232039Z",
+    "exit_code": 0,
+    "artifacts": [
+      "initial-report/report.json",
+      "initial-report/report.md",
+      "initial-stdout.txt",
+      "initial-stderr.txt"
+    ],
+    "executable": "{PYTHON}",
+    "input_base_directory": "{CASE}"
+  },
+  {
+    "command": "python scripts/six_dimension_report.py snapshot.json --context context.json --review review-input.json --out final-report",
+    "cwd": "{REPO}",
+    "started_at": "2026-10-16T21:30:27.9134564Z",
+    "finished_at": "2026-10-16T21:30:28.025821Z",
+    "exit_code": 0,
+    "artifacts": [
+      "final-report/report.json",
+      "final-report/report.md",
+      "final-stdout.txt",
+      "final-stderr.txt",
+      "review-input.json"
+    ],
+    "executable": "{PYTHON}",
+    "input_base_directory": "{CASE}"
+  }
+]

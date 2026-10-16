@@ -1,8 +1,12 @@
 # SEO Review and Fix Priority Workflow
 
+[本轮真实 Sol 6.1 场景、首稿与审阅 / agent behavior evidence](cases/agent-behavior-2026-10-16/README.md) — 合成输入，不代表真实调研或业务效果。
+
 **Give it a website URL to collect a bounded public sample and produce an evidence-linked six-dimension SEO review, or supply your own crawl data for repair triage.** The report separates observed facts, missing evidence, applicability and review tasks. It does not promise complete verification from a URL.
 
 ## Start in one minute
+
+Keep the full repository and provide the nested SKILL.md entrypoint explicitly. Copying only its child folder omits root scripts/docs/cases and attribution resources; installation/discovery depends on the host.
 
 [Example action report](cases/actionable-handoff/run-06-freeze/report.md) · [Synthetic inputs and retained run history](cases/actionable-handoff/README.md) · [Four map/applicability cases](cases/google-maps/REVIEW.md)
 

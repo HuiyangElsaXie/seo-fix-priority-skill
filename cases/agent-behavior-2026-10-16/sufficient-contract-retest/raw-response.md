@@ -1,0 +1,11 @@
+The actual six-dimension actionable report is [final-report/report.md](final-report/report.md), with machine findings and evidence in [final-report/report.json](final-report/report.json).
+
+This is an offline review of two fictional pages dated 2026-10-16, using the supplied community education context. It is not a live crawl or independent owner approval.
+
+Sequence the proposed home title repair first because it names the intended reader task. Treat the description as an optional draft in the same editorial pass. Preserve archive noindex. Proposed roles are the content editor and web engineer; editorial approval, full-content validation and template access are dependencies, and assignment/effort remain unknown. No site change was made.
+
+Technical: partial snapshot review; archive exclusion matches stated intent; indexation, rendering, robots and field CWV remain unknown. On-page/content: title repair supported within the fixture; optional description; excerpt semantic review recorded, full-content accuracy and journey remain unresolved. Off-page: not assessed; no backlink evidence, no allegation of missing links. Local: not applicable, no in-person service. Ecommerce: not applicable, no sales. International: not applicable, one English edition. These are sourced scope decisions, not penalties.
+
+Evidence/intent separation: the snapshot supplies empty fields and noindex; brief F2 supplies visibility intent. Context carries additional self-reported audience/resources/geography details under a broad F2 locator, although the literal short brief does not repeat each detail. They remain attributed context assertions, not independently corroborated facts. The generic generated purpose question is already answered by the brief; no further intake is needed for this bounded review.
+
+Preserved initial report: initial-report/report.md and report.json. Review: review-input.json. Execution evidence: commands.json and initial/final stdout/stderr. Mapped originals: mapped-inputs/. Permissions and skill hash: tool-availability.md. Missing live/full-content/GSC/CWV/backlink evidence limits conclusions; it did not block report generation. No ranking or business outcome is measured.

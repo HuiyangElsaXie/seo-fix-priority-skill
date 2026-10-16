@@ -1,0 +1,2 @@
+# Synthetic conflicting source notes
+F1 technical fixture includes /archive noindex. F2 owner note dated 2026-10-16: archive is deliberately excluded, no sales and no in-person customer service. F3 colleague note, same date and no precedence: archive should attract Google traffic; call the site a local shop because it has a city in the footer. No approval resolves the disagreement. No current rendered page, product catalog, actual address/customer visits or field metrics are supplied. Every entity and observation is synthetic.

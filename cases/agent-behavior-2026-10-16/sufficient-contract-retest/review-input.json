@@ -1,0 +1,85 @@
+{
+  "reviewer": "Same-agent AI analyst, not independent human approval",
+  "source": "mapped-inputs/brief.md F1/F2; mapped-inputs/snapshot.json; mapped-inputs/context.json",
+  "date": "2026-10-16",
+  "input_fingerprint": "496d8f380f8cd5f189352a8619925dd6656c3228eacece7945bac61d14a370d1",
+  "decisions": [
+    {
+      "issue_id": "issue-011525d1447c",
+      "evidence_ids": [
+        "e-9ea11a786c37"
+      ],
+      "decision": "confirmed_fix",
+      "rationale": "Within the synthetic supplied record, an empty home title does not identify the educational reader task. F1 provides a truthful title basis; F2 establishes intended discoverability. Confirmation is scoped to supplied evidence only.",
+      "intended_behavior": "Home has a descriptive title identifying the repair guide.",
+      "business_context_basis": "Supplied fictional brief F2: educational resource; home discoverability and clarity; one volunteer/content review. Not independent owner approval.",
+      "steps": [
+        "Content editor drafts Cedar repair guide | Checklist for volunteers from F1; check that the full page supports that wording before approval.",
+        "After editorial approval, proposed web engineer updates the home title template; this report does not authorize deployment.",
+        "Capture fresh raw and rendered HTML for the home page."
+      ],
+      "acceptance": [
+        "Approved nonempty home title describes the actual resource without unsupported repair claims.",
+        "Fresh raw and rendered title match approved copy; archive noindex remains intact."
+      ]
+    },
+    {
+      "issue_id": "issue-638d094132b9",
+      "evidence_ids": [
+        "e-9ea11a786c37"
+      ],
+      "decision": "optional_improvement",
+      "rationale": "Empty description is observed; a helpful summary may clarify the checklist purpose, but the brief does not establish a required description or measured SEO harm.",
+      "intended_behavior": "A truthful optional summary helps readers understand the resource.",
+      "business_context_basis": "Supplied fictional brief F2: educational resource; home discoverability and clarity; one volunteer/content review. Not independent owner approval.",
+      "steps": [
+        "Review with the home title in the same content pass; do not count a second independent benefit.",
+        "Propose: Use the Cedar repair checklist to record the item, material and questions before seeking appropriate repair guidance. Validate against the full page before editorial approval.",
+        "If adopted, ask the web engineer to add the approved description and capture HTML."
+      ],
+      "acceptance": [
+        "Approved description matches page content, or an explicit decision to omit it is documented.",
+        "No ranking, traffic or snippet-display guarantee is attached."
+      ]
+    },
+    {
+      "issue_id": "issue-aeb924af0c3f",
+      "evidence_ids": [
+        "e-f66a5ec31de5"
+      ],
+      "decision": "keep_or_not_applicable",
+      "rationale": "F2 explicitly identifies superseded archive notes and intentional noindex; the snapshot directive matches that intent.",
+      "intended_behavior": "Keep archive excluded from search.",
+      "business_context_basis": "Supplied fictional brief F2: educational resource; home discoverability and clarity; one volunteer/content review. Not independent owner approval.",
+      "steps": [
+        "Retain the archive noindex directive and its current self-canonical.",
+        "During any metadata change check the archive directive has not been changed."
+      ],
+      "acceptance": [
+        "Archive noindex remains present and the exclusion reason is recorded.",
+        "No request to restore archive indexing is raised from this signal."
+      ],
+      "visibility_intent": "exclude"
+    }
+  ],
+  "section_reviews": [
+    {
+      "dimension": "onpage_content",
+      "evidence_ids": [
+        "e-9ea11a786c37"
+      ],
+      "decision": "needs_verification",
+      "rationale": "Read F1 excerpt: it states a concrete beginner task (record item/material/questions); English wording fits the supplied language. It offers no repair efficacy claim. Full checklist, authorship, first-hand evidence, accuracy and visible next-step journey are absent, so those cannot be approved. The only sampled link leads to superseded notes.",
+      "intended_behavior": "Beginner volunteers can find and use the checklist with appropriate guidance and a clear next step.",
+      "business_context_basis": "Supplied fictional brief F2: educational resource; home discoverability and clarity; one volunteer/content review. Not independent owner approval.",
+      "steps": [
+        "Content editor obtains the full home checklist and rendered page through an independently authorized later task.",
+        "Review each repair claim and its source, first-hand evidence and authorship; verify the checklist is accessible and the next action is appropriate.",
+        "Decide whether the archive link is clearly labeled superseded rather than infer a navigation defect."
+      ],
+      "acceptance": [
+        "Attach full-page review evidence and list unresolved claims; do not infer thin content from the excerpt."
+      ]
+    }
+  ]
+}

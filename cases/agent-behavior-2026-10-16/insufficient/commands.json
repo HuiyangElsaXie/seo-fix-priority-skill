@@ -1,0 +1,11 @@
+{
+  "business_commands_executed": [],
+  "harness_operations": [
+    {"tool":"tools.exec_command","operations":["Get-Content case.json","Get-Content skill SKILL.md"]},
+    {"tool":"tools.exec_command","operations":["Get-Content brief.md","Get-Content INTAKE.md","Get-Content docs/ACTIONABLE-HANDOFF.md","Get-FileHash -Algorithm SHA256 SKILL.md"]},
+    {"tool":"tools.exec_command","operations":["Set-Content raw-response.md"]},
+    {"tool":"tools.exec_command","operations":["Set-Content self-review.md","Copy-Item raw-response.md final.md","Set-Content tool-availability.md","Set-Content commands.json"]}
+  ],
+  "not_executed": ["public collection", "offline triage", "six-dimension report generation", "network requests", "site edits", "Git operations"],
+  "reason": "Scenario prohibits business execution; supplied fictional URL has no snapshot or observations."
+}
