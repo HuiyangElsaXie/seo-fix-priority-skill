@@ -1,0 +1,5 @@
+conversion tailored P1 8.6
+awareness tailored P3 5.4
+industry-general industry_general review None
+generic-framework generic_framework review None
+PASS: context changes supported urgency; general modes retain technical observation without fabricated scores; root canonical false positive absent.

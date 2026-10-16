@@ -1,0 +1,20 @@
+test_classification_separates_iframe_javascript_and_links (test_google_maps_truth.GoogleMapsTruthTests.test_classification_separates_iframe_javascript_and_links) ... ok
+test_consent_deferred_iframe_is_unverified_runtime_signal (test_google_maps_truth.GoogleMapsTruthTests.test_consent_deferred_iframe_is_unverified_runtime_signal) ... ok
+test_directions_link_alone_prevents_forced_embed_recommendation (test_google_maps_truth.GoogleMapsTruthTests.test_directions_link_alone_prevents_forced_embed_recommendation) ... ok
+test_duplicate_conflicting_place_ids_never_resolve_to_single_match (test_google_maps_truth.GoogleMapsTruthTests.test_duplicate_conflicting_place_ids_never_resolve_to_single_match) ... ok
+test_embedded_credentials_never_retained_or_trusted (test_google_maps_truth.GoogleMapsTruthTests.test_embedded_credentials_never_retained_or_trusted) ... ok
+test_explicit_identity_mismatch_and_mixed (test_google_maps_truth.GoogleMapsTruthTests.test_explicit_identity_mismatch_and_mixed) ... ok
+test_key_disguised_as_place_id_not_retained (test_google_maps_truth.GoogleMapsTruthTests.test_key_disguised_as_place_id_not_retained) ... ok
+test_keys_full_urls_and_opaque_payload_not_retained (test_google_maps_truth.GoogleMapsTruthTests.test_keys_full_urls_and_opaque_payload_not_retained) ... ok
+test_lookalike_and_wrong_paths_never_trusted (test_google_maps_truth.GoogleMapsTruthTests.test_lookalike_and_wrong_paths_never_trusted) ... ok
+test_no_static_signal_is_not_nonfunctional_map (test_google_maps_truth.GoogleMapsTruthTests.test_no_static_signal_is_not_nonfunctional_map) ... ok
+test_only_explicit_customer_visit_need_permits_optional_suggestion (test_google_maps_truth.GoogleMapsTruthTests.test_only_explicit_customer_visit_need_permits_optional_suggestion) ... ok
+test_opaque_pb_names_coordinates_do_not_establish_identity (test_google_maps_truth.GoogleMapsTruthTests.test_opaque_pb_names_coordinates_do_not_establish_identity) ... ok
+test_origin_place_does_not_become_destination_match (test_google_maps_truth.GoogleMapsTruthTests.test_origin_place_does_not_become_destination_match) ... ok
+test_portfolio_and_private_service_area_do_not_get_missing_map_advice (test_google_maps_truth.GoogleMapsTruthTests.test_portfolio_and_private_service_area_do_not_get_missing_map_advice) ... ok
+test_shortlinks_not_resolved_or_assumed_branch (test_google_maps_truth.GoogleMapsTruthTests.test_shortlinks_not_resolved_or_assumed_branch) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.006s
+
+OK

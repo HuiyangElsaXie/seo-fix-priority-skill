@@ -1,0 +1,34 @@
+test_canonical_difference_always_review (test_triage.DecisionTests.test_canonical_difference_always_review) ... ok
+test_cli_invalid_input_exit_code (test_triage.DecisionTests.test_cli_invalid_input_exit_code) ... ok
+test_depth_boundary (test_triage.DecisionTests.test_depth_boundary) ... ok
+test_duplicates_rejected (test_triage.DecisionTests.test_duplicates_rejected) ... ok
+test_empty_and_whitespace_titles (test_triage.DecisionTests.test_empty_and_whitespace_titles) ... ok
+test_empty_rows_valid (test_triage.DecisionTests.test_empty_rows_valid) ... ok
+test_excluded_http_error_still_review (test_triage.DecisionTests.test_excluded_http_error_still_review) ... ok
+test_excluded_visibility_suppressed (test_triage.DecisionTests.test_excluded_visibility_suppressed) ... ok
+test_future_evidence_rejected (test_triage.DecisionTests.test_future_evidence_rejected) ... ok
+test_healthy_row_no_findings (test_triage.DecisionTests.test_healthy_row_no_findings) ... ok
+test_http_error_critical (test_triage.DecisionTests.test_http_error_critical) ... ok
+test_invalid_field_types (test_triage.DecisionTests.test_invalid_field_types) ... ok
+test_legacy_rejected (test_triage.DecisionTests.test_legacy_rejected) ... ok
+test_lower_business_importance_changes_score (test_triage.DecisionTests.test_lower_business_importance_changes_score) ... ok
+test_missing_signals_not_pass (test_triage.DecisionTests.test_missing_signals_not_pass) ... ok
+test_no_input_mutation (test_triage.DecisionTests.test_no_input_mutation) ... ok
+test_no_title_rule_on_error_page (test_triage.DecisionTests.test_no_title_rule_on_error_page) ... ok
+test_nonindexable_critical_page (test_triage.DecisionTests.test_nonindexable_critical_page) ... ok
+test_output_contract (test_triage.DecisionTests.test_output_contract) ... ok
+test_owner_missing_explicit (test_triage.DecisionTests.test_owner_missing_explicit) ... ok
+test_priority_then_score_sort (test_triage.DecisionTests.test_priority_then_score_sort) ... ok
+test_redirect_detected_on_3xx (test_triage.DecisionTests.test_redirect_detected_on_3xx) ... ok
+test_repeatable (test_triage.DecisionTests.test_repeatable) ... ok
+test_robots_blocked_intended_page (test_triage.DecisionTests.test_robots_blocked_intended_page) ... ok
+test_source_snapshot_integrity (test_triage.DecisionTests.test_source_snapshot_integrity) ... ok
+test_stale_high_score_gated (test_triage.DecisionTests.test_stale_high_score_gated) ... ok
+test_unknown_importance_gated (test_triage.DecisionTests.test_unknown_importance_gated) ... ok
+test_unknown_lifecycle_not_auto_restore (test_triage.DecisionTests.test_unknown_lifecycle_not_auto_restore) ... ok
+test_zero_inlinks_not_confirmed_orphan (test_triage.DecisionTests.test_zero_inlinks_not_confirmed_orphan) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.199s
+
+OK

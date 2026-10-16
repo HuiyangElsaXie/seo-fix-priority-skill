@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.3",
+  "as_of": "2026-10-16",
+  "business_context": {
+    "objective": "unknown",
+    "owners": {},
+    "answers": {
+      "industry": {
+        "value": null,
+        "status": "unknown"
+      },
+      "audience": {
+        "value": null,
+        "status": "unknown"
+      },
+      "geography": {
+        "value": null,
+        "status": "unknown"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown"
+      },
+      "positioning": {
+        "value": null,
+        "status": "unknown"
+      },
+      "brand_lifecycle": {
+        "value": null,
+        "status": "unknown"
+      },
+      "product_lifecycle": {
+        "value": null,
+        "status": "unknown"
+      },
+      "primary_objective": {
+        "value": null,
+        "status": "unknown"
+      },
+      "conversion_definition": {
+        "value": null,
+        "status": "unknown"
+      },
+      "objective_tradeoff": {
+        "value": null,
+        "status": "unknown"
+      },
+      "resources": {
+        "value": null,
+        "status": "unknown"
+      },
+      "constraints": {
+        "value": null,
+        "status": "unknown"
+      },
+      "specific_problem": {
+        "value": null,
+        "status": "unknown"
+      },
+      "site_age": {
+        "value": null,
+        "status": "unknown"
+      },
+      "migration_history": {
+        "value": null,
+        "status": "unknown"
+      }
+    }
+  },
+  "sources": {
+    "template_stub": {
+      "kind": "fictional_fixture",
+      "description": "Empty starter template only; no website observations or business claims. Replace this manifest entry with actual permitted sources before adding supplied evidence.",
+      "observed_at": "2026-10-16"
+    }
+  },
+  "rows": []
+}

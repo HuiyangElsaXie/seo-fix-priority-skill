@@ -1,0 +1,18 @@
+
+$ python cases/fictional-harbor/build_case.py
+Authored fictional raw evidence: 15 URL rows. Normalized input.v1.json; no queue prefilled.
+exit=0
+
+$ python scripts/triage.py cases/fictional-harbor/input.v1.json > cases/fictional-harbor/output.v1.json
+exit=0
+
+$ python cases/fictional-harbor/verify_case.py
+PASS: 15 fictional rows; normalized identity/status/intent/boolean/text mapping; 9 proposed findings; 9 suppressions; 4 gap rows; stale/canonical/inlink/lifecycle gates; all queue IDs covered in handoff.
+exit=0
+
+# Parent clarified helper confidence metadata only; no evidence correction. Same input.v1.json, preserved output.v1.json.
+$ sha256sum scripts/triage.py
+819ea6bcdbb703ddbb3102a9b599cd8737de509cd1ac1fa3711742b25794c281  scripts/triage.py
+$ python scripts/triage.py cases/fictional-harbor/input.v1.json > cases/fictional-harbor/output.v2.json
+exit=0
+Local JSON comparison: queue, suppressions and gaps identical; top-level addition: ['confidence_definition']

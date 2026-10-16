@@ -1,0 +1,58 @@
+[
+  {
+    "case": "personal-portfolio-na",
+    "local_applicability": "no",
+    "ecommerce_applicability": "no",
+    "map_findings": [],
+    "buckets": {
+      "confirmed_fix": [],
+      "needs_verification": [],
+      "optional_improvement": [],
+      "keep_or_not_applicable": []
+    }
+  },
+  {
+    "case": "local-clinic-map-optional",
+    "local_applicability": "yes",
+    "ecommerce_applicability": "no",
+    "map_findings": [
+      "GOOGLE_MAPS_OPTIONAL_VISIT_SUPPORT"
+    ],
+    "buckets": {
+      "confirmed_fix": [],
+      "needs_verification": [],
+      "optional_improvement": [
+        "task-issue-6b274f35d879"
+      ],
+      "keep_or_not_applicable": []
+    }
+  },
+  {
+    "case": "contact-map-blog-absence",
+    "local_applicability": "yes",
+    "ecommerce_applicability": "no",
+    "map_findings": [],
+    "buckets": {
+      "confirmed_fix": [],
+      "needs_verification": [],
+      "optional_improvement": [],
+      "keep_or_not_applicable": []
+    }
+  },
+  {
+    "case": "wrong-branch-verification",
+    "local_applicability": "yes",
+    "ecommerce_applicability": "no",
+    "map_findings": [
+      "GOOGLE_MAPS_BRANCH_REVIEW"
+    ],
+    "buckets": {
+      "confirmed_fix": [],
+      "needs_verification": [
+        "task-issue-a9808dfbe738"
+      ],
+      "optional_improvement": [],
+      "keep_or_not_applicable": []
+    }
+  }
+]

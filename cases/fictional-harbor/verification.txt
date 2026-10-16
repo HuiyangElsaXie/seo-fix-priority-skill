@@ -1,0 +1,1 @@
+PASS: 15 fictional rows; normalized identity/status/intent/boolean/text mapping; 9 proposed findings; 9 suppressions; 4 gap rows; stale/canonical/inlink/lifecycle gates; all queue IDs covered in handoff.

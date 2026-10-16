@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "$PROJECT/scripts/six_dimension_report.py",
+    "$PROJECT/cases/google-maps/local-clinic-map-optional/snapshot.json",
+    "--context",
+    "$PROJECT/cases/google-maps/local-clinic-map-optional/context.json",
+    "--out",
+    "$PROJECT/cases/google-maps/local-clinic-map-optional/actual-report"
+  ],
+  "returncode": 0,
+  "stdout": "$PROJECT/cases/google-maps/local-clinic-map-optional/actual-report\n",
+  "stderr": ""
+}

@@ -1,0 +1,19 @@
+{
+  "as_of": "2026-10-16",
+  "business_model": {
+    "commercial": "unknown",
+    "local_customer_service": "unknown",
+    "local_acquisition_goal": "unknown",
+    "online_transactions": "unknown",
+    "source": "Unanswered template; no business facts asserted",
+    "date": "2026-10-16",
+    "reason": "Replace with attributed answers; unknown is permitted"
+  },
+  "map_visit_context": {
+    "value": "unknown",
+    "site_kind": "unknown",
+    "source": "Unanswered template; no customer-visit or public-address confirmation",
+    "date": "2026-10-16",
+    "reason": "Ask only if local visitor task is relevant and unresolved"
+  }
+}

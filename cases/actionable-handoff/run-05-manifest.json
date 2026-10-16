@@ -1,0 +1,9 @@
+{
+  "scripts/six_dimension_report.py": "51340e158ade55feb749bc4e3df7f50f9e59d690cb5217d61c50b2a7e38609a2",
+  "tests/test_handoff_truth.py": "6f70e2b24a71d1fc88e4d1e1e0d45ce2f3a7ef3f075342ecfa23f1a4e9331d1b",
+  "cases/actionable-handoff/snapshot.json": "a7d509cd6ebfc0329f230016f0e20607fdc18a656a8aab33bae0d911f64086f6",
+  "cases/actionable-handoff/context.json": "5e6f8079fde30119cd5e19fee4b8e23f01fa70921869fa5f33ba1272f0ae9cf0",
+  "cases/actionable-handoff/supplement.json": "3782be04b47571fb8b76c4727022456e02f5fcef73eafbc50d2c79afbfbc4746",
+  "cases/actionable-handoff/review.json": "d549cea263552f5001a32b3e50605f943a2366cc0eae5e1d5c7c7e43ebf1b4bb",
+  "cases/actionable-handoff/run-05-final/report.json": "0e0740b998f4bc4f040c12270e8870ffdba762b3a00272cb8115072bc77d527c"
+}

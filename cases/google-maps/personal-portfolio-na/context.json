@@ -1,0 +1,19 @@
+{
+  "as_of": "2026-10-16",
+  "business_model": {
+    "source": "Fictional owner brief",
+    "date": "2026-10-16",
+    "reason": "Explicit fictional business model; not inferred from URL or page features.",
+    "commercial": "no",
+    "local_customer_service": "no",
+    "local_acquisition_goal": "no",
+    "online_transactions": "no"
+  },
+  "map_visit_context": {
+    "value": "no",
+    "site_kind": "personal_portfolio",
+    "source": "Fictional owner brief",
+    "date": "2026-10-16",
+    "reason": "Fictional attributed customer visit and address privacy decision."
+  }
+}

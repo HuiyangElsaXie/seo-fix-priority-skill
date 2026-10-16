@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-16",
+  "target": {
+    "entity_id": "fictional-clinic",
+    "branch_id": "fictional-north",
+    "place_id": "fictional-place-north",
+    "market": "fictional-riverton"
+  },
+  "observations": []
+}

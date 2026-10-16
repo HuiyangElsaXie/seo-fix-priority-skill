@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "collection": {
+    "finished_at": "2026-10-16T00:00:00Z",
+    "limitations": [
+      "Fictional test, not a website crawl"
+    ]
+  },
+  "pages": []
+}

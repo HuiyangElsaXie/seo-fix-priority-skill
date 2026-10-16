@@ -1,0 +1,138 @@
+{
+  "schema_version": "0.3",
+  "as_of": "2026-10-16",
+  "sources": {
+    "brief": {
+      "kind": "fictional_fixture",
+      "description": "Invented business interview, not client evidence",
+      "observed_at": "2026-10-16"
+    },
+    "crawl": {
+      "kind": "fictional_fixture",
+      "description": "Two invented HTTP observations; not a live crawl",
+      "observed_at": "2026-10-16"
+    }
+  },
+  "business_context": {
+    "objective": "Recover qualified enquiries",
+    "owners": {
+      "engineering": "Web owner"
+    },
+    "answers": {
+      "industry": {
+        "value": "Commercial solar installation",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "audience": {
+        "value": "Facilities managers",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "geography": {
+        "value": "Ontario",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "language": {
+        "value": "English",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "positioning": {
+        "value": "Small local specialist; unverified owner description",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "brand_lifecycle": {
+        "value": "Growth",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "product_lifecycle": {
+        "value": "Mature installation service",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "primary_objective": {
+        "value": "conversion",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "conversion_definition": {
+        "value": "Qualified quote request submitted",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "resources": {
+        "value": "One engineer, one day",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "constraints": {
+        "value": "No domain or URL migration",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "specific_problem": {
+        "status": "unknown",
+        "value": null
+      },
+      "site_age": {
+        "value": "Three years",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "migration_history": {
+        "value": "No recent migration reported",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      }
+    }
+  },
+  "rows": [
+    {
+      "url": "https://solar.example/quote",
+      "status": 503,
+      "source_id": "crawl",
+      "evidence_locator": "BRIEF.md:technical observations",
+      "intent": "index",
+      "importance": "critical",
+      "effort": 5,
+      "business_impact": {
+        "value": "Only quote-request entry page for current campaign",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "visibility_reason": {
+        "value": "Owner confirms public acquisition page",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      }
+    },
+    {
+      "url": "https://solar.example/",
+      "canonical": "https://solar.example",
+      "status": 200,
+      "source_id": "crawl",
+      "evidence_locator": "BRIEF.md:technical observations",
+      "intent": "unknown",
+      "importance": "unknown"
+    }
+  ]
+}

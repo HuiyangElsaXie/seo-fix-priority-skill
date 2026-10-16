@@ -1,0 +1,71 @@
+test_aggregate_not_sample (test_local_google_import.ImportTests.test_aggregate_not_sample) ... ok
+test_gbp_binding_required (test_local_google_import.ImportTests.test_gbp_binding_required) ... ok
+test_gbp_pagination (test_local_google_import.ImportTests.test_gbp_pagination) ... ok
+test_input_unchanged (test_local_google_import.ImportTests.test_input_unchanged) ... ok
+test_missing_not_zero (test_local_google_import.ImportTests.test_missing_not_zero) ... ok
+test_operating_not_verified (test_local_google_import.ImportTests.test_operating_not_verified) ... ok
+test_wrong_place (test_local_google_import.ImportTests.test_wrong_place) ... ok
+test_actual_findings_have_concrete_actions_and_no_business_score (test_local_report_integration.LocalReportIntegrationTests.test_actual_findings_have_concrete_actions_and_no_business_score) ... ok
+test_cli_writes_integrated_report (test_local_report_integration.LocalReportIntegrationTests.test_cli_writes_integrated_report) ... ok
+test_empty_observations_unknown_not_zero_reviews (test_local_report_integration.LocalReportIntegrationTests.test_empty_observations_unknown_not_zero_reviews) ... ok
+test_enriched_route_skips_legacy_local_and_preserves_products (test_local_report_integration.LocalReportIntegrationTests.test_enriched_route_skips_legacy_local_and_preserves_products) ... ok
+test_fingerprint_covers_enriched_data_and_routes_are_equivalent (test_local_report_integration.LocalReportIntegrationTests.test_fingerprint_covers_enriched_data_and_routes_are_equivalent) ... ok
+test_future_and_wrong_branch_evidence_cannot_trigger_findings (test_local_report_integration.LocalReportIntegrationTests.test_future_and_wrong_branch_evidence_cannot_trigger_findings) ... ok
+test_legacy_route_retains_ecommerce_and_local_behavior (test_local_report_integration.LocalReportIntegrationTests.test_legacy_route_retains_ecommerce_and_local_behavior) ... ok
+test_local_mismatch_review_requires_authoritative_source (test_local_report_integration.LocalReportIntegrationTests.test_local_mismatch_review_requires_authoritative_source) ... ok
+test_reject_conflicting_dual_routes (test_local_report_integration.LocalReportIntegrationTests.test_reject_conflicting_dual_routes) ... ok
+test_reject_nonobject_enriched_payload (test_local_report_integration.LocalReportIntegrationTests.test_reject_nonobject_enriched_payload) ... ok
+test_unknown_and_no_never_become_yes (test_local_report_integration.LocalReportIntegrationTests.test_unknown_and_no_never_become_yes) ... ok
+test_aggregate_changes_sorted_and_sample_excluded (test_local_seo_evidence.LocalEvidenceTests.test_aggregate_changes_sorted_and_sample_excluded) ... ok
+test_cli_preserves_existing_directory (test_local_seo_evidence.LocalEvidenceTests.test_cli_preserves_existing_directory) ... ok
+test_conservative_nap (test_local_seo_evidence.LocalEvidenceTests.test_conservative_nap) ... ok
+test_explicit_zero (test_local_seo_evidence.LocalEvidenceTests.test_explicit_zero) ... ok
+test_future_bad_date_and_stale (test_local_seo_evidence.LocalEvidenceTests.test_future_bad_date_and_stale) ... ok
+test_hours_require_scope (test_local_seo_evidence.LocalEvidenceTests.test_hours_require_scope) ... ok
+test_invalid_aggregate_values_never_become_warnings (test_local_seo_evidence.LocalEvidenceTests.test_invalid_aggregate_values_never_become_warnings) ... ok
+test_low_rating_and_count_have_actionable_evidence (test_local_seo_evidence.LocalEvidenceTests.test_low_rating_and_count_have_actionable_evidence) ... ok
+test_markup_does_not_supply_google_rating (test_local_seo_evidence.LocalEvidenceTests.test_markup_does_not_supply_google_rating) ... ok
+test_sample_never_substitutes_aggregate (test_local_seo_evidence.LocalEvidenceTests.test_sample_never_substitutes_aggregate) ... ok
+test_unknown_never_zero (test_local_seo_evidence.LocalEvidenceTests.test_unknown_never_zero) ... ok
+test_wrong_branch_and_place_rejected (test_local_seo_evidence.LocalEvidenceTests.test_wrong_branch_and_place_rejected) ... ok
+test_actions_are_neutral_customer_invitations_with_manual_review (test_local_seo_truth.LocalEvidenceTruthTests.test_actions_are_neutral_customer_invitations_with_manual_review) ... ok
+test_aggregate_trends_order_independent_and_not_sample_derived (test_local_seo_truth.LocalEvidenceTruthTests.test_aggregate_trends_order_independent_and_not_sample_derived) ... ok
+test_bad_peer_comparability_withheld (test_local_seo_truth.LocalEvidenceTruthTests.test_bad_peer_comparability_withheld) ... ok
+test_cli_executes_and_refuses_overwrite (test_local_seo_truth.LocalEvidenceTruthTests.test_cli_executes_and_refuses_overwrite) ... ok
+test_country_prefix_not_invented (test_local_seo_truth.LocalEvidenceTruthTests.test_country_prefix_not_invented) ... ok
+test_each_wrong_identity_component_rejected (test_local_seo_truth.LocalEvidenceTruthTests.test_each_wrong_identity_component_rejected) ... ok
+test_explicit_zero_is_distinct (test_local_seo_truth.LocalEvidenceTruthTests.test_explicit_zero_is_distinct) ... ok
+test_future_and_invalid_times_rejected (test_local_seo_truth.LocalEvidenceTruthTests.test_future_and_invalid_times_rejected) ... ok
+test_hours_require_current_matching_timezone_and_window (test_local_seo_truth.LocalEvidenceTruthTests.test_hours_require_current_matching_timezone_and_window) ... ok
+test_importer_does_not_retain_raw_review_text_or_token (test_local_seo_truth.LocalEvidenceTruthTests.test_importer_does_not_retain_raw_review_text_or_token) ... ok
+test_importer_rejects_or_drops_unrecognized_metadata_data (test_local_seo_truth.LocalEvidenceTruthTests.test_importer_rejects_or_drops_unrecognized_metadata_data) ... ok
+test_invalid_counts_never_become_low_volume (test_local_seo_truth.LocalEvidenceTruthTests.test_invalid_counts_never_become_low_volume) ... ok
+test_invalid_ratings_never_warn_low_rating (test_local_seo_truth.LocalEvidenceTruthTests.test_invalid_ratings_never_warn_low_rating) ... ok
+test_localbusiness_invalid_shapes_scoped (test_local_seo_truth.LocalEvidenceTruthTests.test_localbusiness_invalid_shapes_scoped) ... ok
+test_localbusiness_missing_fields_bounded_to_supplied_node (test_local_seo_truth.LocalEvidenceTruthTests.test_localbusiness_missing_fields_bounded_to_supplied_node) ... FAIL
+test_low_rating_sample_size_changes_confidence (test_local_seo_truth.LocalEvidenceTruthTests.test_low_rating_sample_size_changes_confidence) ... ok
+test_markup_does_not_establish_google_reputation (test_local_seo_truth.LocalEvidenceTruthTests.test_markup_does_not_establish_google_reputation) ... ok
+test_nap_formatting_only_equal (test_local_seo_truth.LocalEvidenceTruthTests.test_nap_formatting_only_equal) ... ok
+test_nap_semantic_differences_preserved (test_local_seo_truth.LocalEvidenceTruthTests.test_nap_semantic_differences_preserved) ... ok
+test_no_peers_has_no_relative_performance (test_local_seo_truth.LocalEvidenceTruthTests.test_no_peers_has_no_relative_performance) ... ok
+test_noncontemporaneous_nap_withheld (test_local_seo_truth.LocalEvidenceTruthTests.test_noncontemporaneous_nap_withheld) ... ok
+test_observation_after_capture_rejected (test_local_seo_truth.LocalEvidenceTruthTests.test_observation_after_capture_rejected) ... ok
+test_partial_visible_samples_do_not_establish_population_or_trend (test_local_seo_truth.LocalEvidenceTruthTests.test_partial_visible_samples_do_not_establish_population_or_trend) ... ok
+test_sample_larger_than_population_withholds_aggregate (test_local_seo_truth.LocalEvidenceTruthTests.test_sample_larger_than_population_withholds_aggregate) ... ok
+test_stale_current_claims_withheld (test_local_seo_truth.LocalEvidenceTruthTests.test_stale_current_claims_withheld) ... ok
+test_unknown_is_not_zero (test_local_seo_truth.LocalEvidenceTruthTests.test_unknown_is_not_zero) ... ok
+test_valid_peer_is_bounded_comparison_only (test_local_seo_truth.LocalEvidenceTruthTests.test_valid_peer_is_bounded_comparison_only) ... ok
+test_zero_with_rating_is_conflict (test_local_seo_truth.LocalEvidenceTruthTests.test_zero_with_rating_is_conflict) ... ok
+
+======================================================================
+FAIL: test_localbusiness_missing_fields_bounded_to_supplied_node (test_local_seo_truth.LocalEvidenceTruthTests.test_localbusiness_missing_fields_bounded_to_supplied_node)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/100764731f7e/marketing-portfolio-drafts-20261016/seo-fix-priority-workflow/tests/test_local_seo_truth.py", line 152, in test_localbusiness_missing_fields_bounded_to_supplied_node
+    self.assertIn('not asserted Google eligibility requirements',f['reason'])
+AssertionError: 'not asserted Google eligibility requirements' not found in 'Scoped field review: name/address are documented required fields; telephone/url are recommended. This is not a complete eligibility decision.'
+
+----------------------------------------------------------------------
+Ran 58 tests in 0.447s
+
+FAILED (failures=1)

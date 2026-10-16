@@ -1,0 +1,76 @@
+{
+  "cwv": {
+    "source": "Fictional manual export; no API connection",
+    "date": "2026-10-16",
+    "data": [
+      {
+        "kind": "field",
+        "percentile": 75,
+        "scope": "https://fictional.example/",
+        "scope_type": "url",
+        "device": "mobile",
+        "window_start": "2026-09-18",
+        "window_end": "2026-10-15",
+        "metric": "LCP",
+        "value": 3000,
+        "unit": "ms"
+      }
+    ]
+  },
+  "backlinks": {
+    "source": "Fictional manual export; no API connection",
+    "date": "2026-10-16",
+    "data": [
+      {
+        "source_url": "https://fictional-publisher.example/review",
+        "target_url": "https://fictional.example/",
+        "rel": "unknown"
+      }
+    ]
+  },
+  "local": {
+    "source": "Fictional manual export; no API connection",
+    "date": "2026-10-16",
+    "data": [
+      {
+        "entity_id": "fictional-store-1",
+        "observed_at": "2026-10-16",
+        "reference_source": "Fictional business-profile snapshot",
+        "website": {
+          "name": "Fictional Store",
+          "address": "1 Fictional Street",
+          "phone": "000-0000",
+          "hours": "9-5"
+        },
+        "reference": {
+          "name": "Fictional Store",
+          "address": "1 Fictional Street",
+          "phone": "000-0001",
+          "hours": "9-5"
+        }
+      }
+    ]
+  },
+  "products": {
+    "source": "Fictional manual export; no API connection",
+    "date": "2026-10-16",
+    "data": [
+      {
+        "product_id": "fictional-mug",
+        "variant_id": "blue",
+        "observed_at": "2026-10-16",
+        "reference_source": "Fictional supplied Offer extraction",
+        "website": {
+          "price": "12.00",
+          "currency": "CAD",
+          "availability": "InStock"
+        },
+        "reference": {
+          "price": "10.00",
+          "currency": "CAD",
+          "availability": "InStock"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+test_conflicting_reference_does_not_choose_authoritative_value (test_handoff_truth.HandoffTruthTests.test_conflicting_reference_does_not_choose_authoritative_value) ... ok
+test_conflicting_visibility_review_cannot_confirm_removing_noindex (test_handoff_truth.HandoffTruthTests.test_conflicting_visibility_review_cannot_confirm_removing_noindex) ... ok
+test_different_currency_never_generates_price_mismatch_fix (test_handoff_truth.HandoffTruthTests.test_different_currency_never_generates_price_mismatch_fix) ... ok
+test_explicit_not_applicable_is_keep_not_missing_defect (test_handoff_truth.HandoffTruthTests.test_explicit_not_applicable_is_keep_not_missing_defect) ... ok
+test_four_buckets_and_unique_tasks_cover_observed_signals (test_handoff_truth.HandoffTruthTests.test_four_buckets_and_unique_tasks_cover_observed_signals) ... ok
+test_future_or_malformed_review_date_rejected (test_handoff_truth.HandoffTruthTests.test_future_or_malformed_review_date_rejected) ... ok
+test_future_supplement_cannot_establish_current_mismatch (test_handoff_truth.HandoffTruthTests.test_future_supplement_cannot_establish_current_mismatch) ... ok
+test_intent_sensitive_signals_never_become_automatic_fixes (test_handoff_truth.HandoffTruthTests.test_intent_sensitive_signals_never_become_automatic_fixes) ... ok
+test_intentional_exclusion_review_can_preserve_noindex (test_handoff_truth.HandoffTruthTests.test_intentional_exclusion_review_can_preserve_noindex) ... ok
+test_invalid_or_future_comparison_dates_are_not_supported_mismatches (test_handoff_truth.HandoffTruthTests.test_invalid_or_future_comparison_dates_are_not_supported_mismatches) ... ok
+test_lab_cwv_and_unfetched_hreflang_target_are_unknown (test_handoff_truth.HandoffTruthTests.test_lab_cwv_and_unfetched_hreflang_target_are_unknown) ... ok
+test_mismatched_or_missing_review_evidence_cannot_confirm_fix (test_handoff_truth.HandoffTruthTests.test_mismatched_or_missing_review_evidence_cannot_confirm_fix) ... ok
+test_missing_identity_prevents_product_fault_classification (test_handoff_truth.HandoffTruthTests.test_missing_identity_prevents_product_fault_classification) ... ok
+test_offpage_missing_data_is_investigation_not_zero_backlinks_or_defect (test_handoff_truth.HandoffTruthTests.test_offpage_missing_data_is_investigation_not_zero_backlinks_or_defect) ... ok
+test_offpage_section_review_is_scoped_keep_not_defect_detection (test_handoff_truth.HandoffTruthTests.test_offpage_section_review_is_scoped_keep_not_defect_detection) ... ok
+test_other_findings_evidence_cannot_confirm_cross_entity_fix (test_handoff_truth.HandoffTruthTests.test_other_findings_evidence_cannot_confirm_cross_entity_fix) ... ok
+test_positive_signals_exist_across_five_detectable_dimensions (test_handoff_truth.HandoffTruthTests.test_positive_signals_exist_across_five_detectable_dimensions) ... ok
+test_priority_remains_provisional_without_business_owner_effort_evidence (test_handoff_truth.HandoffTruthTests.test_priority_remains_provisional_without_business_owner_effort_evidence) ... ok
+test_reference_conflict_review_requires_authoritative_source (test_handoff_truth.HandoffTruthTests.test_reference_conflict_review_requires_authoritative_source) ... ok
+test_review_cannot_predate_cited_observation (test_handoff_truth.HandoffTruthTests.test_review_cannot_predate_cited_observation) ... ok
+test_section_keep_never_clears_unreviewed_findings (test_handoff_truth.HandoffTruthTests.test_section_keep_never_clears_unreviewed_findings) ... ok
+test_supported_review_can_confirm_bounded_fix (test_handoff_truth.HandoffTruthTests.test_supported_review_can_confirm_bounded_fix) ... FAIL
+test_task_has_operational_steps_role_acceptance_and_traceable_evidence (test_handoff_truth.HandoffTruthTests.test_task_has_operational_steps_role_acceptance_and_traceable_evidence) ... ok
+
+======================================================================
+FAIL: test_supported_review_can_confirm_bounded_fix (test_handoff_truth.HandoffTruthTests.test_supported_review_can_confirm_bounded_fix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/100764731f7e/marketing-portfolio-drafts-20261016/seo-fix-priority-workflow/tests/test_handoff_truth.py", line 183, in test_supported_review_can_confirm_bounded_fix
+    self.assertTrue(all(f['priority']['value'] == 'pending' for f in r['findings']))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.066s
+
+FAILED (failures=1)

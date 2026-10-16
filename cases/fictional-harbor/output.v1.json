@@ -1,0 +1,330 @@
+{
+  "schema_version": "0.2",
+  "as_of": "2026-10-16",
+  "scope": "Supplied evidence only; no live crawl, complete audit, ranking prediction, or implemented fixes",
+  "summary": {
+    "supplied_urls": 15,
+    "candidate_findings": 9,
+    "suppressed_findings": 9,
+    "rows_with_missing_signals": 4
+  },
+  "queue": [
+    {
+      "url": "https://harborflow.example/solutions/supplier-onboarding",
+      "rule": "NONINDEXABLE",
+      "priority": "P1",
+      "score": 9.0,
+      "score_inputs": {
+        "seo_impact": 9,
+        "business_importance": 10,
+        "effort": 3,
+        "effort_basis": "supplied estimate"
+      },
+      "confidence": "high",
+      "observation": "Export marks page non-indexable; cause not independently verified",
+      "business_reason": "critical importance in supplied context: Help procurement teams evaluate HarborFlow supplier onboarding and reach the demo request page. Protect intended organic landing pages while preserving deliberate exclusions.; no traffic or revenue loss measured",
+      "owner": "SEO lead (fictional role)",
+      "source_id": "S-OCT",
+      "evidence_locator": "evidence/crawl-slice.csv#E02; evidence/editorial-intent.json#E02",
+      "evidence_age_days": 2,
+      "gates": [],
+      "proposed_fix": "Confirm the exclusion cause and intended visibility before changing directives.",
+      "verification": "Recrawl rendered HTML and response headers; inspect intended canonical. Index inclusion is not guaranteed.",
+      "status": "proposed; not implemented",
+      "id": "SEO-001"
+    },
+    {
+      "url": "https://harborflow.example/solutions/vendor-risk",
+      "rule": "MISSING_TITLE",
+      "priority": "P2",
+      "score": 7.2,
+      "score_inputs": {
+        "seo_impact": 4,
+        "business_importance": 10,
+        "effort": 2,
+        "effort_basis": "supplied estimate"
+      },
+      "confidence": "high",
+      "observation": "Supplied title is empty",
+      "business_reason": "critical importance in supplied context: Help procurement teams evaluate HarborFlow supplier onboarding and reach the demo request page. Protect intended organic landing pages while preserving deliberate exclusions.; no traffic or revenue loss measured",
+      "owner": "Content lead (fictional role)",
+      "source_id": "S-OCT",
+      "evidence_locator": "evidence/crawl-slice.csv#E03; evidence/editorial-intent.json#E03",
+      "evidence_age_days": 2,
+      "gates": [],
+      "proposed_fix": "Write a unique, descriptive title matching page intent after template review.",
+      "verification": "Inspect rendered title and rerun missing/duplicate checks on the relevant template.",
+      "status": "proposed; not implemented",
+      "id": "SEO-002"
+    },
+    {
+      "url": "https://harborflow.example/platform",
+      "rule": "REDIRECT_CHAIN",
+      "priority": "P2",
+      "score": 6.4,
+      "score_inputs": {
+        "seo_impact": 6,
+        "business_importance": 6,
+        "effort": 2,
+        "effort_basis": "supplied estimate"
+      },
+      "confidence": "high",
+      "observation": "Supplied redirect path has 2 hops",
+      "business_reason": "supporting importance in supplied context: Help procurement teams evaluate HarborFlow supplier onboarding and reach the demo request page. Protect intended organic landing pages while preserving deliberate exclusions.; no traffic or revenue loss measured",
+      "owner": "Engineering lead (fictional role)",
+      "source_id": "S-OCT",
+      "evidence_locator": "evidence/crawl-slice.csv#E07; evidence/editorial-intent.json#E07",
+      "evidence_age_days": 2,
+      "gates": [],
+      "proposed_fix": "Inspect every hop and propose direct internal links to the approved final destination.",
+      "verification": "Recrawl complete hop sequence and confirm no loop or inappropriate destination.",
+      "status": "proposed; not implemented",
+      "id": "SEO-003"
+    },
+    {
+      "url": "https://harborflow.example/resources/vendor-scorecard",
+      "rule": "DEEP_PAGE",
+      "priority": "P3",
+      "score": 5.2,
+      "score_inputs": {
+        "seo_impact": 4,
+        "business_importance": 6,
+        "effort": 4,
+        "effort_basis": "supplied estimate"
+      },
+      "confidence": "high",
+      "observation": "Supplied depth 5 exceeds local review threshold 3",
+      "business_reason": "supporting importance in supplied context: Help procurement teams evaluate HarborFlow supplier onboarding and reach the demo request page. Protect intended organic landing pages while preserving deliberate exclusions.; no traffic or revenue loss measured",
+      "owner": "SEO lead (fictional role)",
+      "source_id": "S-OCT",
+      "evidence_locator": "evidence/crawl-slice.csv#E05; evidence/editorial-intent.json#E05",
+      "evidence_age_days": 2,
+      "gates": [],
+      "proposed_fix": "Review navigation and relevant contextual links to this intended landing page.",
+      "verification": "Recompute depth with the same crawl start and scope; verify useful link placement.",
+      "status": "proposed; not implemented",
+      "id": "SEO-004"
+    },
+    {
+      "url": "https://harborflow.example/pricing",
+      "rule": "NONINDEXABLE",
+      "priority": "review",
+      "score": 8.6,
+      "score_inputs": {
+        "seo_impact": 9,
+        "business_importance": 10,
+        "effort": 5,
+        "effort_basis": "default 5; estimate before scheduling"
+      },
+      "confidence": "low",
+      "observation": "Export marks page non-indexable; cause not independently verified",
+      "business_reason": "critical importance in supplied context: Help procurement teams evaluate HarborFlow supplier onboarding and reach the demo request page. Protect intended organic landing pages while preserving deliberate exclusions.; no traffic or revenue loss measured",
+      "owner": "SEO lead (fictional role)",
+      "source_id": "S-AUG",
+      "evidence_locator": "evidence/crawl-slice.csv#E11; evidence/editorial-intent.json#E11",
+      "evidence_age_days": 57,
+      "gates": [
+        "Evidence older than local 30-day review window; refresh first"
+      ],
+      "proposed_fix": "Confirm the exclusion cause and intended visibility before changing directives.",
+      "verification": "Recrawl rendered HTML and response headers; inspect intended canonical. Index inclusion is not guaranteed.",
+      "status": "proposed; not implemented",
+      "id": "SEO-005"
+    },
+    {
+      "url": "https://harborflow.example/solutions/procurement-automation",
+      "rule": "CANONICAL_REVIEW",
+      "priority": "review",
+      "score": 8.0,
+      "score_inputs": {
+        "seo_impact": 7,
+        "business_importance": 10,
+        "effort": 4,
+        "effort_basis": "supplied estimate"
+      },
+      "confidence": "medium",
+      "observation": "Canonical points to https://harborflow.example/solutions/supplier-onboarding",
+      "business_reason": "critical importance in supplied context: Help procurement teams evaluate HarborFlow supplier onboarding and reach the demo request page. Protect intended organic landing pages while preserving deliberate exclusions.; no traffic or revenue loss measured",
+      "owner": "SEO lead (fictional role)",
+      "source_id": "S-OCT",
+      "evidence_locator": "evidence/crawl-slice.csv#E06; evidence/editorial-intent.json#E06",
+      "evidence_age_days": 2,
+      "gates": [
+        "Manual corroboration required; supplied signal is not a confirmed defect"
+      ],
+      "proposed_fix": "Compare source and target content and intended canonical; do not automatically self-canonicalise.",
+      "verification": "Check canonical target status, visibility and consistency across HTML, headers and sitemap.",
+      "status": "proposed; not implemented",
+      "id": "SEO-006"
+    },
+    {
+      "url": "https://harborflow.example/resources/vendor-checklist-2023",
+      "rule": "HTTP_ERROR",
+      "priority": "review",
+      "score": 6.6,
+      "score_inputs": {
+        "seo_impact": 9,
+        "business_importance": 5,
+        "effort": 5,
+        "effort_basis": "default 5; estimate before scheduling"
+      },
+      "confidence": "medium",
+      "observation": "Supplied HTTP status 404",
+      "business_reason": "unknown importance in supplied context: Help procurement teams evaluate HarborFlow supplier onboarding and reach the demo request page. Protect intended organic landing pages while preserving deliberate exclusions.; no traffic or revenue loss measured",
+      "owner": "Engineering lead (fictional role)",
+      "source_id": "S-OCT",
+      "evidence_locator": "evidence/crawl-slice.csv#E08; evidence/editorial-intent.json#E08",
+      "evidence_age_days": 2,
+      "gates": [
+        "Confirm URL lifecycle / intended visibility",
+        "Confirm business importance"
+      ],
+      "proposed_fix": "Confirm intended URL lifecycle; restore service or approve a relevant replacement.",
+      "verification": "Recheck HTTP status, internal links and intended destination after deployment.",
+      "status": "proposed; not implemented",
+      "id": "SEO-007"
+    },
+    {
+      "url": "https://harborflow.example/resources/vendor-scorecard",
+      "rule": "ZERO_INLINKS",
+      "priority": "review",
+      "score": 5.6,
+      "score_inputs": {
+        "seo_impact": 5,
+        "business_importance": 6,
+        "effort": 4,
+        "effort_basis": "supplied estimate"
+      },
+      "confidence": "medium",
+      "observation": "Supplied inlink count is zero within supplied scope",
+      "business_reason": "supporting importance in supplied context: Help procurement teams evaluate HarborFlow supplier onboarding and reach the demo request page. Protect intended organic landing pages while preserving deliberate exclusions.; no traffic or revenue loss measured",
+      "owner": "SEO lead (fictional role)",
+      "source_id": "S-OCT",
+      "evidence_locator": "evidence/crawl-slice.csv#E05; evidence/editorial-intent.json#E05",
+      "evidence_age_days": 2,
+      "gates": [
+        "Manual corroboration required; supplied signal is not a confirmed defect"
+      ],
+      "proposed_fix": "Investigate possible isolation using a complete link graph; zero inlinks alone does not prove an orphan.",
+      "verification": "Compare a complete internal crawl with sitemap and permitted landing-page sources.",
+      "status": "proposed; not implemented",
+      "id": "SEO-008"
+    },
+    {
+      "url": "https://harborflow.example/campaigns/spring-demo",
+      "rule": "HTTP_ERROR",
+      "priority": "review",
+      "score": 5.4,
+      "score_inputs": {
+        "seo_impact": 9,
+        "business_importance": 2,
+        "effort": 5,
+        "effort_basis": "default 5; estimate before scheduling"
+      },
+      "confidence": "medium",
+      "observation": "Supplied HTTP status 404",
+      "business_reason": "low importance in supplied context: Help procurement teams evaluate HarborFlow supplier onboarding and reach the demo request page. Protect intended organic landing pages while preserving deliberate exclusions.; no traffic or revenue loss measured",
+      "owner": "Engineering lead (fictional role)",
+      "source_id": "S-OCT",
+      "evidence_locator": "evidence/crawl-slice.csv#E15; evidence/editorial-intent.json#E15",
+      "evidence_age_days": 2,
+      "gates": [
+        "Confirm URL lifecycle / intended visibility"
+      ],
+      "proposed_fix": "Confirm intended URL lifecycle; restore service or approve a relevant replacement.",
+      "verification": "Recheck HTTP status, internal links and intended destination after deployment.",
+      "status": "proposed; not implemented",
+      "id": "SEO-009"
+    }
+  ],
+  "suppressed": [
+    {
+      "url": "https://harborflow.example/thank-you/demo",
+      "rule": "NONINDEXABLE",
+      "reason": "Explicitly excluded from organic acquisition; no visibility repair proposed."
+    },
+    {
+      "url": "https://harborflow.example/thank-you/demo",
+      "rule": "MISSING_TITLE",
+      "reason": "Explicitly excluded from organic acquisition; no visibility repair proposed."
+    },
+    {
+      "url": "https://harborflow.example/thank-you/demo",
+      "rule": "ZERO_INLINKS",
+      "reason": "Explicitly excluded from organic acquisition; no visibility repair proposed."
+    },
+    {
+      "url": "https://harborflow.example/internal-preview",
+      "rule": "NONINDEXABLE",
+      "reason": "Explicitly excluded from organic acquisition; no visibility repair proposed."
+    },
+    {
+      "url": "https://harborflow.example/internal-preview",
+      "rule": "ROBOTS_BLOCKED",
+      "reason": "Explicitly excluded from organic acquisition; no visibility repair proposed."
+    },
+    {
+      "url": "https://harborflow.example/internal-preview",
+      "rule": "MISSING_TITLE",
+      "reason": "Explicitly excluded from organic acquisition; no visibility repair proposed."
+    },
+    {
+      "url": "https://harborflow.example/internal-preview",
+      "rule": "DEEP_PAGE",
+      "reason": "Explicitly excluded from organic acquisition; no visibility repair proposed."
+    },
+    {
+      "url": "https://harborflow.example/internal-preview",
+      "rule": "ZERO_INLINKS",
+      "reason": "Explicitly excluded from organic acquisition; no visibility repair proposed."
+    },
+    {
+      "url": "https://harborflow.example/legal/privacy",
+      "rule": "NONINDEXABLE",
+      "reason": "Explicitly excluded from organic acquisition; no visibility repair proposed."
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "url": "https://harborflow.example/platform",
+      "not_assessed": [
+        "indexable",
+        "robots_blocked",
+        "canonical",
+        "title",
+        "depth"
+      ]
+    },
+    {
+      "url": "https://harborflow.example/resources/vendor-checklist-2023",
+      "not_assessed": [
+        "indexable",
+        "robots_blocked",
+        "canonical",
+        "title",
+        "depth"
+      ]
+    },
+    {
+      "url": "https://harborflow.example/resources/api-integration",
+      "not_assessed": [
+        "indexable",
+        "robots_blocked",
+        "canonical",
+        "title",
+        "depth",
+        "inlinks"
+      ]
+    },
+    {
+      "url": "https://harborflow.example/campaigns/spring-demo",
+      "not_assessed": [
+        "indexable",
+        "robots_blocked",
+        "canonical",
+        "title",
+        "depth"
+      ]
+    }
+  ]
+}

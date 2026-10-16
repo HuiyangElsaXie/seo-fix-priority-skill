@@ -1,0 +1,25 @@
+{
+  "repository": "https://github.com/Snippet-Digital-Agency/tech-seo-audit-skill",
+  "commit": "8b5b5d5c776ec71a0d427bd6760dfeca058b404c",
+  "retrieved_at": "2026-10-16",
+  "retrieval": "Authenticated GitHub connector, fetch_file at immutable commit; unmodified UTF-8 content",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Snippet Digital",
+  "scope": "Only the root SKILL.md and LICENCE are vendored; no upstream scripts, references or examples executed or copied.",
+  "files": [
+    {
+      "upstream_path": "SKILL.md",
+      "local_path": "upstream/snippet-digital/SKILL.md",
+      "git_blob_sha": "346c2b728360e3451cbce00ab4117f86521dd8f3",
+      "url": "https://github.com/Snippet-Digital-Agency/tech-seo-audit-skill/blob/8b5b5d5c776ec71a0d427bd6760dfeca058b404c/SKILL.md",
+      "sha256": "42aa4dab9e37b40a44d559a2e4bfa01c3c5ea6a031c91049e0ac78b47cb4f0d0"
+    },
+    {
+      "upstream_path": "LICENCE",
+      "local_path": "upstream/snippet-digital/LICENCE",
+      "git_blob_sha": "3ed242635002c587a5e5bcf3e16e621f1b7bf591",
+      "url": "https://github.com/Snippet-Digital-Agency/tech-seo-audit-skill/blob/8b5b5d5c776ec71a0d427bd6760dfeca058b404c/LICENCE",
+      "sha256": "6753e9b5f3ebf3425d99bb6ea8d204bab0ac9a6d1f6b870d96b84d15bcca562e"
+    }
+  ]
+}

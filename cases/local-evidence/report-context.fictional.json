@@ -1,0 +1,40 @@
+{
+  "as_of": "2026-10-16",
+  "sources": {
+    "brief": {
+      "description": "Fictional in-person studio brief",
+      "kind": "fictional_fixture",
+      "observed_at": "2026-10-16"
+    }
+  },
+  "business_context": {
+    "answers": {
+      "industry": {
+        "value": "Fictional local studio",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "Fictional test brief"
+      }
+    }
+  },
+  "applicability": {
+    "local": {
+      "value": "yes",
+      "reason": "Fictional test explicitly serves customers in person",
+      "source": "Fictional brief",
+      "date": "2026-10-16"
+    },
+    "ecommerce": {
+      "value": "no",
+      "reason": "Fictional fixture has no online store",
+      "source": "Fictional brief",
+      "date": "2026-10-16"
+    },
+    "international": {
+      "value": "no",
+      "reason": "Fictional fixture is single-language",
+      "source": "Fictional brief",
+      "date": "2026-10-16"
+    }
+  }
+}

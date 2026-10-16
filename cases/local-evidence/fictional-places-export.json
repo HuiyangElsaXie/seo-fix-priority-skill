@@ -1,0 +1,15 @@
+{
+  "id": "fictional-place-north",
+  "displayName": {
+    "text": "Fictional Fern Studio"
+  },
+  "rating": 3.0,
+  "userRatingCount": 120,
+  "reviews": [
+    {
+      "rating": 5,
+      "text": "Fictional visible sample, not population sentiment."
+    }
+  ],
+  "businessStatus": "OPERATIONAL"
+}

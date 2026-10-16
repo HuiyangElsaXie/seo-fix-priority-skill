@@ -1,0 +1,22 @@
+{
+  "applicability": {
+    "local": {
+      "value": "no",
+      "reason": "Fictional online-only, single-language personal portfolio; no current sales or local customer service.",
+      "source": "Fictional owner brief",
+      "date": "2026-10-16"
+    },
+    "ecommerce": {
+      "value": "no",
+      "reason": "Fictional online-only, single-language personal portfolio; no current sales or local customer service.",
+      "source": "Fictional owner brief",
+      "date": "2026-10-16"
+    },
+    "international": {
+      "value": "no",
+      "reason": "Fictional online-only, single-language personal portfolio; no current sales or local customer service.",
+      "source": "Fictional owner brief",
+      "date": "2026-10-16"
+    }
+  }
+}

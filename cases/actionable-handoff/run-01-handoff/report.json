@@ -1,0 +1,1427 @@
+{
+  "schema_version": "1.0",
+  "actionable_handoff": {
+    "status": "verification_required",
+    "buckets": {
+      "confirmed_fix": [],
+      "needs_verification": [
+        {
+          "task_id": "task-issue-4f63b549389e",
+          "issue_id": "issue-4f63b549389e",
+          "dimension": "onpage_content",
+          "subject": "https://fictional.example/",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-17e7e31e0b58"
+          ],
+          "observed_basis": "title is empty in collected HTML.",
+          "steps": [
+            "Inspect the title in full rendered pages and the template for every listed URL.",
+            "Document whether these pages serve distinct reader tasks or intentional duplicate/alternate purposes.",
+            "For pages needing differentiation, draft a truthful, purpose-specific title; retain intentional shared values when justified."
+          ],
+          "proposed_role": "Content editor with SEO reviewer",
+          "dependencies": [
+            "Page purpose and target reader confirmed",
+            "Editorial approval and template access"
+          ],
+          "acceptance": [
+            "Each scoped URL has an approved title or a documented reason for retaining/omitting it.",
+            "Fresh HTML/rendered evidence matches the approved copy; no ranking or click-rate gain is assumed."
+          ],
+          "priority_reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-issue-bb3319679a5e",
+          "issue_id": "issue-bb3319679a5e",
+          "dimension": "onpage_content",
+          "subject": "https://fictional.example/",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-17e7e31e0b58"
+          ],
+          "observed_basis": "meta_description is empty in collected HTML.",
+          "steps": [
+            "Inspect the meta description in full rendered pages and the template for every listed URL.",
+            "Document whether these pages serve distinct reader tasks or intentional duplicate/alternate purposes.",
+            "For pages needing differentiation, draft a truthful, purpose-specific meta description; retain intentional shared values when justified."
+          ],
+          "proposed_role": "Content editor with SEO reviewer",
+          "dependencies": [
+            "Page purpose and target reader confirmed",
+            "Editorial approval and template access"
+          ],
+          "acceptance": [
+            "Each scoped URL has an approved meta description or a documented reason for retaining/omitting it.",
+            "Fresh HTML/rendered evidence matches the approved copy; no ranking or click-rate gain is assumed."
+          ],
+          "priority_reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-issue-25c023a35282",
+          "issue_id": "issue-25c023a35282",
+          "dimension": "technical",
+          "subject": "https://fictional.example/",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-17e7e31e0b58"
+          ],
+          "observed_basis": "JSON-LD block 1 has a parse error or non-object/non-array root.",
+          "steps": [
+            "Locate the exact JSON-LD block in the saved raw HTML and reproduce the parsing/shape result.",
+            "Confirm the markup describes visible current content, then repair JSON syntax or node/type shape as needed.",
+            "Run a JSON parser and the relevant schema/official rich-result validator; record results and eligibility limits."
+          ],
+          "proposed_role": "Technical SEO reviewer with web engineer",
+          "dependencies": [
+            "Raw JSON-LD block and intended schema type",
+            "Template access and visible-content review"
+          ],
+          "acceptance": [
+            "Every changed block parses and has the intended object/array and node/type shapes.",
+            "Attach validator output and content comparison; valid syntax alone does not establish eligibility."
+          ],
+          "priority_reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-issue-cbdc88d4e6c1",
+          "issue_id": "issue-cbdc88d4e6c1",
+          "dimension": "onpage_content",
+          "subject": "https://fictional.example/fr/",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-3c2e659c7faa"
+          ],
+          "observed_basis": "meta_description is empty in collected HTML.",
+          "steps": [
+            "Inspect the meta description in full rendered pages and the template for every listed URL.",
+            "Document whether these pages serve distinct reader tasks or intentional duplicate/alternate purposes.",
+            "For pages needing differentiation, draft a truthful, purpose-specific meta description; retain intentional shared values when justified."
+          ],
+          "proposed_role": "Content editor with SEO reviewer",
+          "dependencies": [
+            "Page purpose and target reader confirmed",
+            "Editorial approval and template access"
+          ],
+          "acceptance": [
+            "Each scoped URL has an approved meta description or a documented reason for retaining/omitting it.",
+            "Fresh HTML/rendered evidence matches the approved copy; no ranking or click-rate gain is assumed."
+          ],
+          "priority_reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-issue-a1a8f98965ed",
+          "issue_id": "issue-a1a8f98965ed",
+          "dimension": "technical",
+          "subject": "https://fictional.example/deleted",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-5e04a41bed8b"
+          ],
+          "observed_basis": "Collected HTTP status 404.",
+          "steps": [
+            "Repeat the request and record URL, timestamp, status and redirect chain; compare the saved response.",
+            "Ask the site owner whether this URL should serve content, redirect or remain retired.",
+            "If unintended, repair the route/service or choose an approved equivalent redirect; if intentionally retired, retain the status and review internal links."
+          ],
+          "proposed_role": "Technical SEO reviewer with web engineer",
+          "dependencies": [
+            "URL lifecycle and intended destination confirmed by site owner",
+            "Access to route configuration and fresh response capture"
+          ],
+          "acceptance": [
+            "A fresh request matches the documented intended status/destination.",
+            "Any changed internal links resolve to the approved destination; attach before/after responses."
+          ],
+          "priority_reason": "Validate this observed HTTP error before dependent content changes; intended lifecycle and business impact remain unknown.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-issue-301503fd0bb1",
+          "issue_id": "issue-301503fd0bb1",
+          "dimension": "technical",
+          "subject": "https://fictional.example/private",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-59c793e20b11"
+          ],
+          "observed_basis": "Observed canonical target(s): https://fictional.example/",
+          "steps": [
+            "Capture every HTML and HTTP canonical declaration and resolve each target.",
+            "Compare content and ask the owner to document the intended preferred URL; check rendering and redirects.",
+            "Only if declarations contradict that intent, align the template and related signals with the approved preferred URL."
+          ],
+          "proposed_role": "Technical SEO reviewer with web engineer",
+          "dependencies": [
+            "Documented canonical intent and content-equivalence review",
+            "HTML/header access for source and targets"
+          ],
+          "acceptance": [
+            "Record whether the existing canonical is intentional.",
+            "If changed, one consistent intended canonical is present across the reviewed declarations; its target is reachable and equivalent."
+          ],
+          "priority_reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-issue-e05bc57614ca",
+          "issue_id": "issue-e05bc57614ca",
+          "dimension": "technical",
+          "subject": "https://fictional.example/private",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-59c793e20b11"
+          ],
+          "observed_basis": "Collected HTML or HTTP robots directive includes noindex.",
+          "steps": [
+            "Record the precise HTML meta or HTTP header containing noindex and inspect rendered output.",
+            "Confirm with the owner whether this URL is intended for search visibility or exclusion.",
+            "Retain deliberate exclusions; remove or correct directives only after an unintended exclusion is confirmed."
+          ],
+          "proposed_role": "Technical SEO reviewer with web engineer",
+          "dependencies": [
+            "Explicit URL visibility intent",
+            "Access to rendered HTML, response headers and relevant template"
+          ],
+          "acceptance": [
+            "The recorded directive matches documented visibility intent in a fresh response and rendered check.",
+            "If visibility is intended, inspect Search Console separately; do not equate directive removal with indexing."
+          ],
+          "priority_reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-issue-10815e17eca9",
+          "issue_id": "issue-10815e17eca9",
+          "dimension": "onpage_content",
+          "subject": "https://fictional.example/private",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-59c793e20b11"
+          ],
+          "observed_basis": "meta_description is empty in collected HTML.",
+          "steps": [
+            "Inspect the meta description in full rendered pages and the template for every listed URL.",
+            "Document whether these pages serve distinct reader tasks or intentional duplicate/alternate purposes.",
+            "For pages needing differentiation, draft a truthful, purpose-specific meta description; retain intentional shared values when justified."
+          ],
+          "proposed_role": "Content editor with SEO reviewer",
+          "dependencies": [
+            "Page purpose and target reader confirmed",
+            "Editorial approval and template access"
+          ],
+          "acceptance": [
+            "Each scoped URL has an approved meta description or a documented reason for retaining/omitting it.",
+            "Fresh HTML/rendered evidence matches the approved copy; no ranking or click-rate gain is assumed."
+          ],
+          "priority_reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-issue-3efd990c9dbe",
+          "issue_id": "issue-3efd990c9dbe",
+          "dimension": "technical",
+          "subject": "https://fictional.example/|mobile|2026-10-15",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-3c077eaeea41"
+          ],
+          "observed_basis": "Supplied field p75 LCP = 3000 ms; above good threshold 2500.",
+          "steps": [
+            "Verify the field export scope, device, p75 and observation window; distinguish URL from origin aggregation.",
+            "Trace LCP element discovery, server timing and resource loading.",
+            "Test a targeted change against a reproducible diagnostic case, then collect a comparable post-change field window."
+          ],
+          "proposed_role": "Technical SEO reviewer with web engineer",
+          "dependencies": [
+            "Valid field export with scope/device/window",
+            "Performance trace access and a comparable follow-up field window"
+          ],
+          "acceptance": [
+            "Record before/after LCP for the same scope/device; target p75 <= 2500 ms.",
+            "Keep the outcome unresolved until a comparable field window is available; lab improvements alone do not close it."
+          ],
+          "priority_reason": "Investigate this supplied field threshold exceedance using comparable scope/device data; business urgency is not established.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-issue-fa846f76ab6f",
+          "issue_id": "issue-fa846f76ab6f",
+          "dimension": "local",
+          "subject": "fictional-store-1|2026-10-16",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-35d5950d49f0"
+          ],
+          "observed_basis": "Supplied phone differs: website='000-0000'; reference='000-0001'.",
+          "steps": [
+            "Recheck paired phone values for the exact entity or product variant and effective timestamp.",
+            "Identify the authoritative current source, including currency or branch context where relevant.",
+            "Correct only the source proven stale or incorrect; record intentional differences rather than forcing agreement."
+          ],
+          "proposed_role": "Local operations manager",
+          "dependencies": [
+            "Matching identity, effective time and authoritative value",
+            "Operations approval and access to the affected source"
+          ],
+          "acceptance": [
+            "Fresh paired phone evidence matches the authoritative value for the same identity/time, or the intentional difference is documented.",
+            "For price, compare only identical currencies and variants; attach both observations."
+          ],
+          "priority_reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-issue-e1f671956c40",
+          "issue_id": "issue-e1f671956c40",
+          "dimension": "ecommerce",
+          "subject": "fictional-mug|blue|2026-10-16",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-b7125bc669ca"
+          ],
+          "observed_basis": "Supplied price differs: website='12.00'; reference='10.00'.",
+          "steps": [
+            "Recheck paired price values for the exact entity or product variant and effective timestamp.",
+            "Identify the authoritative current source, including currency or branch context where relevant.",
+            "Correct only the source proven stale or incorrect; record intentional differences rather than forcing agreement."
+          ],
+          "proposed_role": "Catalog operations manager with web engineer",
+          "dependencies": [
+            "Matching identity, effective time and authoritative value",
+            "Operations approval and access to the affected source"
+          ],
+          "acceptance": [
+            "Fresh paired price evidence matches the authoritative value for the same identity/time, or the intentional difference is documented.",
+            "For price, compare only identical currencies and variants; attach both observations."
+          ],
+          "priority_reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-issue-975c4796c099",
+          "issue_id": "issue-975c4796c099",
+          "dimension": "international",
+          "subject": "https://fictional.example/|https://fictional.example/fr/",
+          "bucket": "needs_verification",
+          "evidence_ids": [
+            "e-de4d873a90fa"
+          ],
+          "observed_basis": "Collected target HTML lacks a return reference to the source.",
+          "steps": [
+            "Document the intended language/region cluster and collect its HTML, HTTP header and sitemap declarations.",
+            "Check each intended member for self-reference, unique language mappings, reciprocal references and reachable targets.",
+            "If a mismatch remains across the complete strategy, update the approved cluster declarations consistently."
+          ],
+          "proposed_role": "Localization lead with technical SEO reviewer",
+          "dependencies": [
+            "Confirmed alternate-market strategy and cluster inventory",
+            "Access to all declaration methods and target pages"
+          ],
+          "acceptance": [
+            "Each intended cluster member has a consistent unique mapping, self-reference and reciprocal references across the chosen strategy.",
+            "Record status and canonical checks for every target; missing sample pages remain unresolved, not failed."
+          ],
+          "priority_reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-281f15df68d3",
+          "issue_id": null,
+          "dimension": "technical",
+          "subject": "Evidence investigation",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "Crawl/HTML sample does not prove index inclusion, rendered parity, complete internal graph or robots access for every crawler.",
+          "source_locator": "sections.technical.unknowns",
+          "steps": [
+            "Resolve this specific evidence gap: Crawl/HTML sample does not prove index inclusion, rendered parity, complete internal graph or robots access for every crawler.",
+            "Collect a dated, scoped source or manual check with a reproducible locator; record unavailable evidence explicitly.",
+            "Have the proposed reviewer interpret that evidence before proposing any site change."
+          ],
+          "proposed_role": "Technical SEO reviewer with web engineer",
+          "dependencies": [
+            "Access to the scoped source identified in the evidence gap",
+            "Reviewer availability"
+          ],
+          "acceptance": [
+            "Attach dated evidence with scope and locator for this exact gap, or record why it remains unavailable.",
+            "Mark the check resolved only after review; unresolved evidence is never a site defect or a healthy result."
+          ],
+          "priority_reason": "Collect missing evidence before diagnosing faults or ordering changes; missing data alone establishes no urgency.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-4b33fe9dc400",
+          "issue_id": null,
+          "dimension": "technical",
+          "subject": "Evidence investigation",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "CWV checks apply only to supplied valid metric/scope/device/window records; no overall CWV pass is inferred.",
+          "source_locator": "sections.technical.unknowns",
+          "steps": [
+            "Resolve this specific evidence gap: CWV checks apply only to supplied valid metric/scope/device/window records; no overall CWV pass is inferred.",
+            "Collect a dated, scoped source or manual check with a reproducible locator; record unavailable evidence explicitly.",
+            "Have the proposed reviewer interpret that evidence before proposing any site change."
+          ],
+          "proposed_role": "Technical SEO reviewer with web engineer",
+          "dependencies": [
+            "Access to the scoped source identified in the evidence gap",
+            "Reviewer availability"
+          ],
+          "acceptance": [
+            "Attach dated evidence with scope and locator for this exact gap, or record why it remains unavailable.",
+            "Mark the check resolved only after review; unresolved evidence is never a site defect or a healthy result."
+          ],
+          "priority_reason": "Collect missing evidence before diagnosing faults or ordering changes; missing data alone establishes no urgency.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-b2f7fdc5e993",
+          "issue_id": null,
+          "dimension": "onpage_content",
+          "subject": "Evidence investigation",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "https://fictional.example/deleted: HTML parse not confirmed or HTML media type unavailable; metadata and content checks not assessed.",
+          "source_locator": "sections.onpage_content.unknowns",
+          "steps": [
+            "Resolve this specific evidence gap: https://fictional.example/deleted: HTML parse not confirmed or HTML media type unavailable; metadata and content checks not assessed.",
+            "Collect a dated, scoped source or manual check with a reproducible locator; record unavailable evidence explicitly.",
+            "Have the proposed reviewer interpret that evidence before proposing any site change."
+          ],
+          "proposed_role": "Content editor with SEO reviewer",
+          "dependencies": [
+            "Access to the scoped source identified in the evidence gap",
+            "Reviewer availability"
+          ],
+          "acceptance": [
+            "Attach dated evidence with scope and locator for this exact gap, or record why it remains unavailable.",
+            "Mark the check resolved only after review; unresolved evidence is never a site defect or a healthy result."
+          ],
+          "priority_reason": "Collect missing evidence before diagnosing faults or ordering changes; missing data alone establishes no urgency.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-b47cd1f66509",
+          "issue_id": null,
+          "dimension": "onpage_content",
+          "subject": "Evidence investigation",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "Full-content task satisfaction and factual accuracy need semantic review; excerpts/word counts cannot establish thin content.",
+          "source_locator": "sections.onpage_content.unknowns",
+          "steps": [
+            "Resolve this specific evidence gap: Full-content task satisfaction and factual accuracy need semantic review; excerpts/word counts cannot establish thin content.",
+            "Collect a dated, scoped source or manual check with a reproducible locator; record unavailable evidence explicitly.",
+            "Have the proposed reviewer interpret that evidence before proposing any site change."
+          ],
+          "proposed_role": "Content editor with SEO reviewer",
+          "dependencies": [
+            "Access to the scoped source identified in the evidence gap",
+            "Reviewer availability"
+          ],
+          "acceptance": [
+            "Attach dated evidence with scope and locator for this exact gap, or record why it remains unavailable.",
+            "Mark the check resolved only after review; unresolved evidence is never a site defect or a healthy result."
+          ],
+          "priority_reason": "Collect missing evidence before diagnosing faults or ordering changes; missing data alone establishes no urgency.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-6b5195eb6eff",
+          "issue_id": null,
+          "dimension": "offpage",
+          "subject": "Evidence investigation",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "Supplied sample is not a complete backlink index or reputation assessment.",
+          "source_locator": "sections.offpage.unknowns",
+          "steps": [
+            "Resolve this specific evidence gap: Supplied sample is not a complete backlink index or reputation assessment.",
+            "Collect a dated, scoped source or manual check with a reproducible locator; record unavailable evidence explicitly.",
+            "Have the proposed reviewer interpret that evidence before proposing any site change."
+          ],
+          "proposed_role": "PR or partnerships reviewer",
+          "dependencies": [
+            "Access to the scoped source identified in the evidence gap",
+            "Reviewer availability"
+          ],
+          "acceptance": [
+            "Attach dated evidence with scope and locator for this exact gap, or record why it remains unavailable.",
+            "Mark the check resolved only after review; unresolved evidence is never a site defect or a healthy result."
+          ],
+          "priority_reason": "Collect missing evidence before diagnosing faults or ordering changes; missing data alone establishes no urgency.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-82e66296a1d1",
+          "issue_id": null,
+          "dimension": "international",
+          "subject": "Evidence investigation",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "https://fictional.example/private: no HTML hreflang collected; check actual alternate strategy and other delivery methods.",
+          "source_locator": "sections.international.unknowns",
+          "steps": [
+            "Resolve this specific evidence gap: https://fictional.example/private: no HTML hreflang collected; check actual alternate strategy and other delivery methods.",
+            "Collect a dated, scoped source or manual check with a reproducible locator; record unavailable evidence explicitly.",
+            "Have the proposed reviewer interpret that evidence before proposing any site change."
+          ],
+          "proposed_role": "Localization lead with technical SEO reviewer",
+          "dependencies": [
+            "Access to the scoped source identified in the evidence gap",
+            "Reviewer availability"
+          ],
+          "acceptance": [
+            "Attach dated evidence with scope and locator for this exact gap, or record why it remains unavailable.",
+            "Mark the check resolved only after review; unresolved evidence is never a site defect or a healthy result."
+          ],
+          "priority_reason": "Collect missing evidence before diagnosing faults or ordering changes; missing data alone establishes no urgency.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-business-context",
+          "issue_id": null,
+          "dimension": "business_context",
+          "subject": "Missing essential context",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "audience, geography, language, primary_objective, resources, constraints, specific_problem",
+          "source_locator": "intake.missing_essential",
+          "steps": [
+            "Ask the business owner for each missing answer: audience, geography, language, primary_objective, resources, constraints, specific_problem",
+            "Record each answer with a dated source and evidence locator before tailoring recommendations."
+          ],
+          "proposed_role": "Business owner with SEO lead",
+          "dependencies": [
+            "Business owner input"
+          ],
+          "acceptance": [
+            "Every missing essential answer has a valid attributed source or is explicitly left unknown.",
+            "Business prioritization remains provisional for unresolved answers."
+          ],
+          "priority_reason": "Context gates business-specific ordering; it does not prevent reporting observed technical signals.",
+          "source_truth": "supplied_input_not_independently_verified"
+        }
+      ],
+      "optional_improvement": [],
+      "keep_or_not_applicable": []
+    },
+    "interpretation": "Actionable investigation and conditional repair plans, not execution approval. Empty confirmed-fix and optional buckets do not mean healthy. Proposed roles are not assigned people. Business priority remains pending; investigation sequencing is evidence-based."
+  },
+  "report_type": "bounded_six_dimension_evidence_review",
+  "intake": {
+    "mode": "industry_general",
+    "answers": {
+      "industry": {
+        "value": "Retail",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "fictional brief"
+      }
+    },
+    "sources": {
+      "brief": {
+        "description": "Fictional business owner brief",
+        "kind": "fictional_fixture",
+        "observed_at": "2026-10-16"
+      }
+    },
+    "as_of": "2026-10-16",
+    "invalid_source_ids": [],
+    "missing_essential": [
+      "audience",
+      "geography",
+      "language",
+      "primary_objective",
+      "resources",
+      "constraints",
+      "specific_problem"
+    ],
+    "objective": "unknown",
+    "interpretation": "Context is supplied and attributed, not independently verified. Malformed or future-dated sources cannot establish known answers. Missing context does not block technical observations."
+  },
+  "collection": {
+    "requested_url": "https://fictional.example/",
+    "final_url": "https://fictional.example/",
+    "started_at": "2026-10-16T00:00:00Z",
+    "finished_at": "2026-10-16T00:00:01Z",
+    "limitations": [
+      "Entirely synthetic truth test; no live site or user/client data."
+    ]
+  },
+  "sections": {
+    "technical": {
+      "applicability": {
+        "value": "yes",
+        "reason": "General website review dimension."
+      },
+      "evidence_status": "partial",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "url": "https://fictional.example/",
+          "http_status": 200
+        },
+        {
+          "url": "https://fictional.example/",
+          "canonical": [
+            "https://fictional.example/"
+          ],
+          "robots_meta": [],
+          "index_status": "unknown"
+        },
+        {
+          "url": "https://fictional.example/",
+          "jsonld_blocks": 2,
+          "validation": "presence and supplied JSON shape only; not official rich-result validation"
+        },
+        {
+          "url": "https://fictional.example/fr/",
+          "http_status": 200
+        },
+        {
+          "url": "https://fictional.example/fr/",
+          "canonical": [
+            "https://fictional.example/fr/"
+          ],
+          "robots_meta": [],
+          "index_status": "unknown"
+        },
+        {
+          "url": "https://fictional.example/fr/",
+          "jsonld_blocks": 0,
+          "validation": "presence and supplied JSON shape only; not official rich-result validation"
+        },
+        {
+          "url": "https://fictional.example/deleted",
+          "http_status": 404
+        },
+        {
+          "url": "https://fictional.example/private",
+          "http_status": 200
+        },
+        {
+          "url": "https://fictional.example/private",
+          "canonical": [
+            "https://fictional.example/"
+          ],
+          "robots_meta": [
+            "noindex"
+          ],
+          "index_status": "unknown"
+        },
+        {
+          "url": "https://fictional.example/private",
+          "jsonld_blocks": 0,
+          "validation": "presence and supplied JSON shape only; not official rich-result validation"
+        },
+        {
+          "internal_graph": [
+            {
+              "url": "https://fictional.example/",
+              "sample_inlinks": 0,
+              "sample_depth": 0
+            },
+            {
+              "url": "https://fictional.example/fr/",
+              "sample_inlinks": 1,
+              "sample_depth": 1
+            },
+            {
+              "url": "https://fictional.example/private",
+              "sample_inlinks": 0,
+              "sample_depth": null
+            }
+          ],
+          "sample_only": true,
+          "orphan_assessment": "unknown"
+        },
+        {
+          "cwv": {
+            "kind": "field",
+            "percentile": 75,
+            "scope": "https://fictional.example/",
+            "scope_type": "url",
+            "device": "mobile",
+            "window_start": "2026-09-18",
+            "window_end": "2026-10-15",
+            "metric": "LCP",
+            "value": 3000,
+            "unit": "ms"
+          },
+          "good_threshold": 2500,
+          "assessment": "above_good_threshold"
+        }
+      ],
+      "unknowns": [
+        "Crawl/HTML sample does not prove index inclusion, rendered parity, complete internal graph or robots access for every crawler.",
+        "CWV checks apply only to supplied valid metric/scope/device/window records; no overall CWV pass is inferred."
+      ],
+      "issue_ids": [
+        "issue-25c023a35282",
+        "issue-a1a8f98965ed",
+        "issue-301503fd0bb1",
+        "issue-e05bc57614ca",
+        "issue-3efd990c9dbe"
+      ],
+      "review_task": "Confirm intended visibility, canonical choices, rendering and business-critical paths; observed directives do not prove Google index status.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "Fictional manual export; no API connection",
+        "supplement_date": "2026-10-16"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "onpage_content": {
+      "applicability": {
+        "value": "yes",
+        "reason": "General website review dimension."
+      },
+      "evidence_status": "partial",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "url": "https://fictional.example/",
+          "title": "",
+          "meta_description": "",
+          "h1": [
+            "Fictional shop"
+          ]
+        },
+        {
+          "url": "https://fictional.example/fr/",
+          "title": "Fictional shop",
+          "meta_description": "",
+          "h1": [
+            "Fictional shop"
+          ]
+        },
+        {
+          "url": "https://fictional.example/private",
+          "title": "Synthetic private page",
+          "meta_description": "",
+          "h1": [
+            "Fictional shop"
+          ]
+        }
+      ],
+      "unknowns": [
+        "https://fictional.example/deleted: HTML parse not confirmed or HTML media type unavailable; metadata and content checks not assessed.",
+        "Full-content task satisfaction and factual accuracy need semantic review; excerpts/word counts cannot establish thin content."
+      ],
+      "issue_ids": [
+        "issue-4f63b549389e",
+        "issue-bb3319679a5e",
+        "issue-cbdc88d4e6c1",
+        "issue-10815e17eca9",
+        "issue-e1f671956c40"
+      ],
+      "review_task": "Review reader task, accuracy, first-hand evidence, authorship and useful next steps in full content. Do not score E-E-A-T, keyword density or word count.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "offpage": {
+      "applicability": {
+        "value": "yes",
+        "reason": "General website review dimension."
+      },
+      "evidence_status": "partial",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "supplied_records": 1,
+          "unique_link_records": 1,
+          "link_liveness": "not_verified"
+        }
+      ],
+      "unknowns": [
+        "Supplied sample is not a complete backlink index or reputation assessment."
+      ],
+      "issue_ids": [],
+      "review_task": "Review relevance, independence, paid relationships and sample bias. DA/DR are third-party measures, not Google authority scores.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "Fictional manual export; no API connection",
+        "supplement_date": "2026-10-16"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "local": {
+      "applicability": {
+        "value": "yes",
+        "reason": "Fictional in-person shop confirmed by supplied brief.",
+        "source": "Fictional brief",
+        "date": "2026-10-16"
+      },
+      "evidence_status": "checked",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "identity": {
+            "entity_id": "fictional-store-1",
+            "observed_at": "2026-10-16"
+          },
+          "reference_source": "Fictional business-profile snapshot",
+          "comparison": "supplied observations only"
+        }
+      ],
+      "unknowns": [],
+      "issue_ids": [
+        "issue-fa846f76ab6f"
+      ],
+      "review_task": "Confirm real customer contact/service eligibility, branch identity and privacy before suggesting a Business Profile; a city/address alone establishes no eligibility.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "Fictional manual export; no API connection",
+        "supplement_date": "2026-10-16"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "ecommerce": {
+      "applicability": {
+        "value": "yes",
+        "reason": "Fictional site currently sells mugs.",
+        "source": "Fictional brief",
+        "date": "2026-10-16"
+      },
+      "evidence_status": "checked",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "url": "https://fictional.example/",
+          "applicability_candidate": "Product/Offer markup observed; current selling purpose still requires business confirmation."
+        },
+        {
+          "identity": {
+            "product_id": "fictional-mug",
+            "variant_id": "blue",
+            "observed_at": "2026-10-16"
+          },
+          "reference_source": "Fictional supplied Offer extraction",
+          "comparison": "supplied observations only"
+        }
+      ],
+      "unknowns": [],
+      "issue_ids": [
+        "issue-e1f671956c40"
+      ],
+      "review_task": "Confirm current selling purpose, variants, purchase flow, delivery and returns; past ecommerce case studies do not make this site a shop.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "Fictional manual export; no API connection",
+        "supplement_date": "2026-10-16"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "international": {
+      "applicability": {
+        "value": "yes",
+        "reason": "Fictional English and French variants are intentional.",
+        "source": "Fictional brief",
+        "date": "2026-10-16"
+      },
+      "evidence_status": "partial",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "url": "https://fictional.example/",
+          "html_hreflang": [
+            {
+              "lang": "en",
+              "url": "https://fictional.example/"
+            },
+            {
+              "lang": "fr",
+              "url": "https://fictional.example/fr/"
+            }
+          ],
+          "scope": "collected HTML only"
+        },
+        {
+          "url": "https://fictional.example/fr/",
+          "html_hreflang": [
+            {
+              "lang": "fr",
+              "url": "https://fictional.example/fr/"
+            }
+          ],
+          "scope": "collected HTML only"
+        },
+        {
+          "url": "https://fictional.example/private",
+          "html_hreflang": [],
+          "scope": "collected HTML only"
+        }
+      ],
+      "unknowns": [
+        "https://fictional.example/private: no HTML hreflang collected; check actual alternate strategy and other delivery methods."
+      ],
+      "issue_ids": [
+        "issue-975c4796c099"
+      ],
+      "review_task": "Review actual language/market purpose, translation quality and regional requirements; single-language sites need no standalone missing-hreflang warning.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    }
+  },
+  "findings": [
+    {
+      "issue_id": "issue-4f63b549389e",
+      "root_cause_key": "EMPTY_TITLE|https://fictional.example/",
+      "subject": "https://fictional.example/",
+      "primary_dimension": "onpage_content",
+      "related_dimensions": [],
+      "technical_fact": "title is empty in collected HTML.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-17e7e31e0b58"
+      ],
+      "recommendation": "Review a descriptive field for the page purpose; absence is not proof of a ranking penalty.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied."
+      },
+      "acceptance": "Each scoped URL has an approved title or a documented reason for retaining/omitting it. Fresh HTML/rendered evidence matches the approved copy; no ranking or click-rate gain is assumed.",
+      "owner": "Content editor with SEO reviewer (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    },
+    {
+      "issue_id": "issue-bb3319679a5e",
+      "root_cause_key": "EMPTY_META_DESCRIPTION|https://fictional.example/",
+      "subject": "https://fictional.example/",
+      "primary_dimension": "onpage_content",
+      "related_dimensions": [],
+      "technical_fact": "meta_description is empty in collected HTML.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-17e7e31e0b58"
+      ],
+      "recommendation": "Review a descriptive field for the page purpose; absence is not proof of a ranking penalty.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied."
+      },
+      "acceptance": "Each scoped URL has an approved meta description or a documented reason for retaining/omitting it. Fresh HTML/rendered evidence matches the approved copy; no ranking or click-rate gain is assumed.",
+      "owner": "Content editor with SEO reviewer (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    },
+    {
+      "issue_id": "issue-25c023a35282",
+      "root_cause_key": "JSONLD_SHAPE|https://fictional.example/",
+      "subject": "https://fictional.example/",
+      "primary_dimension": "technical",
+      "related_dimensions": [],
+      "technical_fact": "JSON-LD block 1 has a parse error or non-object/non-array root.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-17e7e31e0b58"
+      ],
+      "recommendation": "Inspect raw JSON and relevant schema; use official validation separately where applicable.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied."
+      },
+      "acceptance": "Every changed block parses and has the intended object/array and node/type shapes. Attach validator output and content comparison; valid syntax alone does not establish eligibility.",
+      "owner": "Technical SEO reviewer with web engineer (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    },
+    {
+      "issue_id": "issue-cbdc88d4e6c1",
+      "root_cause_key": "EMPTY_META_DESCRIPTION|https://fictional.example/fr/",
+      "subject": "https://fictional.example/fr/",
+      "primary_dimension": "onpage_content",
+      "related_dimensions": [],
+      "technical_fact": "meta_description is empty in collected HTML.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-3c2e659c7faa"
+      ],
+      "recommendation": "Review a descriptive field for the page purpose; absence is not proof of a ranking penalty.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied."
+      },
+      "acceptance": "Each scoped URL has an approved meta description or a documented reason for retaining/omitting it. Fresh HTML/rendered evidence matches the approved copy; no ranking or click-rate gain is assumed.",
+      "owner": "Content editor with SEO reviewer (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    },
+    {
+      "issue_id": "issue-a1a8f98965ed",
+      "root_cause_key": "HTTP_ERROR|https://fictional.example/deleted",
+      "subject": "https://fictional.example/deleted",
+      "primary_dimension": "technical",
+      "related_dimensions": [],
+      "technical_fact": "Collected HTTP status 404.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "error",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-5e04a41bed8b"
+      ],
+      "recommendation": "Confirm URL lifecycle and intended audience; investigate service or approved replacement.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Validate this observed HTTP error before dependent content changes; intended lifecycle and business impact remain unknown."
+      },
+      "acceptance": "A fresh request matches the documented intended status/destination. Any changed internal links resolve to the approved destination; attach before/after responses.",
+      "owner": "Technical SEO reviewer with web engineer (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    },
+    {
+      "issue_id": "issue-301503fd0bb1",
+      "root_cause_key": "CANONICAL_REVIEW|https://fictional.example/private",
+      "subject": "https://fictional.example/private",
+      "primary_dimension": "technical",
+      "related_dimensions": [],
+      "technical_fact": "Observed canonical target(s): https://fictional.example/",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-59c793e20b11"
+      ],
+      "recommendation": "Confirm intended canonical and content equivalence; cross-page canonical can be intentional.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied."
+      },
+      "acceptance": "Record whether the existing canonical is intentional. If changed, one consistent intended canonical is present across the reviewed declarations; its target is reachable and equivalent.",
+      "owner": "Technical SEO reviewer with web engineer (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    },
+    {
+      "issue_id": "issue-e05bc57614ca",
+      "root_cause_key": "NOINDEX_REVIEW|https://fictional.example/private",
+      "subject": "https://fictional.example/private",
+      "primary_dimension": "technical",
+      "related_dimensions": [],
+      "technical_fact": "Collected HTML or HTTP robots directive includes noindex.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-59c793e20b11"
+      ],
+      "recommendation": "Confirm intended exclusion before considering any directive change.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied."
+      },
+      "acceptance": "The recorded directive matches documented visibility intent in a fresh response and rendered check. If visibility is intended, inspect Search Console separately; do not equate directive removal with indexing.",
+      "owner": "Technical SEO reviewer with web engineer (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    },
+    {
+      "issue_id": "issue-10815e17eca9",
+      "root_cause_key": "EMPTY_META_DESCRIPTION|https://fictional.example/private",
+      "subject": "https://fictional.example/private",
+      "primary_dimension": "onpage_content",
+      "related_dimensions": [],
+      "technical_fact": "meta_description is empty in collected HTML.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-59c793e20b11"
+      ],
+      "recommendation": "Review a descriptive field for the page purpose; absence is not proof of a ranking penalty.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied."
+      },
+      "acceptance": "Each scoped URL has an approved meta description or a documented reason for retaining/omitting it. Fresh HTML/rendered evidence matches the approved copy; no ranking or click-rate gain is assumed.",
+      "owner": "Content editor with SEO reviewer (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    },
+    {
+      "issue_id": "issue-3efd990c9dbe",
+      "root_cause_key": "CWV_LCP|https://fictional.example/|mobile|2026-10-15",
+      "subject": "https://fictional.example/|mobile|2026-10-15",
+      "primary_dimension": "technical",
+      "related_dimensions": [],
+      "technical_fact": "Supplied field p75 LCP = 3000 ms; above good threshold 2500.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-3c077eaeea41"
+      ],
+      "recommendation": "Investigate experience using the same scope/device/window; do not promise ranking gains.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Investigate this supplied field threshold exceedance using comparable scope/device data; business urgency is not established."
+      },
+      "acceptance": "Record before/after LCP for the same scope/device; target p75 <= 2500 ms. Keep the outcome unresolved until a comparable field window is available; lab improvements alone do not close it.",
+      "owner": "Technical SEO reviewer with web engineer (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    },
+    {
+      "issue_id": "issue-fa846f76ab6f",
+      "root_cause_key": "FIELD_MISMATCH_PHONE|fictional-store-1|2026-10-16",
+      "subject": "fictional-store-1|2026-10-16",
+      "primary_dimension": "local",
+      "related_dimensions": [],
+      "technical_fact": "Supplied phone differs: website='000-0000'; reference='000-0001'.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-35d5950d49f0"
+      ],
+      "recommendation": "Confirm entity/variant, effective time and authoritative value before updating either source.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied."
+      },
+      "acceptance": "Fresh paired phone evidence matches the authoritative value for the same identity/time, or the intentional difference is documented. For price, compare only identical currencies and variants; attach both observations.",
+      "owner": "Local operations manager (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    },
+    {
+      "issue_id": "issue-e1f671956c40",
+      "root_cause_key": "FIELD_MISMATCH_PRICE|fictional-mug|blue|2026-10-16",
+      "subject": "fictional-mug|blue|2026-10-16",
+      "primary_dimension": "ecommerce",
+      "related_dimensions": [
+        "onpage_content"
+      ],
+      "technical_fact": "Supplied price differs: website='12.00'; reference='10.00'.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-b7125bc669ca"
+      ],
+      "recommendation": "Confirm entity/variant, effective time and authoritative value before updating either source.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied."
+      },
+      "acceptance": "Fresh paired price evidence matches the authoritative value for the same identity/time, or the intentional difference is documented. For price, compare only identical currencies and variants; attach both observations.",
+      "owner": "Catalog operations manager with web engineer (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    },
+    {
+      "issue_id": "issue-975c4796c099",
+      "root_cause_key": "HREFLANG_RETURN|https://fictional.example/|https://fictional.example/fr/",
+      "subject": "https://fictional.example/|https://fictional.example/fr/",
+      "primary_dimension": "international",
+      "related_dimensions": [],
+      "technical_fact": "Collected target HTML lacks a return reference to the source.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-de4d873a90fa"
+      ],
+      "recommendation": "Check intended cluster and all declaration methods before changing alternates.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Resolve the observed signal and its intent before approving a change; no measured business urgency or effort estimate is supplied."
+      },
+      "acceptance": "Each intended cluster member has a consistent unique mapping, self-reference and reciprocal references across the chosen strategy. Record status and canonical checks for every target; missing sample pages remain unresolved, not failed.",
+      "owner": "Localization lead with technical SEO reviewer (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "bucket": "needs_verification"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "e-17e7e31e0b58",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://fictional.example/",
+      "locator": "fictional-inline-fixture"
+    },
+    {
+      "evidence_id": "e-3c2e659c7faa",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://fictional.example/fr/",
+      "locator": "fictional-inline-fixture"
+    },
+    {
+      "evidence_id": "e-5e04a41bed8b",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://fictional.example/deleted",
+      "locator": "fictional-inline-fixture"
+    },
+    {
+      "evidence_id": "e-59c793e20b11",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://fictional.example/private",
+      "locator": "fictional-inline-fixture"
+    },
+    {
+      "evidence_id": "e-3c077eaeea41",
+      "source": "Fictional manual export; no API connection",
+      "date": "2026-10-16",
+      "scope": "https://fictional.example/",
+      "locator": "cwv:LCP"
+    },
+    {
+      "evidence_id": "e-35d5950d49f0",
+      "source": "Fictional manual export; no API connection",
+      "date": "2026-10-16",
+      "scope": {
+        "entity_id": "fictional-store-1",
+        "observed_at": "2026-10-16"
+      },
+      "locator": "local:Fictional business-profile snapshot"
+    },
+    {
+      "evidence_id": "e-b7125bc669ca",
+      "source": "Fictional manual export; no API connection",
+      "date": "2026-10-16",
+      "scope": {
+        "product_id": "fictional-mug",
+        "variant_id": "blue",
+        "observed_at": "2026-10-16"
+      },
+      "locator": "products:Fictional supplied Offer extraction"
+    },
+    {
+      "evidence_id": "e-de4d873a90fa",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://fictional.example/",
+      "locator": "hreflang"
+    },
+    {
+      "evidence_id": "e-3ee0df5e0bdb",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://fictional.example/fr/",
+      "locator": "hreflang"
+    },
+    {
+      "evidence_id": "e-eb18ce0221d3",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://fictional.example/private",
+      "locator": "hreflang"
+    }
+  ],
+  "limitations": [
+    "No overall health/authority score, traffic loss, ranking penalty or ROI is calculated.",
+    "Semantic review is pending; this deterministic script does not perform AI review.",
+    "JSON-LD checks are not official rich-result validation. FAQ rich results were removed May 7, 2026; no FAQ rich-result benefit is promised.",
+    "Priority is qualitative and pending business-impact/effort/owner evidence; technical severity is separate."
+  ]
+}

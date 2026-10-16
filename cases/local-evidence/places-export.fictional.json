@@ -1,0 +1,22 @@
+{
+  "id": "fictional-place-north",
+  "displayName": {
+    "text": "Fictional Fern Studio"
+  },
+  "formattedAddress": "10 Example Road Unit 2",
+  "internationalPhoneNumber": "+1 202 555 0100",
+  "rating": 3.0,
+  "userRatingCount": 120,
+  "reviews": [
+    {
+      "rating": 1
+    },
+    {
+      "rating": 4
+    },
+    {
+      "rating": 5
+    }
+  ],
+  "businessStatus": "OPERATIONAL"
+}

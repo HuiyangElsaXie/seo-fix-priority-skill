@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "classifications": [
+    "maps_js_signal"
+  ],
+  "evidence": [
+    {
+      "classification": "maps_js_signal",
+      "source_tag": "iframe",
+      "source_attribute": "data-src",
+      "opaque_pb_present": true,
+      "reason": "JavaScript or deferred placeholder signal; execution and rendering unverified"
+    }
+  ],
+  "branch_status": "unknown",
+  "rendered_verified": false,
+  "customer_visit_applicable": true,
+  "optional_recommendation": null,
+  "limitations": [
+    "Static HTML signals only; rendering, interactivity, availability and consent behavior are not verified.",
+    "JavaScript or consent-delayed maps may be absent from supplied HTML; absence is not proof of a missing map.",
+    "Opaque pb payloads, coordinates and place names do not establish branch identity. Short links are not resolved.",
+    "A map is optional user-experience support, not an automatic SEO defect or ranking requirement.",
+    "Only explicitly allowlisted Google hosts and map paths are recognized; no network requests are made."
+  ]
+}

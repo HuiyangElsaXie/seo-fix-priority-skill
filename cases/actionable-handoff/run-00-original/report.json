@@ -1,0 +1,888 @@
+{
+  "schema_version": "1.0",
+  "report_type": "bounded_six_dimension_evidence_review",
+  "intake": {
+    "mode": "industry_general",
+    "answers": {
+      "industry": {
+        "value": "Retail",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "fictional brief"
+      }
+    },
+    "sources": {
+      "brief": {
+        "description": "Fictional business owner brief",
+        "kind": "fictional_fixture",
+        "observed_at": "2026-10-16"
+      }
+    },
+    "as_of": "2026-10-16",
+    "invalid_source_ids": [],
+    "missing_essential": [
+      "audience",
+      "geography",
+      "language",
+      "primary_objective",
+      "resources",
+      "constraints",
+      "specific_problem"
+    ],
+    "objective": "unknown",
+    "interpretation": "Context is supplied and attributed, not independently verified. Malformed or future-dated sources cannot establish known answers. Missing context does not block technical observations."
+  },
+  "collection": {
+    "requested_url": "https://fictional.example/",
+    "final_url": "https://fictional.example/",
+    "started_at": "2026-10-16T00:00:00Z",
+    "finished_at": "2026-10-16T00:00:01Z",
+    "limitations": [
+      "Entirely synthetic truth test; no live site or user/client data."
+    ]
+  },
+  "sections": {
+    "technical": {
+      "applicability": {
+        "value": "yes",
+        "reason": "General website review dimension."
+      },
+      "evidence_status": "partial",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "url": "https://fictional.example/",
+          "http_status": 200
+        },
+        {
+          "url": "https://fictional.example/",
+          "canonical": [
+            "https://fictional.example/"
+          ],
+          "robots_meta": [],
+          "index_status": "unknown"
+        },
+        {
+          "url": "https://fictional.example/",
+          "jsonld_blocks": 2,
+          "validation": "presence and supplied JSON shape only; not official rich-result validation"
+        },
+        {
+          "url": "https://fictional.example/fr/",
+          "http_status": 200
+        },
+        {
+          "url": "https://fictional.example/fr/",
+          "canonical": [
+            "https://fictional.example/fr/"
+          ],
+          "robots_meta": [],
+          "index_status": "unknown"
+        },
+        {
+          "url": "https://fictional.example/fr/",
+          "jsonld_blocks": 0,
+          "validation": "presence and supplied JSON shape only; not official rich-result validation"
+        },
+        {
+          "url": "https://fictional.example/deleted",
+          "http_status": 404
+        },
+        {
+          "url": "https://fictional.example/private",
+          "http_status": 200
+        },
+        {
+          "url": "https://fictional.example/private",
+          "canonical": [
+            "https://fictional.example/"
+          ],
+          "robots_meta": [
+            "noindex"
+          ],
+          "index_status": "unknown"
+        },
+        {
+          "url": "https://fictional.example/private",
+          "jsonld_blocks": 0,
+          "validation": "presence and supplied JSON shape only; not official rich-result validation"
+        },
+        {
+          "internal_graph": [
+            {
+              "url": "https://fictional.example/",
+              "sample_inlinks": 0,
+              "sample_depth": 0
+            },
+            {
+              "url": "https://fictional.example/fr/",
+              "sample_inlinks": 1,
+              "sample_depth": 1
+            },
+            {
+              "url": "https://fictional.example/private",
+              "sample_inlinks": 0,
+              "sample_depth": null
+            }
+          ],
+          "sample_only": true,
+          "orphan_assessment": "unknown"
+        },
+        {
+          "cwv": {
+            "kind": "field",
+            "percentile": 75,
+            "scope": "https://fictional.example/",
+            "scope_type": "url",
+            "device": "mobile",
+            "window_start": "2026-09-18",
+            "window_end": "2026-10-15",
+            "metric": "LCP",
+            "value": 3000,
+            "unit": "ms"
+          },
+          "good_threshold": 2500,
+          "assessment": "above_good_threshold"
+        }
+      ],
+      "unknowns": [
+        "Crawl/HTML sample does not prove index inclusion, rendered parity, complete internal graph or robots access for every crawler.",
+        "CWV checks apply only to supplied valid metric/scope/device/window records; no overall CWV pass is inferred."
+      ],
+      "issue_ids": [
+        "issue-25c023a35282",
+        "issue-a1a8f98965ed",
+        "issue-301503fd0bb1",
+        "issue-e05bc57614ca",
+        "issue-3efd990c9dbe"
+      ],
+      "review_task": "Confirm intended visibility, canonical choices, rendering and business-critical paths; observed directives do not prove Google index status.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "Fictional manual export; no API connection",
+        "supplement_date": "2026-10-16"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "onpage_content": {
+      "applicability": {
+        "value": "yes",
+        "reason": "General website review dimension."
+      },
+      "evidence_status": "partial",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "url": "https://fictional.example/",
+          "title": "",
+          "meta_description": "",
+          "h1": [
+            "Fictional shop"
+          ]
+        },
+        {
+          "url": "https://fictional.example/fr/",
+          "title": "Fictional shop",
+          "meta_description": "",
+          "h1": [
+            "Fictional shop"
+          ]
+        },
+        {
+          "url": "https://fictional.example/private",
+          "title": "Synthetic private page",
+          "meta_description": "",
+          "h1": [
+            "Fictional shop"
+          ]
+        }
+      ],
+      "unknowns": [
+        "https://fictional.example/deleted: HTML parse not confirmed or HTML media type unavailable; metadata and content checks not assessed.",
+        "Full-content task satisfaction and factual accuracy need semantic review; excerpts/word counts cannot establish thin content."
+      ],
+      "issue_ids": [
+        "issue-4f63b549389e",
+        "issue-bb3319679a5e",
+        "issue-cbdc88d4e6c1",
+        "issue-10815e17eca9",
+        "issue-e1f671956c40"
+      ],
+      "review_task": "Review reader task, accuracy, first-hand evidence, authorship and useful next steps in full content. Do not score E-E-A-T, keyword density or word count.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "offpage": {
+      "applicability": {
+        "value": "yes",
+        "reason": "General website review dimension."
+      },
+      "evidence_status": "partial",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "supplied_records": 1,
+          "unique_link_records": 1,
+          "link_liveness": "not_verified"
+        }
+      ],
+      "unknowns": [
+        "Supplied sample is not a complete backlink index or reputation assessment."
+      ],
+      "issue_ids": [],
+      "review_task": "Review relevance, independence, paid relationships and sample bias. DA/DR are third-party measures, not Google authority scores.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "Fictional manual export; no API connection",
+        "supplement_date": "2026-10-16"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "local": {
+      "applicability": {
+        "value": "yes",
+        "reason": "Fictional in-person shop confirmed by supplied brief.",
+        "source": "Fictional brief",
+        "date": "2026-10-16"
+      },
+      "evidence_status": "checked",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "identity": {
+            "entity_id": "fictional-store-1",
+            "observed_at": "2026-10-16"
+          },
+          "reference_source": "Fictional business-profile snapshot",
+          "comparison": "supplied observations only"
+        }
+      ],
+      "unknowns": [],
+      "issue_ids": [
+        "issue-fa846f76ab6f"
+      ],
+      "review_task": "Confirm real customer contact/service eligibility, branch identity and privacy before suggesting a Business Profile; a city/address alone establishes no eligibility.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "Fictional manual export; no API connection",
+        "supplement_date": "2026-10-16"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "ecommerce": {
+      "applicability": {
+        "value": "yes",
+        "reason": "Fictional site currently sells mugs.",
+        "source": "Fictional brief",
+        "date": "2026-10-16"
+      },
+      "evidence_status": "checked",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "url": "https://fictional.example/",
+          "applicability_candidate": "Product/Offer markup observed; current selling purpose still requires business confirmation."
+        },
+        {
+          "identity": {
+            "product_id": "fictional-mug",
+            "variant_id": "blue",
+            "observed_at": "2026-10-16"
+          },
+          "reference_source": "Fictional supplied Offer extraction",
+          "comparison": "supplied observations only"
+        }
+      ],
+      "unknowns": [],
+      "issue_ids": [
+        "issue-e1f671956c40"
+      ],
+      "review_task": "Confirm current selling purpose, variants, purchase flow, delivery and returns; past ecommerce case studies do not make this site a shop.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "Fictional manual export; no API connection",
+        "supplement_date": "2026-10-16"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "international": {
+      "applicability": {
+        "value": "yes",
+        "reason": "Fictional English and French variants are intentional.",
+        "source": "Fictional brief",
+        "date": "2026-10-16"
+      },
+      "evidence_status": "partial",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "url": "https://fictional.example/",
+          "html_hreflang": [
+            {
+              "lang": "en",
+              "url": "https://fictional.example/"
+            },
+            {
+              "lang": "fr",
+              "url": "https://fictional.example/fr/"
+            }
+          ],
+          "scope": "collected HTML only"
+        },
+        {
+          "url": "https://fictional.example/fr/",
+          "html_hreflang": [
+            {
+              "lang": "fr",
+              "url": "https://fictional.example/fr/"
+            }
+          ],
+          "scope": "collected HTML only"
+        },
+        {
+          "url": "https://fictional.example/private",
+          "html_hreflang": [],
+          "scope": "collected HTML only"
+        }
+      ],
+      "unknowns": [
+        "https://fictional.example/private: no HTML hreflang collected; check actual alternate strategy and other delivery methods."
+      ],
+      "issue_ids": [
+        "issue-975c4796c099"
+      ],
+      "review_task": "Review actual language/market purpose, translation quality and regional requirements; single-language sites need no standalone missing-hreflang warning.",
+      "source_timestamps": {
+        "collection_finished_at": "2026-10-16T00:00:01Z",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    }
+  },
+  "findings": [
+    {
+      "issue_id": "issue-4f63b549389e",
+      "root_cause_key": "EMPTY_TITLE|https://fictional.example/",
+      "subject": "https://fictional.example/",
+      "primary_dimension": "onpage_content",
+      "related_dimensions": [],
+      "technical_fact": "title is empty in collected HTML.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-17e7e31e0b58"
+      ],
+      "recommendation": "Review a descriptive field for the page purpose; absence is not proof of a ranking penalty.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ]
+      },
+      "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+      "owner": "unassigned",
+      "effort": "unknown"
+    },
+    {
+      "issue_id": "issue-bb3319679a5e",
+      "root_cause_key": "EMPTY_META_DESCRIPTION|https://fictional.example/",
+      "subject": "https://fictional.example/",
+      "primary_dimension": "onpage_content",
+      "related_dimensions": [],
+      "technical_fact": "meta_description is empty in collected HTML.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-17e7e31e0b58"
+      ],
+      "recommendation": "Review a descriptive field for the page purpose; absence is not proof of a ranking penalty.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ]
+      },
+      "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+      "owner": "unassigned",
+      "effort": "unknown"
+    },
+    {
+      "issue_id": "issue-25c023a35282",
+      "root_cause_key": "JSONLD_SHAPE|https://fictional.example/",
+      "subject": "https://fictional.example/",
+      "primary_dimension": "technical",
+      "related_dimensions": [],
+      "technical_fact": "JSON-LD block 1 has a parse error or non-object/non-array root.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-17e7e31e0b58"
+      ],
+      "recommendation": "Inspect raw JSON and relevant schema; use official validation separately where applicable.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ]
+      },
+      "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+      "owner": "unassigned",
+      "effort": "unknown"
+    },
+    {
+      "issue_id": "issue-cbdc88d4e6c1",
+      "root_cause_key": "EMPTY_META_DESCRIPTION|https://fictional.example/fr/",
+      "subject": "https://fictional.example/fr/",
+      "primary_dimension": "onpage_content",
+      "related_dimensions": [],
+      "technical_fact": "meta_description is empty in collected HTML.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-3c2e659c7faa"
+      ],
+      "recommendation": "Review a descriptive field for the page purpose; absence is not proof of a ranking penalty.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ]
+      },
+      "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+      "owner": "unassigned",
+      "effort": "unknown"
+    },
+    {
+      "issue_id": "issue-a1a8f98965ed",
+      "root_cause_key": "HTTP_ERROR|https://fictional.example/deleted",
+      "subject": "https://fictional.example/deleted",
+      "primary_dimension": "technical",
+      "related_dimensions": [],
+      "technical_fact": "Collected HTTP status 404.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "error",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-5e04a41bed8b"
+      ],
+      "recommendation": "Confirm URL lifecycle and intended audience; investigate service or approved replacement.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ]
+      },
+      "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+      "owner": "unassigned",
+      "effort": "unknown"
+    },
+    {
+      "issue_id": "issue-301503fd0bb1",
+      "root_cause_key": "CANONICAL_REVIEW|https://fictional.example/private",
+      "subject": "https://fictional.example/private",
+      "primary_dimension": "technical",
+      "related_dimensions": [],
+      "technical_fact": "Observed canonical target(s): https://fictional.example/",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-59c793e20b11"
+      ],
+      "recommendation": "Confirm intended canonical and content equivalence; cross-page canonical can be intentional.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ]
+      },
+      "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+      "owner": "unassigned",
+      "effort": "unknown"
+    },
+    {
+      "issue_id": "issue-e05bc57614ca",
+      "root_cause_key": "NOINDEX_REVIEW|https://fictional.example/private",
+      "subject": "https://fictional.example/private",
+      "primary_dimension": "technical",
+      "related_dimensions": [],
+      "technical_fact": "Collected HTML or HTTP robots directive includes noindex.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-59c793e20b11"
+      ],
+      "recommendation": "Confirm intended exclusion before considering any directive change.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ]
+      },
+      "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+      "owner": "unassigned",
+      "effort": "unknown"
+    },
+    {
+      "issue_id": "issue-10815e17eca9",
+      "root_cause_key": "EMPTY_META_DESCRIPTION|https://fictional.example/private",
+      "subject": "https://fictional.example/private",
+      "primary_dimension": "onpage_content",
+      "related_dimensions": [],
+      "technical_fact": "meta_description is empty in collected HTML.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-59c793e20b11"
+      ],
+      "recommendation": "Review a descriptive field for the page purpose; absence is not proof of a ranking penalty.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ]
+      },
+      "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+      "owner": "unassigned",
+      "effort": "unknown"
+    },
+    {
+      "issue_id": "issue-3efd990c9dbe",
+      "root_cause_key": "CWV_LCP|https://fictional.example/|mobile|2026-10-15",
+      "subject": "https://fictional.example/|mobile|2026-10-15",
+      "primary_dimension": "technical",
+      "related_dimensions": [],
+      "technical_fact": "Supplied field p75 LCP = 3000 ms; above good threshold 2500.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-3c077eaeea41"
+      ],
+      "recommendation": "Investigate experience using the same scope/device/window; do not promise ranking gains.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ]
+      },
+      "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+      "owner": "unassigned",
+      "effort": "unknown"
+    },
+    {
+      "issue_id": "issue-fa846f76ab6f",
+      "root_cause_key": "FIELD_MISMATCH_PHONE|fictional-store-1|2026-10-16",
+      "subject": "fictional-store-1|2026-10-16",
+      "primary_dimension": "local",
+      "related_dimensions": [],
+      "technical_fact": "Supplied phone differs: website='000-0000'; reference='000-0001'.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-35d5950d49f0"
+      ],
+      "recommendation": "Confirm entity/variant, effective time and authoritative value before updating either source.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ]
+      },
+      "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+      "owner": "unassigned",
+      "effort": "unknown"
+    },
+    {
+      "issue_id": "issue-e1f671956c40",
+      "root_cause_key": "FIELD_MISMATCH_PRICE|fictional-mug|blue|2026-10-16",
+      "subject": "fictional-mug|blue|2026-10-16",
+      "primary_dimension": "ecommerce",
+      "related_dimensions": [
+        "onpage_content"
+      ],
+      "technical_fact": "Supplied price differs: website='12.00'; reference='10.00'.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-b7125bc669ca"
+      ],
+      "recommendation": "Confirm entity/variant, effective time and authoritative value before updating either source.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ]
+      },
+      "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+      "owner": "unassigned",
+      "effort": "unknown"
+    },
+    {
+      "issue_id": "issue-975c4796c099",
+      "root_cause_key": "HREFLANG_RETURN|https://fictional.example/|https://fictional.example/fr/",
+      "subject": "https://fictional.example/|https://fictional.example/fr/",
+      "primary_dimension": "international",
+      "related_dimensions": [],
+      "technical_fact": "Collected target HTML lacks a return reference to the source.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-de4d873a90fa"
+      ],
+      "recommendation": "Check intended cluster and all declaration methods before changing alternates.",
+      "priority": {
+        "value": "pending",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ]
+      },
+      "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+      "owner": "unassigned",
+      "effort": "unknown"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "e-17e7e31e0b58",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://fictional.example/",
+      "locator": "fictional-inline-fixture"
+    },
+    {
+      "evidence_id": "e-3c2e659c7faa",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://fictional.example/fr/",
+      "locator": "fictional-inline-fixture"
+    },
+    {
+      "evidence_id": "e-5e04a41bed8b",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://fictional.example/deleted",
+      "locator": "fictional-inline-fixture"
+    },
+    {
+      "evidence_id": "e-59c793e20b11",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://fictional.example/private",
+      "locator": "fictional-inline-fixture"
+    },
+    {
+      "evidence_id": "e-3c077eaeea41",
+      "source": "Fictional manual export; no API connection",
+      "date": "2026-10-16",
+      "scope": "https://fictional.example/",
+      "locator": "cwv:LCP"
+    },
+    {
+      "evidence_id": "e-35d5950d49f0",
+      "source": "Fictional manual export; no API connection",
+      "date": "2026-10-16",
+      "scope": {
+        "entity_id": "fictional-store-1",
+        "observed_at": "2026-10-16"
+      },
+      "locator": "local:Fictional business-profile snapshot"
+    },
+    {
+      "evidence_id": "e-b7125bc669ca",
+      "source": "Fictional manual export; no API connection",
+      "date": "2026-10-16",
+      "scope": {
+        "product_id": "fictional-mug",
+        "variant_id": "blue",
+        "observed_at": "2026-10-16"
+      },
+      "locator": "products:Fictional supplied Offer extraction"
+    },
+    {
+      "evidence_id": "e-de4d873a90fa",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://fictional.example/",
+      "locator": "hreflang"
+    },
+    {
+      "evidence_id": "e-3ee0df5e0bdb",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://fictional.example/fr/",
+      "locator": "hreflang"
+    },
+    {
+      "evidence_id": "e-eb18ce0221d3",
+      "source": "snapshot",
+      "date": "2026-10-16T00:00:00Z",
+      "scope": "https://fictional.example/private",
+      "locator": "hreflang"
+    }
+  ],
+  "limitations": [
+    "No overall health/authority score, traffic loss, ranking penalty or ROI is calculated.",
+    "Semantic review is pending; this deterministic script does not perform AI review.",
+    "JSON-LD checks are not official rich-result validation. FAQ rich results were removed May 7, 2026; no FAQ rich-result benefit is promised.",
+    "Priority is qualitative and pending business-impact/effort/owner evidence; technical severity is separate."
+  ]
+}

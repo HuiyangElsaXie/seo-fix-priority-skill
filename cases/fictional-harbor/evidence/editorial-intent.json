@@ -1,0 +1,77 @@
+{
+  "E01": {
+    "intent": "index",
+    "importance": "critical",
+    "effort": null
+  },
+  "E02": {
+    "intent": "index",
+    "importance": "critical",
+    "effort": 3
+  },
+  "E03": {
+    "intent": "index",
+    "importance": "critical",
+    "effort": 2
+  },
+  "E04": {
+    "intent": "index",
+    "importance": "critical",
+    "effort": null
+  },
+  "E05": {
+    "intent": "index",
+    "importance": "supporting",
+    "effort": 4
+  },
+  "E06": {
+    "intent": "index",
+    "importance": "critical",
+    "effort": 4
+  },
+  "E07": {
+    "intent": "index",
+    "importance": "supporting",
+    "effort": 2
+  },
+  "E08": {
+    "intent": "unknown",
+    "importance": "unknown",
+    "effort": null
+  },
+  "E09": {
+    "intent": "exclude",
+    "importance": "low",
+    "effort": null
+  },
+  "E10": {
+    "intent": "exclude",
+    "importance": "low",
+    "effort": null
+  },
+  "E11": {
+    "intent": "index",
+    "importance": "critical",
+    "effort": null
+  },
+  "E12": {
+    "intent": "index",
+    "importance": "supporting",
+    "effort": null
+  },
+  "E13": {
+    "intent": "index",
+    "importance": "supporting",
+    "effort": null
+  },
+  "E14": {
+    "intent": "exclude",
+    "importance": "low",
+    "effort": null
+  },
+  "E15": {
+    "intent": "exclude",
+    "importance": "low",
+    "effort": null
+  }
+}

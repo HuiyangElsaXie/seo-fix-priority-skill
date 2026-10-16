@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-10-16",
+  "target": {
+    "entity_id": "fictional-fern",
+    "branch_id": "fictional-north",
+    "place_id": "fictional-place-north",
+    "market": "fictional-riverton"
+  },
+  "observation": {
+    "id": "fictional-google-export",
+    "source_url": "https://example.invalid/fictional-place",
+    "captured_at": "2026-10-16",
+    "observed_at": "2026-10-16",
+    "category": "fictional-studio",
+    "comparison_group": "fictional-nearby-studios",
+    "maturity_group": "fictional-established"
+  }
+}

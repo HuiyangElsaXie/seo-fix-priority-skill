@@ -1,0 +1,11 @@
+{
+  "as_of": "2026-10-16",
+  "applicability": {
+    "local": {
+      "value": "yes",
+      "reason": "Fictional owner confirms local customer-facing branch for test purposes.",
+      "source": "Fictional owner brief",
+      "date": "2026-10-16"
+    }
+  }
+}

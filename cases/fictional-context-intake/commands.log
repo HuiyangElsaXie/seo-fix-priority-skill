@@ -1,0 +1,5 @@
+python cases/fictional-context-intake/run_case.py > cases/fictional-context-intake/verification.txt
+python -m unittest discover -s tests -v > evals/results/unittest-intake-v03-20261016.txt 2>&1
+python cases/fictional-harbor/verify_case.py
+python legacy/v0.2/scripts/triage.py cases/fictional-harbor/input.v1.json > /tmp/seo-baseline-replay.json
+# Parsed replay equality: output.v2.json True; initial output.v1.json False (historical confidence clarification retained).

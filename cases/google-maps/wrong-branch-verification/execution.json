@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "$PROJECT/scripts/six_dimension_report.py",
+    "$PROJECT/cases/google-maps/wrong-branch-verification/snapshot.json",
+    "--context",
+    "$PROJECT/cases/google-maps/wrong-branch-verification/context.json",
+    "--out",
+    "$PROJECT/cases/google-maps/wrong-branch-verification/actual-report",
+    "--local-evidence",
+    "$PROJECT/cases/google-maps/wrong-branch-verification/local-evidence.json"
+  ],
+  "returncode": 0,
+  "stdout": "$PROJECT/cases/google-maps/wrong-branch-verification/actual-report\n",
+  "stderr": ""
+}

@@ -1,0 +1,30 @@
+{
+  "fictional": true,
+  "site": "https://mossnote.example",
+  "rows": [
+    {
+      "url": "https://mossnote.example/templates",
+      "status": 404,
+      "indexable": true,
+      "canonical": "",
+      "page_role": "lead",
+      "owner": "Web developer"
+    },
+    {
+      "url": "https://mossnote.example/blog/notes",
+      "status": 200,
+      "indexable": true,
+      "canonical": "https://mossnote.example/blog/notes",
+      "page_role": "support",
+      "owner": "Content editor"
+    },
+    {
+      "url": "https://mossnote.example/private-preview",
+      "status": 200,
+      "indexable": false,
+      "canonical": "",
+      "page_role": "private",
+      "owner": "Web developer"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "same_report_json": true,
+  "same_handoff": true,
+  "counts": {
+    "confirmed_fix": 5,
+    "needs_verification": 8,
+    "optional_improvement": 1,
+    "keep_or_not_applicable": 4
+  },
+  "sha256": {
+    "scripts/six_dimension_report.py": "51340e158ade55feb749bc4e3df7f50f9e59d690cb5217d61c50b2a7e38609a2",
+    "tests/test_handoff_truth.py": "6f70e2b24a71d1fc88e4d1e1e0d45ce2f3a7ef3f075342ecfa23f1a4e9331d1b",
+    "cases/actionable-handoff/review.json": "d549cea263552f5001a32b3e50605f943a2366cc0eae5e1d5c7c7e43ebf1b4bb",
+    "cases/actionable-handoff/run-06-freeze/report.json": "0e0740b998f4bc4f040c12270e8870ffdba762b3a00272cb8115072bc77d527c",
+    "cases/actionable-handoff/run-06-freeze/report.md": "266df2e7f58ade0f4a0cf767a9248f41b60b70a6945df1a7a56022d1d97db5fa",
+    "cases/actionable-handoff/run-06-full-suite.txt": "b6f36304958da6554df3fc61810343c6897d74d7e9e78a013826707e4d3d0fc9"
+  }
+}

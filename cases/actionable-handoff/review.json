@@ -1,0 +1,151 @@
+{
+  "input_fingerprint": "81840cae3e321e6bf8c5cda4d4ac59eccae5c5f5d6db2a111a96e91ddf14296e",
+  "reviewer": "Synthetic QA reviewer",
+  "date": "2026-10-16",
+  "source": "Synthetic acceptance ledger; generated fixture, not independent site review",
+  "decisions": [
+    {
+      "issue_id": "issue-25c023a35282",
+      "evidence_ids": [
+        "e-17e7e31e0b58"
+      ],
+      "decision": "confirmed_fix",
+      "rationale": "Synthetic reviewer compares this exact observation to the deliberately constructed acceptance ledger.",
+      "intended_behavior": "The deliberately malformed second JSON-LD block must parse as a JSON object.",
+      "business_context_basis": "Synthetic retail discovery brief; no quantified urgency or impact and no assigned owner.",
+      "steps": [
+        "Replace the malformed synthetic second JSON-LD block with the approved visible-content object."
+      ],
+      "acceptance": [
+        "Parse the second block successfully and compare its properties with visible synthetic content; preserve validator output."
+      ]
+    },
+    {
+      "issue_id": "issue-4f63b549389e",
+      "evidence_ids": [
+        "e-17e7e31e0b58"
+      ],
+      "decision": "confirmed_fix",
+      "rationale": "Synthetic reviewer compares this exact observation to the deliberately constructed acceptance ledger.",
+      "intended_behavior": "The synthetic public shop homepage must display its approved descriptive title.",
+      "business_context_basis": "Synthetic retail discovery brief; no quantified urgency or impact and no assigned owner.",
+      "steps": [
+        "Add the approved synthetic homepage title to the page template and capture rendered and raw HTML."
+      ],
+      "acceptance": [
+        "The homepage has exactly the approved nonempty descriptive title in rendered and raw captures."
+      ]
+    },
+    {
+      "issue_id": "issue-fa846f76ab6f",
+      "evidence_ids": [
+        "e-35d5950d49f0"
+      ],
+      "decision": "confirmed_fix",
+      "rationale": "Synthetic reviewer compares this exact observation to the deliberately constructed acceptance ledger.",
+      "intended_behavior": "Synthetic branch ledger confirms 000-0001 as the intended current phone.",
+      "business_context_basis": "Synthetic retail discovery brief; no quantified urgency or impact and no assigned owner.",
+      "steps": [
+        "Update only the synthetic website phone to the value in the dated synthetic branch ledger."
+      ],
+      "acceptance": [
+        "Same-branch fresh website and authoritative synthetic ledger both show 000-0001."
+      ],
+      "authoritative_source": "Synthetic branch/catalog ledger dated 2026-10-16; fixture assertion only"
+    },
+    {
+      "issue_id": "issue-e1f671956c40",
+      "evidence_ids": [
+        "e-b7125bc669ca"
+      ],
+      "decision": "confirmed_fix",
+      "rationale": "Synthetic reviewer compares this exact observation to the deliberately constructed acceptance ledger.",
+      "intended_behavior": "Synthetic catalog ledger confirms CAD 10.00 for the blue mug variant.",
+      "business_context_basis": "Synthetic retail discovery brief; no quantified urgency or impact and no assigned owner.",
+      "steps": [
+        "Update only the synthetic blue mug website price to CAD 10.00 from the authoritative dated catalog fixture."
+      ],
+      "acceptance": [
+        "Fresh paired blue-variant captures show CAD 10.00; no other currency or variant was changed."
+      ],
+      "authoritative_source": "Synthetic branch/catalog ledger dated 2026-10-16; fixture assertion only"
+    },
+    {
+      "issue_id": "issue-975c4796c099",
+      "evidence_ids": [
+        "e-de4d873a90fa"
+      ],
+      "decision": "confirmed_fix",
+      "rationale": "Synthetic reviewer compares this exact observation to the deliberately constructed acceptance ledger.",
+      "intended_behavior": "The synthetic English/French cluster is intended reciprocal; fixture review excludes header/sitemap alternatives.",
+      "business_context_basis": "Synthetic retail discovery brief; no quantified urgency or impact and no assigned owner.",
+      "steps": [
+        "Add the English return alternate to the synthetic French page and retain its French self-reference."
+      ],
+      "acceptance": [
+        "Both collected cluster members reciprocate with intended language mappings; record reachable status and canonical checks."
+      ]
+    },
+    {
+      "issue_id": "issue-bb3319679a5e",
+      "evidence_ids": [
+        "e-17e7e31e0b58"
+      ],
+      "decision": "optional_improvement",
+      "rationale": "Synthetic reviewer compares this exact observation to the deliberately constructed acceptance ledger.",
+      "intended_behavior": "A truthful summary is optional editorial work, not a diagnosed ranking penalty.",
+      "business_context_basis": "Synthetic retail discovery brief; no quantified urgency or impact and no assigned owner.",
+      "steps": [
+        "Draft a useful summary only if the synthetic editor judges it helpful to the reader."
+      ],
+      "acceptance": [
+        "If adopted, fresh HTML matches the approved truthful summary; no gain is promised."
+      ]
+    },
+    {
+      "issue_id": "issue-e05bc57614ca",
+      "evidence_ids": [
+        "e-59c793e20b11"
+      ],
+      "decision": "keep_or_not_applicable",
+      "rationale": "Synthetic reviewer compares this exact observation to the deliberately constructed acceptance ledger.",
+      "intended_behavior": "Private synthetic page is deliberately excluded from search.",
+      "business_context_basis": "Synthetic retail discovery brief; no quantified urgency or impact and no assigned owner.",
+      "visibility_intent": "exclude"
+    },
+    {
+      "issue_id": "issue-301503fd0bb1",
+      "evidence_ids": [
+        "e-59c793e20b11"
+      ],
+      "decision": "keep_or_not_applicable",
+      "rationale": "Synthetic reviewer compares this exact observation to the deliberately constructed acceptance ledger.",
+      "intended_behavior": "Synthetic private alternate intentionally canonicalizes to the public homepage.",
+      "business_context_basis": "Synthetic retail discovery brief; no quantified urgency or impact and no assigned owner.",
+      "visibility_intent": "canonicalize_elsewhere"
+    },
+    {
+      "issue_id": "issue-a1a8f98965ed",
+      "evidence_ids": [
+        "e-5e04a41bed8b"
+      ],
+      "decision": "keep_or_not_applicable",
+      "rationale": "Synthetic reviewer compares this exact observation to the deliberately constructed acceptance ledger.",
+      "intended_behavior": "Synthetic deleted URL is deliberately retired with HTTP 404.",
+      "business_context_basis": "Synthetic retail discovery brief; no quantified urgency or impact and no assigned owner.",
+      "url_lifecycle": "retired"
+    }
+  ],
+  "section_reviews": [
+    {
+      "dimension": "offpage",
+      "evidence_ids": [
+        "e-400084789515"
+      ],
+      "decision": "keep_or_not_applicable",
+      "rationale": "This single synthetic backlink sample establishes no action; no automated offpage defect detection is implemented.",
+      "intended_behavior": "Retain this bounded sample only; liveness, completeness, reputation and paid status remain unknown.",
+      "business_context_basis": "Synthetic retail discovery brief; do not manufacture a link-removal or acquisition recommendation."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-16",
+  "target": {
+    "entity_id": "fictional-fern",
+    "branch_id": "fictional-north",
+    "place_id": "fictional-place-north",
+    "market": "fictional-riverton"
+  },
+  "config": {
+    "freshness_days": 30,
+    "max_pair_gap_days": 1,
+    "low_rating_threshold": 4.0,
+    "low_count_threshold": 10
+  },
+  "checked": [
+    {
+      "id": "fictional-profile",
+      "evidence": {
+        "id": "fictional-profile",
+        "entity_id": "fictional-fern",
+        "branch_id": "fictional-north",
+        "place_id": "fictional-place-north",
+        "market": "fictional-riverton",
+        "source_kind": "google_business_profile",
+        "source_url": "https://example.invalid/fictional-profile",
+        "captured_at": "2026-10-16",
+        "observed_at": "2026-10-16",
+        "coverage": "sample",
+        "maturity_group": "fictional-established"
+      },
+      "fresh": true,
+      "confidence": "low"
+    },
+    {
+      "id": "fictional-profile",
+      "operating_status": "unknown",
+      "ownership_verification_status": "unknown",
+      "status_scope": "Supplied assertions only; public operational status never proves ownership or GBP verification."
+    },
+    {
+      "id": "fictional-profile",
+      "visible_sample_count": 3,
+      "sample_caveat": "Visible samples are not the total and cannot establish aggregate rating or trends."
+    }
+  ],
+  "findings": [],
+  "unknowns": [
+    "fictional-profile: Google aggregate rating/count unknown from snapshot/sample coverage",
+    "NAP/hours paired website and reference evidence unavailable",
+    "Google aggregate trend unknown; two genuinely comparable dated aggregates required",
+    "Current Google aggregate reputation unknown; no valid supplied aggregate evidence"
+  ],
+  "rejected": [],
+  "limitations": [
+    "Supplied evidence is not independently verified; missing evidence is unknown, never zero.",
+    "Thresholds are configurable triage heuristics, not Google ranking factors or benchmarks.",
+    "Visible review samples cannot establish total volume, average rating or a trend; sample selection may be biased.",
+    "LocalBusiness checks cover supplied field presence/shape only, not Google eligibility, indexing or full schema validation.",
+    "No live Business Profile, Maps, API, network or paid data calls; no publishing or profile changes.",
+    "Invite genuine customers neutrally and consistently when appropriate; no incentives, review gating, fabricated reviews or automatic replies. Review any response for accuracy and privacy before approval.",
+    "Service-area and home-based businesses require address privacy review; never publish an address merely to fill a schema field.",
+    "Do not add self-serving Google review aggregateRating markup to the business own site as a rich-result recommendation."
+  ],
+  "source_truth": "supplied_input_not_independently_verified"
+}

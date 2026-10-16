@@ -1,0 +1,144 @@
+[
+  {
+    "case": "invalid",
+    "findings": [
+      {
+        "issue_id": "issue-b322658f4312",
+        "root_cause_key": "FIELD_MISMATCH_PHONE|fictional-store-1|not-a-date",
+        "subject": "fictional-store-1|not-a-date",
+        "primary_dimension": "local",
+        "related_dimensions": [],
+        "technical_fact": "Supplied phone differs: website='000-0000'; reference='000-0001'.",
+        "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+        "confirmation_status": "observed_signal",
+        "technical_severity": "review",
+        "confidence": {
+          "classification": "reproducible_rule_match_in_supplied_input",
+          "source_truth": "not_independently_verified",
+          "business_impact": "unknown",
+          "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+        },
+        "evidence_ids": [
+          "e-9035773868c7"
+        ],
+        "recommendation": "Confirm entity/variant, effective time and authoritative value before updating either source.",
+        "priority": {
+          "value": "pending",
+          "provisional": true,
+          "gates": [
+            "Confirm business impact and visibility intent",
+            "Supply sourced effort estimate and accountable owner"
+          ]
+        },
+        "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+        "owner": "unassigned",
+        "effort": "unknown"
+      },
+      {
+        "issue_id": "issue-82c16708277e",
+        "root_cause_key": "FIELD_MISMATCH_PRICE|fictional-mug|blue|not-a-date",
+        "subject": "fictional-mug|blue|not-a-date",
+        "primary_dimension": "ecommerce",
+        "related_dimensions": [
+          "onpage_content"
+        ],
+        "technical_fact": "Supplied price differs: website='12.00'; reference='10.00'.",
+        "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+        "confirmation_status": "observed_signal",
+        "technical_severity": "review",
+        "confidence": {
+          "classification": "reproducible_rule_match_in_supplied_input",
+          "source_truth": "not_independently_verified",
+          "business_impact": "unknown",
+          "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+        },
+        "evidence_ids": [
+          "e-ce86b66c0f3d"
+        ],
+        "recommendation": "Confirm entity/variant, effective time and authoritative value before updating either source.",
+        "priority": {
+          "value": "pending",
+          "provisional": true,
+          "gates": [
+            "Confirm business impact and visibility intent",
+            "Supply sourced effort estimate and accountable owner"
+          ]
+        },
+        "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+        "owner": "unassigned",
+        "effort": "unknown"
+      }
+    ]
+  },
+  {
+    "case": "future",
+    "findings": [
+      {
+        "issue_id": "issue-b98cfa628115",
+        "root_cause_key": "FIELD_MISMATCH_PHONE|fictional-store-1|2099-01-01",
+        "subject": "fictional-store-1|2099-01-01",
+        "primary_dimension": "local",
+        "related_dimensions": [],
+        "technical_fact": "Supplied phone differs: website='000-0000'; reference='000-0001'.",
+        "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+        "confirmation_status": "observed_signal",
+        "technical_severity": "review",
+        "confidence": {
+          "classification": "reproducible_rule_match_in_supplied_input",
+          "source_truth": "not_independently_verified",
+          "business_impact": "unknown",
+          "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+        },
+        "evidence_ids": [
+          "e-53169df671e0"
+        ],
+        "recommendation": "Confirm entity/variant, effective time and authoritative value before updating either source.",
+        "priority": {
+          "value": "pending",
+          "provisional": true,
+          "gates": [
+            "Confirm business impact and visibility intent",
+            "Supply sourced effort estimate and accountable owner"
+          ]
+        },
+        "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+        "owner": "unassigned",
+        "effort": "unknown"
+      },
+      {
+        "issue_id": "issue-1cc0c805525f",
+        "root_cause_key": "FIELD_MISMATCH_PRICE|fictional-mug|blue|2099-01-01",
+        "subject": "fictional-mug|blue|2099-01-01",
+        "primary_dimension": "ecommerce",
+        "related_dimensions": [
+          "onpage_content"
+        ],
+        "technical_fact": "Supplied price differs: website='12.00'; reference='10.00'.",
+        "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+        "confirmation_status": "observed_signal",
+        "technical_severity": "review",
+        "confidence": {
+          "classification": "reproducible_rule_match_in_supplied_input",
+          "source_truth": "not_independently_verified",
+          "business_impact": "unknown",
+          "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+        },
+        "evidence_ids": [
+          "e-a5d9511132aa"
+        ],
+        "recommendation": "Confirm entity/variant, effective time and authoritative value before updating either source.",
+        "priority": {
+          "value": "pending",
+          "provisional": true,
+          "gates": [
+            "Confirm business impact and visibility intent",
+            "Supply sourced effort estimate and accountable owner"
+          ]
+        },
+        "acceptance": "Recheck the same scoped evidence after an approved change and resolve the contextual review.",
+        "owner": "unassigned",
+        "effort": "unknown"
+      }
+    ]
+  }
+]

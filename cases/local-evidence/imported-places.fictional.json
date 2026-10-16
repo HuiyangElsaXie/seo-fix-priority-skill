@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-16",
+  "target": {
+    "entity_id": "fictional-fern",
+    "branch_id": "fictional-north",
+    "place_id": "fictional-place-north",
+    "market": "fictional-riverton"
+  },
+  "observations": [
+    {
+      "id": "fictional-google-export",
+      "source_url": "https://example.invalid/fictional-place",
+      "captured_at": "2026-10-16",
+      "observed_at": "2026-10-16",
+      "category": "fictional-studio",
+      "comparison_group": "fictional-nearby-studios",
+      "maturity_group": "fictional-established",
+      "entity_id": "fictional-fern",
+      "branch_id": "fictional-north",
+      "place_id": "fictional-place-north",
+      "market": "fictional-riverton",
+      "google_reviews": {
+        "rating": 3.0,
+        "total_count": 120,
+        "visible_sample_count": 3
+      },
+      "nap": {
+        "name": "Fictional Fern Studio",
+        "address": "10 Example Road Unit 2",
+        "phone": "+1 202 555 0100"
+      },
+      "operating_status": "OPERATIONAL",
+      "source_method": "supplied_places_api_response; no live API request or ownership verification",
+      "source_kind": "google_business_profile",
+      "coverage": "aggregate",
+      "export_sha256": "b67e945b992191d031dcc15cf0427a77e7562ef1165c64e966c3ee7e193f5e9c"
+    }
+  ]
+}

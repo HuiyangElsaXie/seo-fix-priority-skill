@@ -1,0 +1,16 @@
+Evidence ID,Address,Status Code,Export Indexable,Robots Blocked,Canonical Link,Title 1,Crawl Depth,Unique Inlinks,Redirect Count,Snapshot Date
+E01,https://harborflow.example/,200,yes,no,https://harborflow.example/,HarborFlow supplier onboarding,0,12,0,2026-10-14
+E02,https://harborflow.example/solutions/supplier-onboarding,200,no,no,https://harborflow.example/solutions/supplier-onboarding,Supplier onboarding platform,1,8,0,2026-10-14
+E03,https://harborflow.example/solutions/vendor-risk,200,yes,no,https://harborflow.example/solutions/vendor-risk,,2,6,0,2026-10-14
+E04,https://harborflow.example/demo,200,yes,no,https://harborflow.example/demo,Book a HarborFlow demo,1,10,0,2026-10-14
+E05,https://harborflow.example/resources/vendor-scorecard,200,yes,no,https://harborflow.example/resources/vendor-scorecard,Vendor scorecard template,5,0,0,2026-10-14
+E06,https://harborflow.example/solutions/procurement-automation,200,yes,no,https://harborflow.example/solutions/supplier-onboarding,Procurement automation,2,4,0,2026-10-14
+E07,https://harborflow.example/platform,301,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,7,2,2026-10-14
+E08,https://harborflow.example/resources/vendor-checklist-2023,404,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,2,0,2026-10-14
+E09,https://harborflow.example/thank-you/demo,200,no,no,https://harborflow.example/thank-you/demo,,2,0,0,2026-10-14
+E10,https://harborflow.example/internal-preview,200,no,yes,https://harborflow.example/internal-preview,,4,0,0,2026-10-14
+E11,https://harborflow.example/pricing,200,no,no,https://harborflow.example/pricing,Pricing,1,9,0,2026-08-20
+E12,https://harborflow.example/resources/api-integration,200,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,0,2026-10-14
+E13,https://harborflow.example/blog/vendor-risk-basics,200,yes,no,https://harborflow.example/blog/vendor-risk-basics,Vendor risk basics,2,5,0,2026-10-14
+E14,https://harborflow.example/legal/privacy,200,no,no,https://harborflow.example/legal/privacy,Privacy policy,1,20,0,2026-10-14
+E15,https://harborflow.example/campaigns/spring-demo,404,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,0,0,2026-10-14

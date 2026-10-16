@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "collection": {
+    "requested_url": "https://fictional.example/",
+    "final_url": "https://fictional.example/",
+    "started_at": "2026-10-16T00:00:00Z",
+    "finished_at": "2026-10-16T00:00:01Z",
+    "limitations": [
+      "Fictional fixture, not a live crawl."
+    ]
+  },
+  "pages": [
+    {
+      "url": "https://fictional.example/",
+      "status": 200,
+      "fetch_state": "ok",
+      "fetched_at": "2026-10-16T00:00:00Z",
+      "content_type": "text/html",
+      "title": "Fictional shop",
+      "meta_description": "",
+      "h1": [
+        "Fictional shop"
+      ],
+      "canonical": [
+        "https://fictional.example/"
+      ],
+      "robots_meta": [],
+      "hreflang": [
+        {
+          "lang": "en",
+          "url": "https://fictional.example/"
+        },
+        {
+          "lang": "fr",
+          "url": "https://fictional.example/fr/"
+        }
+      ],
+      "internal_links": [
+        "https://fictional.example/fr/"
+      ],
+      "jsonld": [
+        {
+          "valid_json": true,
+          "value": {
+            "@type": "Product",
+            "name": "Fictional mug",
+            "offers": {
+              "@type": "Offer",
+              "price": "12.00",
+              "priceCurrency": "CAD"
+            }
+          }
+        }
+      ],
+      "raw_artifact_path": "fictional-inline-fixture",
+      "parse_state": "parsed"
+    },
+    {
+      "url": "https://fictional.example/fr/",
+      "status": 200,
+      "fetch_state": "ok",
+      "fetched_at": "2026-10-16T00:00:00Z",
+      "content_type": "text/html",
+      "title": "Fictional shop",
+      "meta_description": "",
+      "h1": [
+        "Fictional shop"
+      ],
+      "canonical": [
+        "https://fictional.example/fr/"
+      ],
+      "robots_meta": [],
+      "hreflang": [
+        {
+          "lang": "fr",
+          "url": "https://fictional.example/fr/"
+        }
+      ],
+      "internal_links": [],
+      "jsonld": [],
+      "raw_artifact_path": "fictional-inline-fixture",
+      "parse_state": "parsed"
+    }
+  ],
+  "errors": []
+}

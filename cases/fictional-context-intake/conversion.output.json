@@ -1,0 +1,177 @@
+{
+  "schema_version": "0.3",
+  "intake": {
+    "mode": "tailored",
+    "context": {
+      "industry": {
+        "value": "Commercial solar installation",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "audience": {
+        "value": "Facilities managers",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "geography": {
+        "value": "Ontario",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "language": {
+        "value": "English",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "positioning": {
+        "value": "Small local specialist; unverified owner description",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "brand_lifecycle": {
+        "value": "Growth",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "product_lifecycle": {
+        "value": "Mature installation service",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "primary_objective": {
+        "value": "conversion",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "conversion_definition": {
+        "value": "Qualified quote request submitted",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "resources": {
+        "value": "One engineer, one day",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "constraints": {
+        "value": "No domain or URL migration",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "specific_problem": {
+        "value": "Quote form landing page returns 503",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "site_age": {
+        "value": "Three years",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "migration_history": {
+        "value": "No recent migration reported",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      }
+    },
+    "missing_essential": [],
+    "questions": [],
+    "page_questions": [
+      {
+        "url": "https://solar.example/",
+        "questions": [
+          "intended_visibility",
+          "visibility_reason / intentional noindex",
+          "critical_page_and_business_impact"
+        ]
+      }
+    ],
+    "interpretation": "Tailored to supplied context; estimates remain provisional.",
+    "limitations": "Self-reported context is attributed, not independently verified. Brand position/lifecycle never supplies measured traffic, demand or financial impact."
+  },
+  "as_of": "2026-10-16",
+  "scope": "Supplied evidence only; no live crawl, complete audit, ranking prediction, or implemented fixes",
+  "confidence_definition": "Confidence in classification of supplied signals only; source truth, live defects and ranking benefit are not independently verified",
+  "summary": {
+    "supplied_urls": 2,
+    "candidate_findings": 1,
+    "suppressed_findings": 0,
+    "rows_with_missing_signals": 2
+  },
+  "queue": [
+    {
+      "url": "https://solar.example/quote",
+      "rule": "HTTP_ERROR",
+      "priority": "P1",
+      "score": 8.6,
+      "score_inputs": {
+        "seo_impact": 9,
+        "business_importance": 10,
+        "effort": 5,
+        "effort_basis": "supplied estimate"
+      },
+      "confidence": "high",
+      "observation": "Supplied HTTP status 503",
+      "technical_severity": 9,
+      "business_urgency": "supported provisional estimate",
+      "business_reason": {
+        "supplied_importance": "critical",
+        "objective": "Recover qualified enquiries",
+        "rationale": {
+          "value": "Only quote-request entry page for current campaign",
+          "status": "self_reported",
+          "source_id": "brief",
+          "evidence_locator": "BRIEF.md"
+        },
+        "caution": "No traffic or revenue loss measured; technical severity does not establish business urgency"
+      },
+      "owner": "Web owner",
+      "source_id": "crawl",
+      "evidence_locator": "BRIEF.md:technical observations",
+      "evidence_age_days": 0,
+      "gates": [],
+      "proposed_fix": "Confirm intended URL lifecycle; restore service or approve a relevant replacement.",
+      "verification": "Recheck HTTP status, internal links and intended destination after deployment.",
+      "status": "proposed; not implemented",
+      "id": "SEO-001"
+    }
+  ],
+  "suppressed": [],
+  "coverage_gaps": [
+    {
+      "url": "https://solar.example/quote",
+      "not_assessed": [
+        "indexable",
+        "robots_blocked",
+        "canonical",
+        "title",
+        "depth",
+        "inlinks"
+      ]
+    },
+    {
+      "url": "https://solar.example/",
+      "not_assessed": [
+        "indexable",
+        "robots_blocked",
+        "title",
+        "depth",
+        "inlinks"
+      ]
+    }
+  ]
+}

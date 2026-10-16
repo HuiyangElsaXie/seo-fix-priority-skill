@@ -1,0 +1,588 @@
+{
+  "schema_version": "1.0",
+  "input_fingerprint": "99a917baaae5929e257aece20f0466f1709ecd40e294e430a9f8d30e5cf81085",
+  "final_review_status": {
+    "status": "not_supplied",
+    "source_truth": "not_independently_verified",
+    "input_binding": "evidence_locator_only; review assertions may be stale if source content changed"
+  },
+  "actionable_handoff": {
+    "status": "verification_required",
+    "buckets": {
+      "confirmed_fix": [],
+      "needs_verification": [
+        {
+          "task_id": "task-404b69bc24c4",
+          "issue_id": null,
+          "dimension": "technical",
+          "subject": "Evidence investigation",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "Crawl/HTML sample does not prove index inclusion, rendered parity, complete internal graph or robots access for every crawler.; No supplied field CWV export: LCP/INP/CLS unknown, not measured.",
+          "source_locator": "sections.technical.unknowns",
+          "steps": [
+            "Investigate only these scoped gaps: Crawl/HTML sample does not prove index inclusion, rendered parity, complete internal graph or robots access for every crawler.; No supplied field CWV export: LCP/INP/CLS unknown, not measured.",
+            "If any scoped HTTP/parse failures are listed, repeat the exact requests and save status, headers and raw HTML before re-running skipped checks.",
+            "For index/rendering uncertainty, compare rendered HTML and URL Inspection evidence for the scoped URLs; inspect robots rules for the relevant crawler and record sample limits.",
+            "For CWV gaps, request a field p75 export with URL/origin scope, device, metric, units and window; invalid or absent records remain unknown.",
+            "Attach source, date, scope and locator for each resolved gap; keep unavailable or irrelevant checks explicitly unresolved/not applicable."
+          ],
+          "proposed_role": "Technical SEO reviewer with web engineer",
+          "dependencies": [
+            "Access to the scoped source identified in the evidence gap",
+            "Reviewer availability"
+          ],
+          "acceptance": [
+            "Attach dated evidence with scope and locator for this exact gap, or record why it remains unavailable.",
+            "Mark the check resolved only after review; unresolved evidence is never a site defect or a healthy result."
+          ],
+          "priority_reason": "Collect missing evidence before diagnosing faults or ordering changes; missing data alone establishes no urgency.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-b47cd1f66509",
+          "issue_id": null,
+          "dimension": "onpage_content",
+          "subject": "Evidence investigation",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "Full-content task satisfaction and factual accuracy need semantic review; excerpts/word counts cannot establish thin content.",
+          "source_locator": "sections.onpage_content.unknowns",
+          "steps": [
+            "Investigate only these scoped gaps: Full-content task satisfaction and factual accuracy need semantic review; excerpts/word counts cannot establish thin content.",
+            "Review full content for the exact affected URLs against the intended reader task; list factual claims and their supporting sources.",
+            "Check authorship/first-hand evidence and whether internal links or a relevant next action help the reader; compare rendered metadata with raw HTML where parsing failed.",
+            "Attach source, date, scope and locator for each resolved gap; keep unavailable or irrelevant checks explicitly unresolved/not applicable."
+          ],
+          "proposed_role": "Content editor with SEO reviewer",
+          "dependencies": [
+            "Access to the scoped source identified in the evidence gap",
+            "Reviewer availability"
+          ],
+          "acceptance": [
+            "Attach dated evidence with scope and locator for this exact gap, or record why it remains unavailable.",
+            "Mark the check resolved only after review; unresolved evidence is never a site defect or a healthy result."
+          ],
+          "priority_reason": "Collect missing evidence before diagnosing faults or ordering changes; missing data alone establishes no urgency.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-debf275596d0",
+          "issue_id": null,
+          "dimension": "offpage",
+          "subject": "Evidence investigation",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "No backlink/mention data supplied; this does not mean no backlinks exist.",
+          "source_locator": "sections.offpage.unknowns",
+          "steps": [
+            "Investigate only these scoped gaps: No backlink/mention data supplied; this does not mean no backlinks exist.",
+            "If external reputation evidence is needed for this objective, obtain a dated referring-page/target/rel export with its sampling limits.",
+            "Inspect a documented sample for live links, topical relevance, independence and paid relationships; do not infer reputation from missing data or recommend buying links.",
+            "Attach source, date, scope and locator for each resolved gap; keep unavailable or irrelevant checks explicitly unresolved/not applicable."
+          ],
+          "proposed_role": "PR or partnerships reviewer",
+          "dependencies": [
+            "Access to the scoped source identified in the evidence gap",
+            "Reviewer availability"
+          ],
+          "acceptance": [
+            "Attach dated evidence with scope and locator for this exact gap, or record why it remains unavailable.",
+            "Mark the check resolved only after review; unresolved evidence is never a site defect or a healthy result."
+          ],
+          "priority_reason": "Collect missing evidence before diagnosing faults or ordering changes; missing data alone establishes no urgency.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-a9e177f2c53a",
+          "issue_id": null,
+          "dimension": "local",
+          "subject": "Evidence investigation",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "https://fictional.example/contact: Google Maps rendering, interaction, consent behavior and actual destination remain unverified.; No supplied matching-identity comparison records; comparison not assessed.",
+          "source_locator": "sections.local.unknowns",
+          "steps": [
+            "Investigate only these scoped gaps: https://fictional.example/contact: Google Maps rendering, interaction, consent behavior and actual destination remain unverified.; No supplied matching-identity comparison records; comparison not assessed.",
+            "First ask whether this business actually serves customers at an eligible location or service area; document the decision and privacy constraints.",
+            "Only if applicable, compare current website and approved business-profile records for the same entity/branch and effective time: name, address, phone and hours.",
+            "For review gaps, obtain a dated platform/branch-scoped sample and its coverage, counts, timestamps and reply evidence; no supplied reviews means review activity is unknown, not absent.",
+            "For profile or location-page gaps, capture the approved branch profile and matching live location page; confirm categories, service area, displayed-address privacy and current customer contact details before edits.",
+            "For citation or competitor gaps, identify dated same-market, same-query and same-branch sources; formatting variants and incomplete samples alone do not establish inconsistency or competitive weakness.",
+            "Attach source, date, scope and locator for each resolved gap; keep unavailable or irrelevant checks explicitly unresolved/not applicable."
+          ],
+          "proposed_role": "Local operations manager",
+          "dependencies": [
+            "Access to the scoped source identified in the evidence gap",
+            "Reviewer availability"
+          ],
+          "acceptance": [
+            "Attach dated evidence with scope and locator for this exact gap, or record why it remains unavailable.",
+            "Mark the check resolved only after review; unresolved evidence is never a site defect or a healthy result."
+          ],
+          "priority_reason": "Collect missing evidence before diagnosing faults or ordering changes; missing data alone establishes no urgency.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-9deb213cb399",
+          "issue_id": null,
+          "dimension": "international",
+          "subject": "Evidence investigation",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "Actual language/region variants are unknown; paths or location names do not establish applicability.",
+          "source_locator": "sections.international.unknowns",
+          "steps": [
+            "Investigate only these scoped gaps: Actual language/region variants are unknown; paths or location names do not establish applicability.",
+            "Confirm the actual language/region variants and intended alternate strategy before requiring hreflang.",
+            "For each explicitly missing target in the scoped gaps, collect target HTML plus relevant header/sitemap declarations; compare return references, self-reference, mappings and canonical targets.",
+            "Have a fluent reviewer check the intended reader task and translation on the scoped variants; uncollected targets remain unknown.",
+            "Attach source, date, scope and locator for each resolved gap; keep unavailable or irrelevant checks explicitly unresolved/not applicable."
+          ],
+          "proposed_role": "Localization lead with technical SEO reviewer",
+          "dependencies": [
+            "Access to the scoped source identified in the evidence gap",
+            "Reviewer availability"
+          ],
+          "acceptance": [
+            "Attach dated evidence with scope and locator for this exact gap, or record why it remains unavailable.",
+            "Mark the check resolved only after review; unresolved evidence is never a site defect or a healthy result."
+          ],
+          "priority_reason": "Collect missing evidence before diagnosing faults or ordering changes; missing data alone establishes no urgency.",
+          "source_truth": "supplied_input_not_independently_verified"
+        },
+        {
+          "task_id": "task-business-context",
+          "issue_id": null,
+          "dimension": "business_context",
+          "subject": "Missing essential context",
+          "bucket": "needs_verification",
+          "evidence_ids": [],
+          "observed_basis": "industry, audience, geography, language, primary_objective, resources, constraints, specific_problem",
+          "source_locator": "intake.missing_essential",
+          "steps": [
+            "Ask the business owner for each missing answer: industry, audience, geography, language, primary_objective, resources, constraints, specific_problem",
+            "Record each answer with a dated source and evidence locator before tailoring recommendations."
+          ],
+          "proposed_role": "Business owner with SEO lead",
+          "dependencies": [
+            "Business owner input"
+          ],
+          "acceptance": [
+            "Every missing essential answer has a valid attributed source or is explicitly left unknown.",
+            "Business prioritization remains provisional for unresolved answers."
+          ],
+          "priority_reason": "Context gates business-specific ordering; it does not prevent reporting observed technical signals.",
+          "source_truth": "supplied_input_not_independently_verified"
+        }
+      ],
+      "optional_improvement": [
+        {
+          "task_id": "task-issue-6b274f35d879",
+          "issue_id": "issue-6b274f35d879",
+          "dimension": "local",
+          "subject": "Collected HTML sample: optional customer navigation support",
+          "bucket": "optional_improvement",
+          "evidence_ids": [
+            "e-a7565c56265e"
+          ],
+          "observed_basis": "No recognized static Google Maps feature was supplied in the bounded collected HTML sample; uncollected pages and JavaScript/consent-delayed maps remain unknown.",
+          "steps": [
+            "Inspect the page in a rendered browser, including consent-delayed and mobile behavior; save sanitized evidence.",
+            "Confirm the intended public branch, customer visit purpose and address privacy with the owner.",
+            "Only if useful and approved, offer a directions link or lightweight map; retaining no map is an acceptable choice."
+          ],
+          "proposed_role": "Local operations manager",
+          "dependencies": [
+            "Confirmed target branch and publicly shareable address",
+            "Owner approval and website access for any future edit",
+            "Rendered-browser verification; this report performs no API calls or publishing"
+          ],
+          "acceptance": [
+            "Record rendered behavior and actual destination for the intended branch without storing API keys.",
+            "Verify mobile accessibility, consent behavior and destination after any approved change, or document the choice to retain the page."
+          ],
+          "priority_reason": "Optional customer navigation support; no ranking requirement or measured business urgency is established.",
+          "source_truth": "supplied_input_not_independently_verified"
+        }
+      ],
+      "keep_or_not_applicable": [
+        {
+          "task_id": "task-bab237b49009",
+          "issue_id": null,
+          "dimension": "ecommerce",
+          "subject": "Applicability decision",
+          "bucket": "keep_or_not_applicable",
+          "evidence_ids": [],
+          "observed_basis": "Online transaction purpose is explicitly no. Supplied basis: Explicit fictional business model; not inferred from URL or page features.",
+          "source_locator": "sections.ecommerce.applicability",
+          "steps": [
+            "Retain the documented applicability decision: Online transaction purpose is explicitly no. Supplied basis: Explicit fictional business model; not inferred from URL or page features.",
+            "Revisit only if the business offering or market scope changes."
+          ],
+          "proposed_role": "Catalog operations manager with web engineer",
+          "dependencies": [
+            "Business owner confirmation if applicability changes"
+          ],
+          "acceptance": [
+            "Applicability reason, source and date remain recorded; no missing-data penalty is assigned."
+          ],
+          "priority_reason": "Preserve an explicit supplied scope decision.",
+          "source_truth": "supplied_input_not_independently_verified"
+        }
+      ]
+    },
+    "interpretation": "Actionable investigation and conditional repair plans, not execution approval. Evidence gaps are conditional scope checks, not mandatory tool purchases or website changes. Empty confirmed-fix and optional buckets do not mean healthy. Proposed roles are not assigned people. Business priority remains pending; investigation sequencing is evidence-based."
+  },
+  "report_type": "bounded_six_dimension_evidence_review",
+  "intake": {
+    "mode": "generic_framework",
+    "answers": {},
+    "sources": {},
+    "as_of": "2026-10-16",
+    "invalid_source_ids": [],
+    "missing_essential": [
+      "industry",
+      "audience",
+      "geography",
+      "language",
+      "primary_objective",
+      "resources",
+      "constraints",
+      "specific_problem"
+    ],
+    "objective": "unknown",
+    "interpretation": "Context is supplied and attributed, not independently verified. Malformed or future-dated sources cannot establish known answers. Missing context does not block technical observations.",
+    "next_questions": [
+      "What is the website purpose: portfolio, content, lead generation, online sales or other?"
+    ]
+  },
+  "collection": {},
+  "sections": {
+    "technical": {
+      "applicability": {
+        "value": "yes",
+        "reason": "General website review dimension."
+      },
+      "evidence_status": "partial",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "url": "https://fictional.example/contact",
+          "http_status": 200
+        },
+        {
+          "url": "https://fictional.example/contact",
+          "canonical": [],
+          "robots_meta": [],
+          "index_status": "unknown"
+        },
+        {
+          "url": "https://fictional.example/contact",
+          "jsonld_blocks": 0,
+          "validation": "presence and supplied JSON shape only; not official rich-result validation"
+        },
+        {
+          "internal_graph": [
+            {
+              "url": "https://fictional.example/contact",
+              "sample_inlinks": 0,
+              "sample_depth": null
+            }
+          ],
+          "sample_only": true,
+          "orphan_assessment": "unknown"
+        }
+      ],
+      "unknowns": [
+        "Crawl/HTML sample does not prove index inclusion, rendered parity, complete internal graph or robots access for every crawler.",
+        "No supplied field CWV export: LCP/INP/CLS unknown, not measured."
+      ],
+      "issue_ids": [],
+      "review_task": "Confirm intended visibility, canonical choices, rendering and business-critical paths; observed directives do not prove Google index status.",
+      "source_timestamps": {
+        "collection_finished_at": "unknown",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "onpage_content": {
+      "applicability": {
+        "value": "yes",
+        "reason": "General website review dimension."
+      },
+      "evidence_status": "partial",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "url": "https://fictional.example/contact",
+          "title": "Fictional page /contact",
+          "meta_description": "Synthetic description of this fictional page for offline evidence tests.",
+          "h1": [
+            "Fictional page"
+          ]
+        }
+      ],
+      "unknowns": [
+        "Full-content task satisfaction and factual accuracy need semantic review; excerpts/word counts cannot establish thin content."
+      ],
+      "issue_ids": [],
+      "review_task": "Review reader task, accuracy, first-hand evidence, authorship and useful next steps in full content. Do not score E-E-A-T, keyword density or word count.",
+      "source_timestamps": {
+        "collection_finished_at": "unknown",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "offpage": {
+      "applicability": {
+        "value": "yes",
+        "reason": "General website review dimension."
+      },
+      "evidence_status": "not_assessed",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [],
+      "unknowns": [
+        "No backlink/mention data supplied; this does not mean no backlinks exist."
+      ],
+      "issue_ids": [],
+      "review_task": "Review relevance, independence, paid relationships and sample bias. DA/DR are third-party measures, not Google authority scores.",
+      "source_timestamps": {
+        "collection_finished_at": "unknown",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "local": {
+      "applicability": {
+        "value": "yes",
+        "reason": "Explicit local customer service or local acquisition purpose; Business Profile eligibility remains separately reviewable. Supplied basis: Explicit fictional business model; not inferred from URL or page features.",
+        "source": "Fictional owner brief",
+        "date": "2026-10-16",
+        "derived_from": "business_model"
+      },
+      "evidence_status": "partial",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [
+        {
+          "url": "https://fictional.example/contact",
+          "google_maps": {
+            "schema_version": "1.0",
+            "classifications": [
+              "no_static_evidence"
+            ],
+            "evidence": [],
+            "branch_status": "unknown",
+            "rendered_verified": false,
+            "customer_visit_applicable": true,
+            "optional_recommendation": "Optionally offer a map or directions link for confirmed customer visits, after verifying the public branch and address privacy.",
+            "limitations": [
+              "Static HTML signals only; rendering, interactivity, availability and consent behavior are not verified.",
+              "JavaScript or consent-delayed maps may be absent from supplied HTML; absence is not proof of a missing map.",
+              "Opaque pb payloads, coordinates and place names do not establish branch identity. Short links are not resolved.",
+              "A map is optional user-experience support, not an automatic SEO defect or ranking requirement.",
+              "Only explicitly allowlisted Google hosts and map paths are recognized; no network requests are made."
+            ]
+          },
+          "source_truth": "supplied_static_evidence_not_independently_verified"
+        }
+      ],
+      "unknowns": [
+        "https://fictional.example/contact: Google Maps rendering, interaction, consent behavior and actual destination remain unverified.",
+        "No supplied matching-identity comparison records; comparison not assessed."
+      ],
+      "issue_ids": [
+        "issue-6b274f35d879"
+      ],
+      "review_task": "Confirm real customer contact/service eligibility, branch identity and privacy before suggesting a Business Profile; a city/address alone establishes no eligibility.",
+      "source_timestamps": {
+        "collection_finished_at": "unknown",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported",
+      "limitations": [
+        "Static HTML signals only; rendering, interactivity, availability and consent behavior are not verified.",
+        "JavaScript or consent-delayed maps may be absent from supplied HTML; absence is not proof of a missing map.",
+        "Opaque pb payloads, coordinates and place names do not establish branch identity. Short links are not resolved.",
+        "A map is optional user-experience support, not an automatic SEO defect or ranking requirement.",
+        "Only explicitly allowlisted Google hosts and map paths are recognized; no network requests are made."
+      ]
+    },
+    "ecommerce": {
+      "applicability": {
+        "value": "no",
+        "reason": "Online transaction purpose is explicitly no. Supplied basis: Explicit fictional business model; not inferred from URL or page features.",
+        "source": "Fictional owner brief",
+        "date": "2026-10-16",
+        "derived_from": "business_model"
+      },
+      "evidence_status": "not_assessed",
+      "semantic_review": "not_applicable",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [],
+      "unknowns": [
+        "Not applicable according to supplied business reason; no penalty assigned."
+      ],
+      "issue_ids": [],
+      "review_task": "Confirm current selling purpose, variants, purchase flow, delivery and returns; past ecommerce case studies do not make this site a shop.",
+      "source_timestamps": {
+        "collection_finished_at": "unknown",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    },
+    "international": {
+      "applicability": {
+        "value": "unknown",
+        "reason": "Business applicability has not been confirmed."
+      },
+      "evidence_status": "not_assessed",
+      "semantic_review": "pending",
+      "evidence_status_meaning": "Status covers specified deterministic checks only; not complete SEO verification or semantic/eligibility approval.",
+      "confidence": {
+        "classification": "bounded_input_rules",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "coverage": "limited_to_supplied_sample"
+      },
+      "checked": [],
+      "unknowns": [
+        "Actual language/region variants are unknown; paths or location names do not establish applicability."
+      ],
+      "issue_ids": [],
+      "review_task": "Review actual language/market purpose, translation quality and regional requirements; single-language sites need no standalone missing-hreflang warning.",
+      "source_timestamps": {
+        "collection_finished_at": "unknown",
+        "supplement_source": "not_supplied",
+        "supplement_date": "not_supplied"
+      },
+      "collection_errors": [],
+      "collection_error_status": "none_reported"
+    }
+  },
+  "findings": [
+    {
+      "issue_id": "issue-6b274f35d879",
+      "root_cause_key": "GOOGLE_MAPS_OPTIONAL_VISIT_SUPPORT|Collected HTML sample: optional customer navigation support",
+      "subject": "Collected HTML sample: optional customer navigation support",
+      "primary_dimension": "local",
+      "related_dimensions": [],
+      "technical_fact": "No recognized static Google Maps feature was supplied in the bounded collected HTML sample; uncollected pages and JavaScript/consent-delayed maps remain unknown.",
+      "interpretive_judgment": "Candidate requiring contextual review; no ranking or revenue effect established.",
+      "confirmation_status": "observed_signal",
+      "technical_severity": "review",
+      "confidence": {
+        "classification": "reproducible_rule_match_in_supplied_input",
+        "source_truth": "not_independently_verified",
+        "business_impact": "unknown",
+        "meaning": "Rule matching is distinct from factual authenticity, SEO harm and business priority; no probability is estimated."
+      },
+      "evidence_ids": [
+        "e-a7565c56265e"
+      ],
+      "recommendation": "Optionally offer a map or directions link for confirmed customer visits, after verifying the public branch and address privacy.",
+      "priority": {
+        "value": "optional",
+        "provisional": true,
+        "gates": [
+          "Confirm business impact and visibility intent",
+          "Supply sourced effort estimate and accountable owner"
+        ],
+        "reason": "Optional customer navigation support; no ranking requirement or measured business urgency is established."
+      },
+      "acceptance": "Record rendered behavior and actual destination for the intended branch without storing API keys. Verify mobile accessibility, consent behavior and destination after any approved change, or document the choice to retain the page.",
+      "owner": "Local operations manager (proposed role; assignment requires agreement)",
+      "effort": "unknown",
+      "action_plan": {
+        "optional": true,
+        "steps": [
+          "Inspect the page in a rendered browser, including consent-delayed and mobile behavior; save sanitized evidence.",
+          "Confirm the intended public branch, customer visit purpose and address privacy with the owner.",
+          "Only if useful and approved, offer a directions link or lightweight map; retaining no map is an acceptable choice."
+        ],
+        "dependencies": [
+          "Confirmed target branch and publicly shareable address",
+          "Owner approval and website access for any future edit",
+          "Rendered-browser verification; this report performs no API calls or publishing"
+        ],
+        "acceptance": [
+          "Record rendered behavior and actual destination for the intended branch without storing API keys.",
+          "Verify mobile accessibility, consent behavior and destination after any approved change, or document the choice to retain the page."
+        ],
+        "priority_reason": "Optional customer navigation support; no ranking requirement or measured business urgency is established."
+      },
+      "bucket": "optional_improvement"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "e-705d5c593f38",
+      "source": "snapshot",
+      "date": "2026-10-16",
+      "scope": "https://fictional.example/contact",
+      "locator": "pages:https://fictional.example/contact"
+    },
+    {
+      "evidence_id": "e-a7565c56265e",
+      "source": "snapshot",
+      "date": "2026-10-16",
+      "scope": "https://fictional.example/contact",
+      "locator": "pages.google_maps:https://fictional.example/contact"
+    }
+  ],
+  "limitations": [
+    "No overall health/authority score, traffic loss, ranking penalty or ROI is calculated.",
+    "Unreviewed semantic scope remains pending; supplied external reviews are attributed assertions, not AI review performed by this deterministic script.",
+    "JSON-LD checks are not official rich-result validation. FAQ rich results were removed May 7, 2026; no FAQ rich-result benefit is promised.",
+    "Priority is qualitative and pending business-impact/effort/owner evidence; technical severity is separate.",
+    "Static HTML signals only; rendering, interactivity, availability and consent behavior are not verified.",
+    "JavaScript or consent-delayed maps may be absent from supplied HTML; absence is not proof of a missing map.",
+    "Opaque pb payloads, coordinates and place names do not establish branch identity. Short links are not resolved.",
+    "A map is optional user-experience support, not an automatic SEO defect or ranking requirement.",
+    "Only explicitly allowlisted Google hosts and map paths are recognized; no network requests are made."
+  ]
+}

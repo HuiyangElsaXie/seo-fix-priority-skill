@@ -1,0 +1,55 @@
+{
+  "schema_version": "0.3",
+  "as_of": "2026-10-16",
+  "sources": {
+    "brief": {
+      "kind": "fictional_fixture",
+      "description": "Invented business interview, not client evidence",
+      "observed_at": "2026-10-16"
+    },
+    "crawl": {
+      "kind": "fictional_fixture",
+      "description": "Two invented HTTP observations; not a live crawl",
+      "observed_at": "2026-10-16"
+    }
+  },
+  "business_context": {
+    "objective": "Recover qualified enquiries",
+    "owners": {
+      "engineering": "Web owner"
+    },
+    "answers": {}
+  },
+  "rows": [
+    {
+      "url": "https://solar.example/quote",
+      "status": 503,
+      "source_id": "crawl",
+      "evidence_locator": "BRIEF.md:technical observations",
+      "intent": "index",
+      "importance": "critical",
+      "effort": 5,
+      "business_impact": {
+        "value": "Only quote-request entry page for current campaign",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      },
+      "visibility_reason": {
+        "value": "Owner confirms public acquisition page",
+        "status": "self_reported",
+        "source_id": "brief",
+        "evidence_locator": "BRIEF.md"
+      }
+    },
+    {
+      "url": "https://solar.example/",
+      "canonical": "https://solar.example",
+      "status": 200,
+      "source_id": "crawl",
+      "evidence_locator": "BRIEF.md:technical observations",
+      "intent": "unknown",
+      "importance": "unknown"
+    }
+  ]
+}

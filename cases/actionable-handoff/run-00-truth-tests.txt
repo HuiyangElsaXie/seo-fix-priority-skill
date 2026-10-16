@@ -1,0 +1,35 @@
+test_conflicting_reference_does_not_choose_authoritative_value (test_handoff_truth.HandoffTruthTests.test_conflicting_reference_does_not_choose_authoritative_value) ... ok
+test_different_currency_never_generates_price_mismatch_fix (test_handoff_truth.HandoffTruthTests.test_different_currency_never_generates_price_mismatch_fix) ... ok
+test_explicit_not_applicable_is_keep_not_missing_defect (test_handoff_truth.HandoffTruthTests.test_explicit_not_applicable_is_keep_not_missing_defect) ... ok
+test_four_buckets_and_unique_tasks_cover_observed_signals (test_handoff_truth.HandoffTruthTests.test_four_buckets_and_unique_tasks_cover_observed_signals) ... ok
+test_intent_sensitive_signals_never_become_automatic_fixes (test_handoff_truth.HandoffTruthTests.test_intent_sensitive_signals_never_become_automatic_fixes) ... ok
+test_invalid_or_future_comparison_dates_are_not_supported_mismatches (test_handoff_truth.HandoffTruthTests.test_invalid_or_future_comparison_dates_are_not_supported_mismatches) ... 
+  test_invalid_or_future_comparison_dates_are_not_supported_mismatches (test_handoff_truth.HandoffTruthTests.test_invalid_or_future_comparison_dates_are_not_supported_mismatches) (observed_at='not-a-date') ... FAIL
+  test_invalid_or_future_comparison_dates_are_not_supported_mismatches (test_handoff_truth.HandoffTruthTests.test_invalid_or_future_comparison_dates_are_not_supported_mismatches) (observed_at='2099-01-01') ... FAIL
+test_lab_cwv_and_unfetched_hreflang_target_are_unknown (test_handoff_truth.HandoffTruthTests.test_lab_cwv_and_unfetched_hreflang_target_are_unknown) ... ok
+test_missing_identity_prevents_product_fault_classification (test_handoff_truth.HandoffTruthTests.test_missing_identity_prevents_product_fault_classification) ... ok
+test_offpage_missing_data_is_investigation_not_zero_backlinks_or_defect (test_handoff_truth.HandoffTruthTests.test_offpage_missing_data_is_investigation_not_zero_backlinks_or_defect) ... ok
+test_positive_signals_exist_across_five_detectable_dimensions (test_handoff_truth.HandoffTruthTests.test_positive_signals_exist_across_five_detectable_dimensions) ... ok
+test_priority_remains_provisional_without_business_owner_effort_evidence (test_handoff_truth.HandoffTruthTests.test_priority_remains_provisional_without_business_owner_effort_evidence) ... ok
+test_task_has_operational_steps_role_acceptance_and_traceable_evidence (test_handoff_truth.HandoffTruthTests.test_task_has_operational_steps_role_acceptance_and_traceable_evidence) ... ok
+
+======================================================================
+FAIL: test_invalid_or_future_comparison_dates_are_not_supported_mismatches (test_handoff_truth.HandoffTruthTests.test_invalid_or_future_comparison_dates_are_not_supported_mismatches) (observed_at='not-a-date')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/100764731f7e/marketing-portfolio-drafts-20261016/seo-fix-priority-workflow/tests/test_handoff_truth.py", line 143, in test_invalid_or_future_comparison_dates_are_not_supported_mismatches
+    self.assertFalse(any(f['primary_dimension'] in ('local', 'ecommerce') for f in r['findings']))
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_invalid_or_future_comparison_dates_are_not_supported_mismatches (test_handoff_truth.HandoffTruthTests.test_invalid_or_future_comparison_dates_are_not_supported_mismatches) (observed_at='2099-01-01')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/100764731f7e/marketing-portfolio-drafts-20261016/seo-fix-priority-workflow/tests/test_handoff_truth.py", line 143, in test_invalid_or_future_comparison_dates_are_not_supported_mismatches
+    self.assertFalse(any(f['primary_dimension'] in ('local', 'ecommerce') for f in r['findings']))
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.015s
+
+FAILED (failures=2)
