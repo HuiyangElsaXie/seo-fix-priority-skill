@@ -51,10 +51,13 @@ Default rule findings remain investigation candidates until evidence and a docum
 
 ## What runs, and what still needs review
 
-1. `collect_public_site.py` makes bounded read-only public HTTP requests: robots policy, HTML metadata/text, canonical/hreflang, JSON-LD, sitemap samples and observed internal links. It does not render JavaScript or log in.
-2. `six_dimension_report.py` analyzes that snapshot offline and emits `report.json` and `report.md` with Technical, On-page/Content, Off-page, Local, Ecommerce and International sections. Six sections are a coverage framework, not six automatically passed audits. Supplied optional evidence can expand checks; absent evidence remains explicit.
-3. The agent/reviewer assesses intent, content usefulness, eligibility, deliberate exclusions and proposed actions. Machine output leaves semantic review pending. The reviewer records corrections without replacing the original output; the report can incorporate validated, explicit review decisions while identifying them as supplied assertions.
-4. Existing `triage.py` remains the supplied-data, eight-rule repair-queue mode. Its conditional 40/40/20 scoring is not a score for the six-dimension report or a Google ranking score.
+1. **You** provide URL/evidence, site purpose, important pages and intended visibility; clarify local/ecommerce/language applicability where material.
+2. **AI** maps the supplied contract or, with authorized tools, runs `collect_public_site.py` for bounded public HTTP evidence. Raw snapshots, dates, errors and gaps are preserved; no JavaScript rendering or login is implied.
+3. **The offline reporter** `six_dimension_report.py` produces `report.json` and `report.md` across six dimensions. Coverage is not automatic verification; missing supplemental evidence remains explicit.
+4. **AI** reviews captured content, intent, exclusions and actions. **You / the site owner** resolve disputed intended behavior and judge business relevance, eligibility and priorities; AI review is not independent human approval. Preserve original output and review decisions separately.
+5. **AI** delivers the actionable report with sources, supported fixes versus investigations, roles and acceptance checks. **You** review the proposals and decide any separately authorized implementation; this workflow does not change the site.
+
+Alternative supplied-data route: `triage.py` retains its eight-rule repair queue. Its conditional 40/40/20 scoring is neither the six-dimension report's score nor a Google ranking score.
 
 Python 3.10+, standard library only. No paid API, installed SEO suite, account connection, posting or deployment.
 
